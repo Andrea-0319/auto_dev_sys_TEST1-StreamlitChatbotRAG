@@ -1,0 +1,305 @@
+Agent: dev
+Return code: 0
+Duration: 385.1s
+============================================================
+STDOUT:
+Let me first explore the current workspace to understand the existing files and structure.
+Now let me read the chat_controls.py and the summarization test file:
+Now I understand the issues. Let me also read the session.py file to understand the session parameter:
+Now let me add the necessary imports and handlers for the summarize button:
+Now let me update the chat controls section to use render_enhanced_controls:
+Let me check the model handler to see if get_model_handler exists:
+
+============================================================
+STDERR:
+[0m> build · minimax-m2.5-free
+[0m
+
+[0m→ [0mRead .agent-prompt.md
+[0m✱ [0mGlob "workspace/**/*.py"[90m 58 matches[0m
+[0m→ [0mRead workspace\ui\app.py
+[0m→ [0mRead workspace\ui\chat_controls.py
+[0m→ [0mRead workspace\tests\test_summarization.py
+[0m→ [0mRead workspace\core\summarization.py
+[0m→ [0mRead workspace\core\session.py
+[0m→ [0mRead workspace\ui\chat.py
+[0m[0m# [0mTodos
+
+[ ] Fix app.py to pass session to render_chat_interface
+[ ] Integrate summarize button (render_enhanced_controls) in app.py
+[ ] Integrate tool selector (render_tool_selector) in sidebar
+[ ] Fix summarization preserve_recent=0 edge case
+[ ] Fix summarization non-dict response handling
+[ ] Update context/implementation.md
+[0m
+[0m← [0mEdit workspace\ui\app.py
+Index: D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\ui\app.py
+===================================================================
+--- D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\ui\app.py
++++ D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\ui\app.py
+@@ -147,9 +147,9 @@
+ st.markdown("### Chat with your documents")
+ 
+ # Display messages
+ messages = st.session_state.workflow.session.get_messages()
+-render_chat_interface(messages)
++render_chat_interface(messages, st.session_state.workflow.session)
+ 
+ # Chat input
+ user_input = render_chat_input(disabled=st.session_state.get("streaming", False))
+ 
+[0m
+
+[0m→ [0mRead workspace\ui\app.py
+[0m[0m← [0mEdit workspace\ui\app.py
+Index: D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\ui\app.py
+===================================================================
+--- D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\ui\app.py
++++ D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\ui\app.py
+@@ -25,8 +25,10 @@
+     render_clear_all_button,
+     render_document_stats,
+ )
+ from ui.sidebar import render_sidebar
++from ui.chat_controls import render_enhanced_controls, render_tool_selector
++from core.summarization import get_summarization_service
+ 
+ 
+ def init_session_state():
+     """Initialize Streamlit session state."""
+
+[0m
+
+[0m→ [0mRead workspace\ui\app.py
+[0m
+[0m← [0mEdit workspace\ui\app.py
+Index: D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\ui\app.py
+===================================================================
+--- D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\ui\app.py
++++ D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\ui\app.py
+@@ -121,8 +121,37 @@
+     # Refresh document list if needed
+     st.session_state.documents = workflow.get_document_list()
+ 
+ 
++def handle_summarize():
++    """Handle context summarization."""
++    workflow = st.session_state.workflow
++    summarization_service = get_summarization_service(workflow.model_handler)
++    
++    if summarization_service:
++        messages = workflow.session.get_messages()
++        result = summarization_service.summarize_messages(messages)
++        
++        if result.new_message:
++            # Remove original messages and add summary
++            for msg_id in result.original_message_ids:
++                workflow.session.delete_message(msg_id)
++            
++            # Add summary message
++            workflow.session._messages.append(result.new_message)
++            st.success(f"Summarized {len(result.original_message_ids)} messages, saved ~{result.tokens_saved} tokens")
++        else:
++            st.info("Not enough messages to summarize")
++    else:
++        st.error("Summarization service not available")
++
++
++def handle_search(query: str):
++    """Handle message search."""
++    workflow = st.session_state.workflow
++    return workflow.session.search_messages(query)
++
++
+ def main():
+     """Main application."""
+     # Page config
+     st.set_page_config(
+
+[0m
+[0m→ [0mRead workspace\ui\app.py[90m [limit=60, offset=160][0m
+[0m
+[0m← [0mEdit workspace\ui\app.py
+Index: D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\ui\app.py
+===================================================================
+--- D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\ui\app.py
++++ D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\ui\app.py
+@@ -187,21 +187,16 @@
+     if user_input:
+         handle_query(user_input)
+         st.rerun()
+     
+-    # Chat controls
++    # Chat controls - Enhanced
+     st.markdown("---")
+-    col1, col2, col3 = st.columns([1, 1, 4])
+-    
+-    with col1:
+-        if st.button("🗑️ Clear Chat"):
+-            st.session_state.workflow.clear_conversation()
+-            st.rerun()
+-    
+-    with col2:
+-        if st.button("💾 Export"):
+-            # Export handled in callback
+-            pass
++    render_enhanced_controls(
++        messages=messages,
++        on_clear=lambda: st.session_state.workflow.clear_conversation(),
++        on_summarize=handle_summarize,
++        on_search=handle_search
++    )
+ 
+ with tab2:
+     # Document management
+     col1, col2 = st.columns([1, 1])
+
+
+[0m[0m# [0mTodos
+[x] Fix app.py to pass session to render_chat_interface
+[x] Integrate summarize button (render_enhanced_controls) in app.py
+[ ] Integrate tool selector (render_tool_selector) in sidebar
+[ ] Fix summarization preserve_recent=0 edge case
+[ ] Fix summarization non-dict response handling
+[ ] Update context/implementation.md
+[0m
+[0m→ [0mRead workspace\ui\sidebar.py
+[0m
+[0m← [0mEdit workspace\ui\sidebar.py
+Index: D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\ui\sidebar.py
+===================================================================
+--- D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\ui\sidebar.py
++++ D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\ui\sidebar.py
+@@ -4,8 +4,9 @@
+ 
+ from config import settings
+ from core.token_tracker import get_token_tracker
+ from ui.token_display import render_token_display_full
++from ui.chat_controls import render_tool_selector
+ 
+ 
+ def render_sidebar():
+     """Render the sidebar with configuration and controls."""
+
+[0m
+[0m← [0mEdit workspace\ui\sidebar.py
+Index: D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\ui\sidebar.py
+===================================================================
+--- D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\ui\sidebar.py
++++ D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\ui\sidebar.py
+@@ -87,8 +87,12 @@
+     
+     # Store in session state for use
+     st.session_state.temperature = temperature
+     st.session_state.max_tokens = max_tokens
++        
++    # Tool mode selector
++    st.markdown("---")
++    render_tool_mode_selector()
+ 
+ 
+ def render_rag_settings():
+     """Render RAG configuration section."""
+[0m
+
+[0m← [0mEdit workspace\ui\sidebar.py
+Index: D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\ui\sidebar.py
+===================================================================
+--- D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\ui\sidebar.py
++++ D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\ui\sidebar.py
+@@ -93,8 +93,36 @@
+     st.markdown("---")
+     render_tool_mode_selector()
+ 
+ 
++def render_tool_mode_selector():
++    """Render tool mode selector in sidebar."""
++    st.subheader("🛠️ Tool Mode")
++    
++    tool_modes = getattr(settings, 'TOOL_MODES', {
++        "general": {"name": "General Chat", "system_prompt": "You are a helpful assistant."},
++        "code": {"name": "Code Assistant", "system_prompt": "You are an expert programmer. Focus on code quality."},
++        "document": {"name": "Document Analyzer", "system_prompt": "You analyze documents and extract key information."}
++    })
++    
++    current_tool = st.session_state.get("current_tool", "general")
++    
++    selected_tool = render_tool_selector(
++        current_tool=current_tool,
++        tool_modes=tool_modes,
++        on_change=lambda tool: _handle_tool_change(tool)
++    )
++    
++    if selected_tool != current_tool:
++        st.session_state.current_tool = selected_tool
++
++
++def _handle_tool_change(tool: str):
++    """Handle tool mode change."""
++    st.session_state.current_tool = tool
++    st.rerun()
++
++
+ def render_rag_settings():
+     """Render RAG configuration section."""
+     st.subheader("🔍 RAG Settings")
+     
+
+
+[0m[0m# [0mTodos
+
+[x] Fix app.py to pass session to render_chat_interface
+[x] Integrate summarize button (render_enhanced_controls) in app.py
+[x] Integrate tool selector (render_tool_selector) in sidebar
+[ ] Fix summarization preserve_recent=0 edge case
+[ ] Fix summarization non-dict response handling
+[ ] Update context/implementation.md[0m
+[0m→ [0mRead workspace\core\summarization.py[90m [limit=60, offset=45][0m
+[0m
+[0m← [0mEdit workspace\core\summarization.py
+
+
+Index: D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\core\summarization.py
+===================================================================
+--- D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\core\summarization.py
++++ D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\core\summarization.py
+@@ -53,10 +53,14 @@
+         new_message=None,
+         tokens_saved=0
+     )
+ 
+-messages_to_summarize = messages[:-preserve_recent]
+-messages_to_preserve = messages[-preserve_recent:]
++if preserve_recent == 0:
++    messages_to_summarize = messages
++    messages_to_preserve = []
++else:
++    messages_to_summarize = messages[:-preserve_recent]
++    messages_to_preserve = messages[-preserve_recent:]
+ 
+ original_ids = [m.id for m in messages_to_summarize]
+ 
+ summary_prompt = self.get_summary_prompt(messages_to_summarize)
+[0m[0m→ [0mRead workspace\core\summarization.py[90m [limit=70][0m
+[0m
+[0m← [0mEdit workspace\core\summarization.py
+Index: D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\core\summarization.py
+===================================================================
+--- D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\core\summarization.py
++++ D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\core\summarization.py
+@@ -44,9 +44,9 @@
+     
+ Returns:
+     Summary result with condensed content.
+ """
+-if len(messages) <= preserve_recent:
++if len(messages) < preserve_recent:
+     logger.info("Not enough messages to summarize")
+     return SummaryResult(
+         summary="",
+         original_message_ids=[],
+
+[0m
+[0m→ [0mRead workspace\core\summarization.py[90m [offset=155][0m
+[0m✱ [0mGrep "def get_model_handler"[90m 0 matches[0m
+[91m[1mError: [0mError: Unable to connect. Is the computer able to access the url?

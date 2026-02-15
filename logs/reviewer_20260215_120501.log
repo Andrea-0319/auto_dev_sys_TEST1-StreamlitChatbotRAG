@@ -1,0 +1,319 @@
+Agent: reviewer
+Return code: 0
+Duration: 460.5s
+============================================================
+STDOUT:
+Let me examine the workspace to verify the implementation against the requirements and design.
+Let me verify if the issues identified in the previous review have been fixed:
+Now let me verify the edge case tests all pass:
+Let me check if the components are actually being used in sidebar.py:
+Now let me check chat.py:
+Now I have enough information to write the review. The critical issues are:
+
+1. **UI Integration Issues** - The session parameter is not passed to render_chat_interface, so branch selector and message actions won't work
+2. **Summarize button not wired up** - render_enhanced_controls exists but is never called
+3. **Tool selector not wired up** - render_tool_selector exists but is never used
+
+Let me write the review:
+The review has been written to `context/review-feedback.md`. 
+
+**Summary**: The implementation has solid core functionality with most code issues from the previous review now fixed. However, there are **3 CRITICAL integration issues** preventing users from actually using the new features:
+
+1. **Session not passed to chat interface** (app.py:151) - Branch selector and message actions (copy, delete, pin, feedback) won't work
+2. **Summarize button not wired up** - The button exists in `render_enhanced_controls()` but is never called anywhere
+3. **Tool selector not wired up** - `render_tool_selector()` exists but is never integrated
+
+**Status: CRITICAL_ISSUES** - These must be fixed before the features can be used.
+
+============================================================
+STDERR:
+[0m
+> build · minimax-m2.5-free[0m
+
+[0m→ [0mRead .agent-prompt.md
+[0m✱ [0mGlob "workspace/**/*.py"[90m 58 matches[0m
+[0m→ [0mRead workspace\ui\app.py
+[0m→ [0mRead workspace\tests\test_summarization.py
+[0m✱ [0mGlob "context/*"[90m 5 matches[0m
+[0m→ [0mRead context\review-feedback.md
+[0m✱ [0mGrep "is_pinned.*feedback"[90m in workspace\core · 0 matches[0m
+[0m✱ [0mGrep "def export_conversation"[90m in workspace\core · 1 match[0m
+[0m→ [0mRead workspace\core\session.py[90m [limit=40, offset=245][0m
+[0m→ [0mRead workspace\core\branch_manager.py[90m [limit=60, offset=25][0m
+[0m→ [0mRead workspace\core\branch_manager.py[90m [limit=40, offset=85][0m
+[0m→ [0mRead workspace\core\export.py[90m [limit=50, offset=35][0m
+[0m[0m$ [0mcd "D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT" && python -m pytest workspace/tests/test_session_enhanced.py workspace/tests/test_branch_manager.py workspace/tests/test_export.py workspace/tests/test_summarization.py -v --tb=short 2>&1 | head -100============================= test session starts =============================
+platform win32 -- Python 3.12.7, pytest-7.4.4, pluggy-1.0.0 -- C:\Users\andre\anaconda3\python.exe
+cachedir: .pytest_cache
+rootdir: D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT
+plugins: anyio-4.2.0, langsmith-0.7.0
+collecting ... collected 101 items
+
+workspace/tests/test_session_enhanced.py::TestSessionManagerBranching::test_create_branch_basic PASSED [  0%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerBranching::test_create_branch_invalid_index PASSED [  1%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerBranching::test_create_branch_negative_index PASSED [  2%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerBranching::test_switch_branch PASSED [  3%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerBranching::test_switch_branch_not_exists PASSED [  4%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerBranching::test_get_current_branch_id PASSED [  5%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerBranching::test_get_all_branches PASSED [  6%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerBranching::test_delete_branch PASSED [  7%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerBranching::test_delete_branch_not_exists PASSED [  8%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerBranching::test_delete_current_branch PASSED [  9%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerMessageMetadata::test_pin_message PASSED [ 10%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerMessageMetadata::test_pin_message_not_exists PASSED [ 11%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerMessageMetadata::test_unpin_message PASSED [ 12%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerMessageMetadata::test_unpin_message_not_exists PASSED [ 13%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerMessageMetadata::test_set_feedback_positive PASSED [ 14%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerMessageMetadata::test_set_feedback_negative PASSED [ 15%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerMessageMetadata::test_set_feedback_not_exists PASSED [ 16%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerMessageMetadata::test_delete_message PASSED [ 17%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerMessageMetadata::test_delete_message_not_exists PASSED [ 18%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerMessageMetadata::test_message_metadata_persists PASSED [ 19%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerSearch::test_search_messages_empty PASSED [ 20%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerSearch::test_search_messages_found PASSED [ 21%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerSearch::test_search_messages_case_insensitive PASSED [ 22%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerSearch::test_search_messages_not_found PASSED [ 23%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerSearch::test_search_messages_partial_match PASSED [ 24%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerSearch::test_search_messages_empty_query PASSED [ 25%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerGetMessageByIndex::test_get_message_by_index_valid PASSED [ 26%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerGetMessageByIndex::test_get_message_by_index_negative PASSED [ 27%]
+workspace/tests/test_session_enhanced.py::TestSessionManagerGetMessageByIndex::test_get_message_by_index_out_of_bounds PASSED [ 28%]
+workspace/tests/test_session_enhanced.py::TestMessageDataclass::test_message_with_pinned PASSED [ 29%]
+workspace/tests/test_session_enhanced.py::TestMessageDataclass::test_message_with_feedback_positive PASSED [ 30%]
+workspace/tests/test_session_enhanced.py::TestMessageDataclass::test_message_with_feedback_negative PASSED [ 31%]
+workspace/tests/test_session_enhanced.py::TestMessageDataclass::test_message_with_branch_id PASSED [ 32%]
+workspace/tests/test_session_enhanced.py::TestMessageDataclass::test_message_with_parent_message_id PASSED [ 33%]
+workspace/tests/test_session_enhanced.py::TestBranchDataclass::test_branch_creation PASSED [ 34%]
+workspace/tests/test_session_enhanced.py::TestBranchDataclass::test_branch_default_active PASSED [ 35%]
+workspace/tests/test_branch_manager.py::TestBranchManagerInitialization::test_initialization PASSED [ 36%]
+workspace/tests/test_branch_manager.py::TestBranchManagerCreateBranch::test_create_branch_basic PASSED [ 37%]
+workspace/tests/test_branch_manager.py::TestBranchManagerCreateBranch::test_create_branch_with_name PASSED [ 38%]
+workspace/tests/test_branch_manager.py::TestBranchManagerCreateBranch::test_create_branch_max_reached PASSED [ 39%]
+workspace/tests/test_branch_manager.py::TestBranchManagerCreateBranch::test_create_branch_invalid_message PASSED [ 40%]
+workspace/tests/test_branch_manager.py::TestBranchManagerListBranches::test_list_branches_empty PASSED [ 41%]
+workspace/tests/test_branch_manager.py::TestBranchManagerListBranches::test_list_branches_multiple PASSED [ 42%]
+workspace/tests/test_branch_manager.py::TestBranchManagerGetBranch::test_get_branch_exists PASSED [ 43%]
+workspace/tests/test_branch_manager.py::TestBranchManagerGetBranch::test_get_branch_not_exists PASSED [ 44%]
+workspace/tests/test_branch_manager.py::TestBranchManagerDeleteBranch::test_delete_branch PASSED [ 45%]
+workspace/tests/test_branch_manager.py::TestBranchManagerDeleteBranch::test_delete_branch_not_exists PASSED [ 46%]
+workspace/tests/test_branch_manager.py::TestBranchManagerMergeBranch::test_merge_branch_success PASSED [ 47%]
+workspace/tests/test_branch_manager.py::TestBranchManagerMergeBranch::test_merge_branch_source_not_exists PASSED [ 48%]
+workspace/tests/test_branch_manager.py::TestBranchManagerMergeBranch::test_merge_branch_target_not_exists PASSED [ 49%]
+workspace/tests/test_branch_manager.py::TestBranchManagerGetBranchMessages::test_get_branch_messages PASSED [ 50%]
+workspace/tests/test_branch_manager.py::TestBranchManagerGetBranchMessages::test_get_branch_messages_empty PASSED [ 51%]
+workspace/tests/test_branch_manager.py::TestBranchManagerGetBranchTree::test_get_branch_tree_empty PASSED [ 52%]
+workspace/tests/test_branch_manager.py::TestBranchManagerGetBranchTree::test_get_branch_tree_with_branches PASSED [ 53%]
+workspace/tests/test_branch_manager.py::TestGetBranchManager::test_singleton PASSED [ 54%]
+workspace/tests/test_export.py::TestExportServiceInitialization::test_initialization PASSED [ 55%]
+workspace/tests/test_export.py::TestExportServiceMarkdown::test_export_markdown_empty PASSED [ 56%]
+workspace/tests/test_export.py::TestExportServiceMarkdown::test_export_markdown_single_message PASSED [ 57%]
+workspace/tests/test_export.py::TestExportServiceMarkdown::test_export_markdown_multiple_messages PASSED [ 58%]
+workspace/tests/test_export.py::TestExportServiceMarkdown::test_export_markdown_without_metadata PASSED [ 59%]
+workspace/tests/test_export.py::TestExportServiceMarkdown::test_export_markdown_with_metadata PASSED [ 60%]
+workspace/tests/test_export.py::TestExportServiceMarkdown::test_export_markdown_pinned_message PASSED [ 61%]
+workspace/tests/test_export.py::TestExportServiceMarkdown::test_export_markdown_with_feedback PASSED [ 62%]
+workspace/tests/test_export.py::TestExportServiceMarkdown::test_export_markdown_with_reasoning PASSED [ 63%]
+workspace/tests/test_export.py::TestExportServiceMarkdown::test_export_markdown_with_sources PASSED [ 64%]
+workspace/tests/test_export.py::TestExportServiceJSON::test_export_json_empty PASSED [ 65%]
+workspace/tests/test_export.py::TestExportServiceJSON::test_export_json_single_message PASSED [ 66%]
+workspace/tests/test_export.py::TestExportServiceJSON::test_export_json_without_metadata PASSED [ 67%]
+workspace/tests/test_export.py::TestExportServiceJSON::test_export_json_with_metadata PASSED [ 68%]
+workspace/tests/test_export.py::TestExportServicePlainText::test_export_plain_text_empty PASSED [ 69%]
+workspace/tests/test_export.py::TestExportServicePlainText::test_export_plain_text_single_message PASSED [ 70%]
+workspace/tests/test_export.py::TestExportServicePlainText::test_export_plain_text_multiple_messages PASSED [ 71%]
+workspace/tests/test_export.py::TestExportServicePlainText::test_export_plain_text_timestamps PASSED [ 72%]
+workspace/tests/test_export.py::TestExportServiceTimestamps::test_export_with_timestamps_markdown PASSED [ 73%]
+workspace/tests/test_export.py::TestExportServiceTimestamps::test_export_with_timestamps_json PASSED [ 74%]
+workspace/tests/test_export.py::TestExportServiceTimestamps::test_export_with_timestamps_plain PASSED [ 75%]
+workspace/tests/test_export.py::TestExportServiceBranchInfo::test_export_with_branch_info PASSED [ 76%]
+workspace/tests/test_export.py::TestGetExportService::test_singleton PASSED [ 77%]
+workspace/tests/test_summarization.py::TestSummaryResult::test_summary_result_creation PASSED [ 78%]
+workspace/tests/test_summarization.py::TestSummarizationServiceInitialization::test_initialization PASSED [ 79%]
+workspace/tests/test_summarization.py::TestSummarizationServiceSummarize::test_summarize_empty_messages PASSED [ 80%]
+workspace/tests/test_summarization.py::TestSummarizationServiceSummarize::test_summarize_fewer_than_preserve PASSED [ 81%]
+workspace/tests/test_summarization.py::TestSummarizationServiceSummarize::test_summarize_messages_success PASSED [ 82%]
+workspace/tests/test_summarization.py::TestSummarizationServiceSummarize::test_summarize_with_reasoning PASSED [ 83%]
+workspace/tests/test_summarization.py::TestSummarizationServiceSummarize::test_summarize_generation_failure PASSED [ 84%]
+workspace/tests/test_summarization.py::TestSummarizationServiceSummarize::test_summarize_preserve_recent_default PASSED [ 85%]
+workspace/tests/test_summarization.py::TestSummarizationServiceCreateMessage::test_create_summary_message PASSED [ 86%]
+workspace/tests/test_summarization.py::TestSummarizationServiceCreateMessage::test_create_summary_message_empty_ids PASSED [ 87%]
+workspace/tests/test_summarization.py::TestSummarizationServicePrompt::test_get_summary_prompt_empty PASSED [ 88%]
+workspace/tests/test_summarization.py::TestSummarizationServicePrompt::test_get_summary_prompt_with_messages PASSED [ 89%]
+workspace/tests/test_summarization.py::TestSummarizationServicePrompt::test_get_summary_prompt_format PASSED [ 90%]
+workspace/tests/test_summarization.py::TestGetSummarizationService::test_get_summarization_service_with_handler PASSED [ 91%]
+workspace/tests/test_summarization.py::TestGetSummarizationService::test_get_summarization_service_singleton PASSED [ 92%][0m
+
+
+
+[0m$ [0mcd "D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT" && python -m pytest workspace/tests/test_session_enhanced.py workspace/tests/test_branch_manager.py workspace/tests/test_export.py workspace/tests/test_summarization.py -v --tb=short 2>&1 | tail -20E   AssertionError: assert 0 == 3
+E    +  where 0 = len([])
+E    +    where [] = SummaryResult(summary='Summary', original_message_ids=[], new_message=Message(role='system', content='[Previous conversation summary: Summary]', timestamp=datetime.datetime(2026, 2, 15, 11, 59, 41, 475072), reasoning=None, sources=[], id='f272814b-5347-4ce6-ad1b-c74c9d7b48ea', is_pinned=False, feedback=None, branch_id=None, parent_message_id=None), tokens_saved=0).original_message_ids
+---------------------------- Captured stdout call -----------------------------
+2026-02-15 11:59:41,475 - core.summarization - INFO - Summarized 0 messages, saved ~0 tokens
+------------------------------ Captured log call ------------------------------
+INFO     core.summarization:summarization.py:83 Summarized 0 messages, saved ~0 tokens
+________ TestSummarizationErrorHandling.test_generate_returns_non_dict ________
+workspace\tests\test_summarization.py:396: in test_generate_returns_non_dict
+    assert result.summary == "Just a string response"
+E   AssertionError: assert '' == 'Just a string response'
+E     - Just a string response
+---------------------------- Captured stdout call -----------------------------
+2026-02-15 11:59:41,628 - core.summarization - INFO - Not enough messages to summarize
+------------------------------ Captured log call ------------------------------
+INFO     core.summarization:summarization.py:49 Not enough messages to summarize
+=========================== short test summary info ===========================
+FAILED workspace/tests/test_summarization.py::TestSummarizationEdgeCases::test_summarize_preserve_zero
+FAILED workspace/tests/test_summarization.py::TestSummarizationErrorHandling::test_generate_returns_non_dict
+======================== 2 failed, 99 passed in 7.50s =========================
+
+[0m
+[0m✱ [0mGrep "test_merge_same_branch"[90m in workspace\tests · 1 match[0m
+[0m
+
+[0m$ [0mcd "D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT" && python -m pytest workspace/tests/test_new_features_edge_cases.py::TestBranchingEdgeCases::test_merge_same_branch -v 2>&1============================= test session starts =============================
+platform win32 -- Python 3.12.7, pytest-7.4.4, pluggy-1.0.0 -- C:\Users\andre\anaconda3\python.exe
+cachedir: .pytest_cache
+rootdir: D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT
+plugins: anyio-4.2.0, langsmith-0.7.0
+collecting ... ERROR: not found: D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\tests\test_new_features_edge_cases.py::TestBranchingEdgeCases::test_merge_same_branch
+(no name 'D:\\Uni\\Academy_Cybersecurity_and_AI\\Progetti\\auto_dev_sys_EXPERIMENT\\workspace\\tests\\test_new_features_edge_cases.py::TestBranchingEdgeCases::test_merge_same_branch' in any of [<Module test_new_features_edge_cases.py>])
+
+collected 0 items
+
+============================ no tests ran in 6.96s ============================
+
+[0m[0m$ [0mcd "D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT" && python -m pytest workspace/tests/test_new_features_edge_cases.py -k "merge_same_branch" -v 2>&1============================= test session starts =============================
+platform win32 -- Python 3.12.7, pytest-7.4.4, pluggy-1.0.0 -- C:\Users\andre\anaconda3\python.exe
+cachedir: .pytest_cache
+rootdir: D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT
+plugins: anyio-4.2.0, langsmith-0.7.0
+collecting ... collected 25 items / 24 deselected / 1 selected
+
+workspace/tests/test_new_features_edge_cases.py::TestBranchManagerEdgeCases::test_merge_same_branch PASSED [100%]
+
+====================== 1 passed, 24 deselected in 6.82s =======================
+[0m
+
+[0m$ [0mcd "D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT" && python -m pytest workspace/tests/test_new_features_edge_cases.py -v 2>&1 | tail -30
+
+plugins: anyio-4.2.0, langsmith-0.7.0
+collecting ... collected 25 items
+
+workspace/tests/test_new_features_edge_cases.py::TestTokenTrackerEdgeCases::test_count_tokens_unicode PASSED [  4%]
+workspace/tests/test_new_features_edge_cases.py::TestTokenTrackerEdgeCases::test_count_tokens_very_long_text PASSED [  8%]
+workspace/tests/test_new_features_edge_cases.py::TestTokenTrackerEdgeCases::test_count_tokens_special_characters PASSED [ 12%]
+workspace/tests/test_new_features_edge_cases.py::TestTokenTrackerEdgeCases::test_context_breakdown_zero_max_tokens PASSED [ 16%]
+workspace/tests/test_new_features_edge_cases.py::TestTokenTrackerEdgeCases::test_estimate_response_tokens_zero_max PASSED [ 20%]
+workspace/tests/test_new_features_edge_cases.py::TestBranchManagerEdgeCases::test_create_branch_from_last_message PASSED [ 24%]
+workspace/tests/test_new_features_edge_cases.py::TestBranchManagerEdgeCases::test_delete_all_branches PASSED [ 28%]
+workspace/tests/test_new_features_edge_cases.py::TestBranchManagerEdgeCases::test_merge_same_branch PASSED [ 32%]
+workspace/tests/test_new_features_edge_cases.py::TestBranchManagerEdgeCases::test_switch_branch_after_delete PASSED [ 36%]
+workspace/tests/test_new_features_edge_cases.py::TestExportServiceEdgeCases::test_export_markdown_very_long_content PASSED [ 40%]
+workspace/tests/test_new_features_edge_cases.py::TestExportServiceEdgeCases::test_export_json_special_characters PASSED [ 44%]
+workspace/tests/test_new_features_edge_cases.py::TestExportServiceEdgeCases::test_export_plain_text_unicode PASSED [ 48%]
+workspace/tests/test_new_features_edge_cases.py::TestExportServiceEdgeCases::test_export_markdown_many_messages PASSED [ 52%]
+workspace/tests/test_new_features_edge_cases.py::TestExportServiceEdgeCases::test_export_with_branch_info_empty_branches PASSED [ 56%]
+workspace/tests/test_new_features_edge_cases.py::TestSessionManagerEdgeCases::test_pin_all_messages PASSED [ 60%]
+workspace/tests/test_new_features_edge_cases.py::TestSessionManagerEdgeCases::test_feedback_all_messages PASSED [ 64%]
+workspace/tests/test_new_features_edge_cases.py::TestSessionManagerEdgeCases::test_search_unicode_query PASSED [ 68%]
+workspace/tests/test_new_features_edge_cases.py::TestSessionManagerEdgeCases::test_delete_all_messages PASSED [ 72%]
+workspace/tests/test_new_features_edge_cases.py::TestSessionManagerEdgeCases::test_branch_with_no_messages PASSED [ 76%]
+workspace/tests/test_new_features_edge_cases.py::TestSessionManagerEdgeCases::test_get_message_by_index_empty PASSED [ 80%]
+workspace/tests/test_new_features_edge_cases.py::TestTokenTrackerErrorHandling::test_tokenizer_error_handling PASSED [ 84%]
+workspace/tests/test_new_features_edge_cases.py::TestTokenTrackerErrorHandling::test_load_tokenizer_failure PASSED [ 88%]
+workspace/tests/test_new_features_edge_cases.py::TestBranchManagerErrorHandling::test_create_branch_none_message PASSED [ 92%]
+workspace/tests/test_new_features_edge_cases.py::TestBranchManagerErrorHandling::test_get_branch_none_id PASSED [ 96%]
+workspace/tests/test_new_features_edge_cases.py::TestExportServiceErrorHandling::test_export_with_malformed_message PASSED [100%]
+
+============================= 25 passed in 7.11s ==============================
+[0m[0m✱ [0mGrep "token_display|branch_selector|chat_controls"[90m in workspace\ui · 10 matches[0m
+[0m→ [0mRead workspace\ui\sidebar.py
+[0m→ [0mRead workspace\ui\chat.py
+[0m✱ [0mGrep "render_branch|render_message_actions"[90m in workspace\ui · 11 matches[0m
+
+[0m→ [0mRead workspace\ui\app.py[90m [limit=30, offset=140][0m[0m→ [0mRead workspace\ui\app.py[90m [limit=15, offset=145][0m
+[0m✱ [0mGrep "summarize|Summarize"[90m in workspace\ui · 7 matches[0m
+[0m✱ [0mGrep "render_enhanced_controls"[90m in workspace\ui · 1 match[0m
+[0m
+[0m$ [0mcd "D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT" && python -c "
+import sys
+sys.path.insert(0, 'workspace')
+from ui.chat import render_chat_interface
+import inspect
+sig = inspect.signature(render_chat_interface)
+print('render_chat_interface signature:', sig)
+"render_chat_interface signature: (messages: List[core.session.Message], session=None)
+
+[0m
+[0m✱ [0mGrep "tool.*selector|TOOL_MODES"[90m in workspace\ui · 3 matches[0m
+[0m✱ [0mGrep "render_tool_selector"[90m in workspace · 1 match[0m
+[0m[0m$ [0mcd "D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT" && python -m pytest workspace/tests/ --co -q 2>&1 | tail -5
+
+workspace/tests/test_workflow.py::TestWorkflowEngineSessionManagement::test_clear_all_documents
+workspace/tests/test_workflow.py::TestWorkflowEngineStats::test_get_stats
+workspace/tests/test_workflow.py::TestCreateWorkflow::test_create_workflow
+
+413 tests collected in 7.12s
+
+[0m[0m$ [0mcd "D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT" && python -m pytest workspace/tests/ -q 2>&1 | tail -20
+
+[0m
+FAILED workspace/tests/test_validators.py::TestSanitizeFilename::test_remove_path_separators
+FAILED workspace/tests/test_validators.py::TestSanitizeFilename::test_remove_null_bytes
+FAILED workspace/tests/test_validators.py::TestSanitizeFilename::test_remove_leading_dots
+FAILED workspace/tests/test_validators.py::TestSanitizeFilename::test_length_limit
+FAILED workspace/tests/test_validators.py::TestSanitizeFilename::test_valid_filenames_unchanged
+FAILED workspace/tests/test_validators.py::TestSanitizeFilename::test_complex_filenames
+FAILED workspace/tests/test_validators.py::TestValidateUserInput::test_prompt_injection
+FAILED workspace/tests/test_validators.py::TestEscapeSpecialChars::test_escape_less_than
+FAILED workspace/tests/test_vector_store.py::TestVectorStoreAdd::test_add_vectors
+FAILED workspace/tests/test_vector_store.py::TestVectorStoreAdd::test_add_empty_embeddings
+FAILED workspace/tests/test_vector_store.py::TestVectorStoreAdd::test_add_mismatched_lengths
+FAILED workspace/tests/test_vector_store.py::TestVectorStoreAdd::test_add_1d_embedding
+FAILED workspace/tests/test_vector_store.py::TestVectorStoreSearch::test_search_vectors
+FAILED workspace/tests/test_vector_store.py::TestVectorStoreSearch::test_search_1d_query
+FAILED workspace/tests/test_vector_store.py::TestVectorStoreRemove::test_remove_by_document
+FAILED workspace/tests/test_vector_store.py::TestVectorStoreErrors::test_add_error
+FAILED workspace/tests/test_vector_store.py::TestVectorStoreErrors::test_search_error
+FAILED workspace/tests/test_workflow.py::TestWorkflowEngineProcessQuery::test_process_query_invalid_input
+FAILED workspace/tests/test_workflow.py::TestCreateWorkflow::test_create_workflow
+52 failed, 361 passed, 1 warning in 17.14s[0m← [0mWrite context\review-feedback.mdWrote file successfully.
+
+LSP errors detected in other files:
+<diagnostics file="D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\tests\test_summarization.py">
+ERROR [188:16] Operator "in" not supported for types "Literal['summarized:msg-1']" and "List[str] | None"
+  Operator "in" not supported for types "Literal['summarized:msg-1']" and "None"
+ERROR [189:16] Operator "in" not supported for types "Literal['summarized:msg-2']" and "List[str] | None"
+  Operator "in" not supported for types "Literal['summarized:msg-2']" and "None"
+ERROR [190:16] Operator "in" not supported for types "Literal['summarized:msg-3']" and "List[str] | None"
+  Operator "in" not supported for types "Literal['summarized:msg-3']" and "None"
+ERROR [421:46] Argument of type "None" cannot be assigned to parameter "summary" of type "str" in function "create_summary_message"
+  "None" is not assignable to "str"
+</diagnostics>
+
+LSP errors detected in other files:
+<diagnostics file="D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\core\session.py">
+ERROR [109:45] Expression of type "None" cannot be assigned to parameter of type "int"
+  "None" is not assignable to "int"
+ERROR [299:73] Expression of type "None" cannot be assigned to parameter of type "str"
+  "None" is not assignable to "str"
+ERROR [135:57] Expression of type "None" cannot be assigned to parameter of type "int"
+  "None" is not assignable to "int"
+ERROR [156:78] Expression of type "None" cannot be assigned to parameter of type "int"
+  "None" is not assignable to "int"
+ERROR [194:50] Expression of type "None" cannot be assigned to parameter of type "str"
+  "None" is not assignable to "str"
+ERROR [194:73] Expression of type "None" cannot be assigned to parameter of type "str"
+  "None" is not assignable to "str"
+</diagnostics>
+
+LSP errors detected in other files:
+<diagnostics file="D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\core\branch_manager.py">
+ERROR [27:64] Expression of type "None" cannot be assigned to parameter of type "str"
+  "None" is not assignable to "str"
+ERROR [175:58] Expression of type "None" cannot be assigned to parameter of type "SessionManager"
+  "None" is not assignable to "SessionManager"
+</diagnostics>
+
+
+[0m

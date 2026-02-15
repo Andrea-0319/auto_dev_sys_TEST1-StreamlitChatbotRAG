@@ -1,0 +1,1119 @@
+2026-02-10 12:09:24,088 - core.session - INFO - __init__:35 - Session initialized: 7660b404-515f-4a9d-bdc0-5dbf827d3fc8
+2026-02-10 12:09:25,358 - rag.embeddings - INFO - _load_model:30 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-02-10 12:09:34,485 - rag.embeddings - INFO - _load_model:33 - Embedding model loaded. Dimension: 384
+2026-02-10 12:09:35,655 - rag.vector_store - WARNING - load:242 - No saved vector store found at data/vector_store
+2026-02-10 12:09:35,657 - model.handler - INFO - __init__:45 - ModelHandler initialized: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-10 12:09:35,660 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-10 12:10:54,394 - rag.engine - INFO - add_document:57 - Processing document: tmp4jkjncn7.pdf
+2026-02-10 12:10:54,426 - rag.engine - ERROR - add_document:110 - Error adding document: PyPDF2 is required for PDF processing
+2026-02-10 12:10:54,493 - core.workflow - ERROR - upload_document:170 - Document upload failed: Error: PyPDF2 is required for PDF processing
+2026-02-10 12:13:01,360 - core.workflow - INFO - process_query:60 - Processing query: Ciao...
+2026-02-10 12:13:01,364 - model.handler - INFO - _load_model:53 - Loading model: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-10 12:16:23,094 - core.workflow - INFO - process_query:60 - Processing query: ciao...
+2026-02-10 12:56:24,697 - core.session - INFO - __init__:35 - Session initialized: 209e93f7-1e06-450b-b1b7-393a7c3f32f3
+2026-02-10 12:56:25,770 - rag.embeddings - INFO - _load_model:30 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-02-10 12:56:29,316 - rag.embeddings - INFO - _load_model:33 - Embedding model loaded. Dimension: 384
+2026-02-10 12:56:29,320 - rag.vector_store - WARNING - load:242 - No saved vector store found at data/vector_store
+2026-02-10 12:56:29,321 - model.handler - INFO - __init__:45 - ModelHandler initialized: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-10 12:56:29,323 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 11:06:34,090 - core.session - INFO - __init__:54 - Session initialized: 6fd3dbc5-1ecb-48ef-baec-3ced7197885d
+2026-02-15 11:06:34,095 - core.session - INFO - __init__:54 - Session initialized: 1f9da677-bb40-48cb-8824-8b9a4cbf77a1
+2026-02-15 11:06:34,098 - core.session - INFO - __init__:54 - Session initialized: 600bcef1-8fe8-4d60-9915-bb91fc3e5ae9
+2026-02-15 11:06:34,101 - core.session - INFO - __init__:54 - Session initialized: f9a1152f-e9fa-4918-94f2-135451c66605
+2026-02-15 11:06:34,102 - core.session - INFO - __init__:54 - Session initialized: ea19c405-c6da-4001-bf18-3a60bb97e3cb
+2026-02-15 11:06:34,104 - core.session - INFO - __init__:54 - Session initialized: 0430ef3c-878c-47a1-a1e7-9c58aa5ff540
+2026-02-15 11:06:34,107 - core.session - INFO - __init__:54 - Session initialized: 058f62f4-2afd-4f7a-b408-a559be87399d
+2026-02-15 11:06:34,109 - core.session - INFO - __init__:54 - Session initialized: b8b89a7f-1f21-4350-bac4-eaebf2fb7a3e
+2026-02-15 11:06:34,110 - core.session - INFO - __init__:54 - Session initialized: 3949157a-be62-413b-8ce4-b3f502bf5dc6
+2026-02-15 11:06:34,121 - core.session - INFO - __init__:54 - Session initialized: f1937f18-3c34-4ba0-952c-917177d0def1
+2026-02-15 11:06:34,124 - core.session - INFO - __init__:54 - Session initialized: f89176a5-edab-46e7-b444-ef26d036ad3c
+2026-02-15 11:06:34,126 - core.session - INFO - __init__:54 - Session initialized: 213059c6-4578-4e44-8943-3b093a5b2d0a
+2026-02-15 11:06:34,130 - core.session - INFO - __init__:54 - Session initialized: 7c03354a-7d23-4a04-95ff-4fed6a61f9a7
+2026-02-15 11:06:34,131 - core.session - INFO - clear_conversation:188 - Conversation cleared
+2026-02-15 11:06:34,132 - core.session - INFO - __init__:54 - Session initialized: a7c1c64f-c232-4857-8df7-7937b9e3de32
+2026-02-15 11:06:34,134 - core.session - INFO - __init__:54 - Session initialized: cd1eabf9-73bc-4ac5-90ea-e359be5aca10
+2026-02-15 11:06:34,136 - core.session - INFO - __init__:54 - Session initialized: 8aafd2ad-dabb-4886-a1fa-ccce0d3857a3
+2026-02-15 11:06:34,137 - core.session - INFO - __init__:54 - Session initialized: 5290fcf0-cdae-4c97-a3e5-7bd0380f1bc0
+2026-02-15 11:06:34,140 - core.session - INFO - __init__:54 - Session initialized: 650b608c-5d58-4934-899f-96fbb11db64a
+2026-02-15 11:06:34,142 - core.session - INFO - __init__:54 - Session initialized: 108623f0-afc3-4a57-a6a9-1f9f29658006
+2026-02-15 11:06:34,143 - core.session - INFO - __init__:54 - Session initialized: 527d6800-031b-4b6c-987e-bf6030303797
+2026-02-15 11:06:34,146 - core.session - INFO - __init__:54 - Session initialized: 8f4b36f9-466a-4bf9-881d-364efb87d9b3
+2026-02-15 11:06:34,146 - core.session - INFO - import_conversation:288 - Imported 2 messages
+2026-02-15 11:06:34,148 - core.session - INFO - __init__:54 - Session initialized: fcd1009c-c172-48cf-bbf4-0fe7a9a19319
+2026-02-15 11:06:34,148 - core.session - INFO - import_conversation:288 - Imported 0 messages
+2026-02-15 11:06:34,150 - core.session - INFO - __init__:54 - Session initialized: 2c06cacb-9bb4-460f-85de-bf48437663a4
+2026-02-15 11:07:25,224 - rag.document_processor - INFO - process:94 - Processed document: test.txt (21 bytes)
+2026-02-15 11:07:25,236 - rag.document_processor - INFO - process:94 - Processed document: bytes_test.txt (17 bytes)
+2026-02-15 11:07:25,330 - rag.document_processor - INFO - process:94 - Processed document: convenience.txt (16 bytes)
+2026-02-15 11:07:25,358 - rag.document_processor - INFO - process:94 - Processed document: integration.txt (191 bytes)
+2026-02-15 11:07:25,415 - rag.document_processor - INFO - process:94 - Processed document: large.txt (560000 bytes)
+2026-02-15 11:07:26,836 - utils.file_utils - INFO - save_uploaded_file:41 - Saved uploaded file: C:\Users\andre\AppData\Local\Temp\tmpejyg2zoj\test.txt
+2026-02-15 11:07:27,393 - utils.file_utils - INFO - save_uploaded_file:41 - Saved uploaded file: C:\Users\andre\AppData\Local\Temp\tmpivi0dmrw\test.txt
+2026-02-15 11:07:27,401 - utils.file_utils - INFO - save_uploaded_file:41 - Saved uploaded file: C:\Users\andre\AppData\Local\Temp\tmpivi0dmrw\test_8bfa8e06.txt
+2026-02-15 11:07:27,405 - utils.file_utils - INFO - save_uploaded_file:41 - Saved uploaded file: C:\Users\andre\AppData\Local\Temp\tmpsl6lj8bx\document.pdf
+2026-02-15 11:07:27,410 - utils.file_utils - ERROR - save_uploaded_file:45 - Failed to save uploaded file: Write error
+2026-02-15 11:07:27,414 - utils.file_utils - INFO - delete_file:62 - Deleted file: C:\Users\andre\AppData\Local\Temp\tmp5a1efw9u\to_delete.txt
+2026-02-15 11:07:27,483 - utils.file_utils - ERROR - delete_file:66 - Failed to delete file C:\Users\andre\AppData\Local\Temp\tmpip_nh9wu\protected.txt: [WinError 5] Accesso negato: 'C:\\Users\\andre\\AppData\\Local\\Temp\\tmpip_nh9wu\\protected.txt'
+2026-02-15 11:07:27,502 - utils.file_utils - INFO - clear_directory:121 - Cleared directory: C:\Users\andre\AppData\Local\Temp\tmpwbpkpeln
+2026-02-15 11:07:27,508 - utils.file_utils - INFO - clear_directory:121 - Cleared directory: C:\Users\andre\AppData\Local\Temp\tmpcru_7eit
+2026-02-15 11:07:27,513 - utils.file_utils - ERROR - clear_directory:125 - Failed to clear directory C:\Users\andre\AppData\Local\Temp\tmpps44rw7u: [WinError 5] Accesso negato: 'C:\\Users\\andre\\AppData\\Local\\Temp\\tmpps44rw7u\\protected.txt'
+2026-02-15 11:07:27,803 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 11:07:28,976 - core.workflow - INFO - process_query:60 - Processing query: What is the answer?...
+2026-02-15 11:07:28,979 - core.session - INFO - __init__:54 - Session initialized: 45ba360c-706e-4f51-b17b-7db090465e14
+2026-02-15 11:07:28,982 - core.session - INFO - __init__:54 - Session initialized: 482e37d6-be27-4963-b18d-9402532dde80
+2026-02-15 11:07:29,142 - utils.file_utils - INFO - save_uploaded_file:41 - Saved uploaded file: C:\Users\andre\AppData\Local\Temp\tmp9nngzj_3\test.txt
+2026-02-15 11:07:29,146 - core.session - INFO - __init__:54 - Session initialized: cd48bdcc-011e-4720-91db-850164f628e7
+2026-02-15 11:07:29,148 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 11:07:29,148 - core.workflow - INFO - process_query:60 - Processing query: test query...
+2026-02-15 11:07:29,148 - core.workflow - ERROR - process_query:85 - Retrieval error: Vector store error
+2026-02-15 11:07:29,182 - rag.document_processor - INFO - process:94 - Processed document: tmpmqv5d1p3.txt (16 bytes)
+2026-02-15 11:07:29,228 - rag.engine - ERROR - add_document:110 - Error adding document: [WinError 2] Impossibile trovare il file specificato: 'test.txt'
+2026-02-15 11:07:29,272 - rag.engine - ERROR - add_document:110 - Error adding document: [WinError 2] Impossibile trovare il file specificato: 'large.txt'
+2026-02-15 11:07:29,295 - rag.engine - INFO - clear_all:247 - Cleared all documents
+2026-02-15 11:07:29,304 - core.session - INFO - __init__:54 - Session initialized: a77d8f97-849c-4120-843b-08a94a0901cf
+2026-02-15 11:07:29,305 - core.session - INFO - __init__:54 - Session initialized: 767357d7-0c96-4bf0-af8b-ccad47bf32cf
+2026-02-15 11:07:29,309 - core.session - INFO - __init__:54 - Session initialized: 8ba8fa84-809f-4f81-be1e-611b341cb35a
+2026-02-15 11:07:29,311 - core.session - INFO - __init__:54 - Session initialized: 7ce9a868-7e66-4c91-9578-b8291e8aa101
+2026-02-15 11:07:29,317 - core.session - INFO - __init__:54 - Session initialized: 3e535da8-d77a-4ba3-9209-0d99539afc36
+2026-02-15 11:07:29,320 - core.session - INFO - __init__:54 - Session initialized: 75df65d2-e0bf-4208-a63a-415d4cdefbd9
+2026-02-15 11:07:29,323 - core.session - INFO - __init__:54 - Session initialized: a5702696-2599-4f7e-b87c-20e251f14c7c
+2026-02-15 11:07:29,325 - core.session - INFO - __init__:54 - Session initialized: 0b3e649c-f34e-4b59-bafc-ccf61692255d
+2026-02-15 11:07:29,328 - core.session - INFO - __init__:54 - Session initialized: bf6e49eb-7e49-482b-9f6d-4be5e9dde4ca
+2026-02-15 11:07:29,341 - core.session - INFO - __init__:54 - Session initialized: 16d03a72-bae9-4124-80f5-06e4f83fc818
+2026-02-15 11:07:29,343 - core.session - INFO - __init__:54 - Session initialized: a1652dc5-0cf1-4421-b275-d8332432e914
+2026-02-15 11:07:29,345 - core.session - INFO - __init__:54 - Session initialized: 43e351ba-a19a-4f11-a306-50a930cfba47
+2026-02-15 11:07:29,347 - core.session - INFO - __init__:54 - Session initialized: 2e14e094-c1a7-4e35-a2e5-ba8f572f6e65
+2026-02-15 11:07:29,348 - core.session - INFO - clear_conversation:188 - Conversation cleared
+2026-02-15 11:07:29,350 - core.session - INFO - __init__:54 - Session initialized: 02f89bcb-1a06-4032-a5d9-7040372023a9
+2026-02-15 11:07:29,352 - core.session - INFO - __init__:54 - Session initialized: 1c902ed6-ea84-428b-9cd8-c8af618c20f4
+2026-02-15 11:07:29,353 - core.session - INFO - __init__:54 - Session initialized: 5919356e-a923-47c0-9337-0f738a834eaa
+2026-02-15 11:07:29,355 - core.session - INFO - __init__:54 - Session initialized: 5066da43-2add-49e6-b1a2-35796a4cd68e
+2026-02-15 11:07:29,358 - core.session - INFO - __init__:54 - Session initialized: a4a66b01-476d-4bc6-a9d0-ee6b6e7e93d2
+2026-02-15 11:07:29,359 - core.session - INFO - __init__:54 - Session initialized: 00d3c89e-efc8-4493-88ae-b4d4d4ec80ca
+2026-02-15 11:07:29,362 - core.session - INFO - __init__:54 - Session initialized: 024fa593-bf11-4dd4-986a-5bf11bb04aa6
+2026-02-15 11:07:29,364 - core.session - INFO - __init__:54 - Session initialized: 7da2b371-d24e-411c-8d71-d6c6ba9f015c
+2026-02-15 11:07:29,364 - core.session - INFO - import_conversation:288 - Imported 2 messages
+2026-02-15 11:07:29,366 - core.session - INFO - __init__:54 - Session initialized: 854bcb2b-edd0-430d-a583-cb0aafeb11af
+2026-02-15 11:07:29,366 - core.session - INFO - import_conversation:288 - Imported 0 messages
+2026-02-15 11:07:29,368 - core.session - INFO - __init__:54 - Session initialized: 6f8c2822-b008-4468-bb4d-0f9511052a46
+2026-02-15 11:07:31,331 - rag.vector_store - INFO - clear:186 - Vector store cleared
+2026-02-15 11:15:01,155 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:15:01,162 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: test-model
+2026-02-15 11:15:01,165 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:15:01,167 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:15:01,171 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:15:01,171 - core.token_tracker - WARNING - count_tokens:84 - Tokenization error: Tokenizer error
+2026-02-15 11:15:01,173 - core.token_tracker - WARNING - _load_tokenizer:64 - Failed to load tokenizer: Load error. Using fallback.
+2026-02-15 11:15:01,176 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:15:01,180 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:15:01,185 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:15:01,188 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:15:01,191 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:15:01,195 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:15:01,198 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:15:01,201 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:15:01,203 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:15:01,205 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:15:01,208 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:15:01,211 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:15:01,214 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:15:01,216 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:15:01,221 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:15:06,045 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:15:43,830 - core.session - INFO - __init__:54 - Session initialized: 50faca7b-1cd6-48c4-a755-520fd86578cc
+2026-02-15 11:15:43,832 - core.session - INFO - __init__:54 - Session initialized: f43170ff-4e5d-4acc-b31a-36d4e503b9b8
+2026-02-15 11:15:43,833 - core.session - INFO - create_branch:329 - Created branch: 9ee05484-bee4-4843-9417-c8b909bebf7e from message 0
+2026-02-15 11:15:43,836 - core.session - INFO - __init__:54 - Session initialized: 7e6c92f1-f5fe-40f0-ada0-7b2bd136426b
+2026-02-15 11:15:43,836 - core.session - INFO - create_branch:329 - Created branch: e28e498c-37e1-4049-aac3-1720a43dbb2a from message 0
+2026-02-15 11:15:43,838 - core.session - INFO - __init__:54 - Session initialized: e080d038-718e-4063-9d2e-999f6fba4a61
+2026-02-15 11:15:43,839 - core.session - INFO - create_branch:329 - Created branch: 9e753ccb-36cc-4786-8d7f-741e1b9ffc88 from message 0
+2026-02-15 11:15:43,839 - core.session - INFO - create_branch:329 - Created branch: 9235df2f-07d0-4f09-9c9a-c4860baa4ea6 from message 0
+2026-02-15 11:15:43,839 - core.session - INFO - create_branch:329 - Created branch: 08c9ede4-01d9-460a-95a8-e53695cb9328 from message 0
+2026-02-15 11:15:43,840 - core.session - INFO - create_branch:329 - Created branch: 1e0ed476-0688-4254-9784-bca6b16f14ef from message 0
+2026-02-15 11:15:43,840 - core.session - INFO - create_branch:329 - Created branch: f1ab6030-cde8-484a-91de-c1e6a22c64b9 from message 0
+2026-02-15 11:15:43,841 - core.session - INFO - create_branch:329 - Created branch: f56b4695-66c6-4186-ae41-0fd27f07e7d3 from message 0
+2026-02-15 11:15:43,849 - core.session - INFO - create_branch:329 - Created branch: a4a15886-ac9c-4eb0-8ac2-8b671bf3a8a1 from message 0
+2026-02-15 11:15:43,849 - core.session - INFO - create_branch:329 - Created branch: 15e0e21c-9162-4eb5-99a4-f5d4d3dc67e9 from message 0
+2026-02-15 11:15:43,849 - core.session - INFO - create_branch:329 - Created branch: 995b2c79-849c-456f-b699-8b3afabb991c from message 0
+2026-02-15 11:15:43,851 - core.session - INFO - create_branch:329 - Created branch: 84595f2d-a716-4ad9-b420-43df3ef59e49 from message 0
+2026-02-15 11:15:43,851 - core.branch_manager - WARNING - create_branch:40 - Maximum branches (10) reached
+2026-02-15 11:15:43,852 - core.session - INFO - __init__:54 - Session initialized: 1bcd1aea-f4ec-4aaa-b362-a0c07151d885
+2026-02-15 11:15:43,852 - core.branch_manager - ERROR - create_branch:48 - Message not found: 71645d89-56ef-4d65-b51c-66ad52d32580
+2026-02-15 11:15:43,854 - core.session - INFO - __init__:54 - Session initialized: 16727e57-e982-4b0b-81b9-021e0fbcdcaf
+2026-02-15 11:15:43,855 - core.session - INFO - __init__:54 - Session initialized: b7d51aba-6c8f-45d2-8ceb-1512efc2f2da
+2026-02-15 11:15:43,855 - core.session - INFO - create_branch:329 - Created branch: 99918c35-26a5-4fa1-87f4-847b40cfdc61 from message 0
+2026-02-15 11:15:43,855 - core.session - INFO - create_branch:329 - Created branch: a804e6c6-bdd2-4336-a7ab-0c1106e7d771 from message 0
+2026-02-15 11:15:43,855 - core.session - INFO - create_branch:329 - Created branch: d7196116-ed48-41cb-afdf-141b5e1a37c5 from message 0
+2026-02-15 11:15:43,858 - core.session - INFO - __init__:54 - Session initialized: 70e2bdae-39d2-4223-91f1-aeb4d723cde2
+2026-02-15 11:15:43,858 - core.session - INFO - create_branch:329 - Created branch: 6b797010-9945-4d46-a75f-a1c9b6c26c5b from message 0
+2026-02-15 11:15:43,859 - core.session - INFO - __init__:54 - Session initialized: 9d300c60-98e6-4452-89b6-0514210797b7
+2026-02-15 11:15:43,861 - core.session - INFO - __init__:54 - Session initialized: 3b9302f6-c499-4958-bfb3-3663c3b25683
+2026-02-15 11:15:43,861 - core.session - INFO - create_branch:329 - Created branch: 15e1118c-5df3-4e24-8cd1-7e9312f67361 from message 0
+2026-02-15 11:15:43,861 - core.session - INFO - delete_branch:366 - Deleted branch: 15e1118c-5df3-4e24-8cd1-7e9312f67361
+2026-02-15 11:15:43,863 - core.session - INFO - __init__:54 - Session initialized: a56b4731-19e8-481f-bda2-b87de79096b5
+2026-02-15 11:15:43,865 - core.session - INFO - __init__:54 - Session initialized: c747c91b-1fc1-4e15-9c6c-16c7f106ade6
+2026-02-15 11:15:43,865 - core.session - INFO - create_branch:329 - Created branch: 614fa3e2-499b-4e93-9481-61eccefbdcd3 from message 0
+2026-02-15 11:15:43,865 - core.session - INFO - create_branch:329 - Created branch: 2b6be980-f207-4bdf-990e-e395bf92bdac from message 0
+2026-02-15 11:15:43,865 - core.session - INFO - delete_branch:366 - Deleted branch: 614fa3e2-499b-4e93-9481-61eccefbdcd3
+2026-02-15 11:15:43,865 - core.branch_manager - INFO - merge_branch:123 - Merged branch 614fa3e2-499b-4e93-9481-61eccefbdcd3 into 2b6be980-f207-4bdf-990e-e395bf92bdac
+2026-02-15 11:15:43,866 - core.session - INFO - __init__:54 - Session initialized: 9c35d3f9-7911-4b22-8fb8-271d6ce3c7b8
+2026-02-15 11:15:43,868 - core.session - INFO - create_branch:329 - Created branch: 5b1eacc7-b90a-4873-8098-a5cacfac5387 from message 0
+2026-02-15 11:15:43,868 - core.branch_manager - WARNING - merge_branch:108 - Source or target branch not found
+2026-02-15 11:15:43,870 - core.session - INFO - __init__:54 - Session initialized: 980c36b3-78a9-4b53-8f16-bccd465efb91
+2026-02-15 11:15:43,870 - core.session - INFO - create_branch:329 - Created branch: 09081bbf-9280-497d-b3db-13265207be32 from message 0
+2026-02-15 11:15:43,870 - core.branch_manager - WARNING - merge_branch:108 - Source or target branch not found
+2026-02-15 11:15:43,871 - core.session - INFO - __init__:54 - Session initialized: 8d4b206a-4710-46ef-b947-93c7b6825610
+2026-02-15 11:15:43,873 - core.session - INFO - create_branch:329 - Created branch: 84ff3a5a-3f57-43dc-8b47-6a91079733b7 from message 0
+2026-02-15 11:15:43,874 - core.session - INFO - __init__:54 - Session initialized: 6c571bf4-7384-4532-8eed-e4b7e58c80d2
+2026-02-15 11:15:43,876 - core.session - INFO - __init__:54 - Session initialized: fe9c2986-5133-41f0-9042-ac6ebc36fb36
+2026-02-15 11:15:43,877 - core.session - INFO - __init__:54 - Session initialized: baa6cd99-6654-488f-a8f7-221e13df9242
+2026-02-15 11:15:43,877 - core.session - INFO - create_branch:329 - Created branch: b5feb34b-6af6-44d9-aedf-6375736019b0 from message 0
+2026-02-15 11:15:43,877 - core.session - INFO - create_branch:329 - Created branch: 2fa4be77-7edf-47c1-bc0b-58284539e42e from message 0
+2026-02-15 11:15:43,879 - core.session - INFO - __init__:54 - Session initialized: a37cf1d1-d1e7-4235-9567-5eb648dbbd09
+2026-02-15 11:15:43,918 - core.session - INFO - __init__:54 - Session initialized: 5cd1c5bf-07da-46a7-8c3a-e76dc7a12b96
+2026-02-15 11:15:43,918 - core.session - INFO - create_branch:329 - Created branch: 09de92d6-e3b9-4d4a-9bac-9615a5f892e8 from message 0
+2026-02-15 11:15:43,919 - core.session - INFO - __init__:54 - Session initialized: 0152d639-ccf9-4160-a59a-665761de8d55
+2026-02-15 11:15:43,919 - core.session - WARNING - create_branch:306 - Invalid message index: 10
+2026-02-15 11:15:43,922 - core.session - INFO - __init__:54 - Session initialized: 8ee7b5ce-f724-4316-9c03-13bc8b6b82b0
+2026-02-15 11:15:43,923 - core.session - WARNING - create_branch:306 - Invalid message index: -1
+2026-02-15 11:15:43,924 - core.session - INFO - __init__:54 - Session initialized: e239bd5f-810c-42da-82d1-8713791c5da4
+2026-02-15 11:15:43,924 - core.session - INFO - create_branch:329 - Created branch: 96e2d58f-d971-4caf-b5b0-e577c6584b38 from message 0
+2026-02-15 11:15:43,925 - core.session - INFO - create_branch:329 - Created branch: 6fc2124c-34f8-4a21-906a-52db70e8b764 from message 0
+2026-02-15 11:15:43,925 - core.session - INFO - switch_branch:345 - Switched to branch: 96e2d58f-d971-4caf-b5b0-e577c6584b38
+2026-02-15 11:15:43,927 - core.session - INFO - __init__:54 - Session initialized: 825ea884-58e5-4bf7-8252-037387884769
+2026-02-15 11:15:43,927 - core.session - WARNING - switch_branch:348 - Branch not found: non-existent-id
+2026-02-15 11:15:43,929 - core.session - INFO - __init__:54 - Session initialized: b43ccf7a-f1db-475c-88e7-274acca293e4
+2026-02-15 11:15:43,929 - core.session - INFO - create_branch:329 - Created branch: 2e91cd2e-e46f-4300-ad82-65ab832238a8 from message 0
+2026-02-15 11:15:43,930 - core.session - INFO - __init__:54 - Session initialized: 5d81d054-285f-46fa-8e00-fc79de0b1a34
+2026-02-15 11:15:43,931 - core.session - INFO - create_branch:329 - Created branch: d196196f-714b-4c75-a300-ab2eeb902e8f from message 0
+2026-02-15 11:15:43,931 - core.session - INFO - create_branch:329 - Created branch: b69bdb9c-477e-4309-ac64-90e7d56ca1aa from message 0
+2026-02-15 11:15:43,932 - core.session - INFO - __init__:54 - Session initialized: 4943e17d-a065-4c9c-b140-05f6916d7254
+2026-02-15 11:15:43,933 - core.session - INFO - create_branch:329 - Created branch: 28db501f-9b42-4ee4-874d-b1bd90a801e8 from message 0
+2026-02-15 11:15:43,933 - core.session - INFO - delete_branch:366 - Deleted branch: 28db501f-9b42-4ee4-874d-b1bd90a801e8
+2026-02-15 11:15:43,934 - core.session - INFO - __init__:54 - Session initialized: f6cb4927-e191-45b2-8724-7591396261fc
+2026-02-15 11:15:43,936 - core.session - INFO - __init__:54 - Session initialized: 138e8049-9f0b-4ce4-8dd3-2bf03baf9290
+2026-02-15 11:15:43,936 - core.session - INFO - create_branch:329 - Created branch: a3ea066a-bb8f-4b48-8623-4efdf65975d4 from message 0
+2026-02-15 11:15:43,936 - core.session - INFO - delete_branch:366 - Deleted branch: a3ea066a-bb8f-4b48-8623-4efdf65975d4
+2026-02-15 11:15:43,939 - core.session - INFO - __init__:54 - Session initialized: 9967856d-6f6e-46e7-b8ba-e11ac7f6e933
+2026-02-15 11:15:43,939 - core.session - INFO - pin_message:375 - Pinned message: 1dddab34-a769-49a2-981b-bdbc26685676
+2026-02-15 11:15:43,941 - core.session - INFO - __init__:54 - Session initialized: b319e5a7-dc1d-4ec8-8403-a9e315ebe7c3
+2026-02-15 11:15:43,943 - core.session - INFO - __init__:54 - Session initialized: 3de89d42-8f10-4524-9ab9-1af01a02f836
+2026-02-15 11:15:43,943 - core.session - INFO - pin_message:375 - Pinned message: 69ee3a96-37c4-447e-befd-756447ca1f68
+2026-02-15 11:15:43,943 - core.session - INFO - unpin_message:384 - Unpinned message: 69ee3a96-37c4-447e-befd-756447ca1f68
+2026-02-15 11:15:43,945 - core.session - INFO - __init__:54 - Session initialized: 50387d28-1183-4644-a6e0-bb6f476fb71f
+2026-02-15 11:15:43,946 - core.session - INFO - __init__:54 - Session initialized: 4a2538d4-d1f0-435c-b2f5-64b21f64429d
+2026-02-15 11:15:43,947 - core.session - INFO - set_feedback:402 - Set feedback on message: c99e0dd3-3d11-46f6-bbe9-acc4919177cd = positive
+2026-02-15 11:15:43,949 - core.session - INFO - __init__:54 - Session initialized: 9261a5d6-9544-4221-9f27-99d3c0650b6b
+2026-02-15 11:15:43,949 - core.session - INFO - set_feedback:402 - Set feedback on message: 4a3233df-8255-4538-8c86-de82c0c640e9 = negative
+2026-02-15 11:15:43,950 - core.session - INFO - __init__:54 - Session initialized: 96c56ee0-3210-4daf-83cf-ffba5263bab1
+2026-02-15 11:15:43,952 - core.session - INFO - __init__:54 - Session initialized: 6e851b6d-99b4-4a8a-8749-b90c46846821
+2026-02-15 11:15:43,952 - core.session - INFO - delete_message:393 - Deleted message: cd99928e-dff3-4ed4-b22e-a5b8483a01e0
+2026-02-15 11:15:43,953 - core.session - INFO - __init__:54 - Session initialized: 568477ba-5284-4753-b134-a8920166691c
+2026-02-15 11:15:43,954 - core.session - INFO - __init__:54 - Session initialized: af6be486-23e4-40ec-b573-32362d67d680
+2026-02-15 11:15:43,955 - core.session - INFO - pin_message:375 - Pinned message: c7a3094a-0f47-4f22-bf2f-096b824122e7
+2026-02-15 11:15:43,955 - core.session - INFO - set_feedback:402 - Set feedback on message: c7a3094a-0f47-4f22-bf2f-096b824122e7 = positive
+2026-02-15 11:15:44,150 - core.session - INFO - __init__:54 - Session initialized: cbb09767-edbf-44ba-9002-bebba0dc452e
+2026-02-15 11:15:44,152 - core.session - INFO - __init__:54 - Session initialized: 07ebc2d6-d0f9-4fac-9548-24bb4c7cfdf8
+2026-02-15 11:15:44,154 - core.session - INFO - __init__:54 - Session initialized: ab448928-e77a-4a7e-ae6a-b4305f8ecf23
+2026-02-15 11:15:44,157 - core.session - INFO - __init__:54 - Session initialized: a8393fee-8473-40ce-bfeb-71953df75e05
+2026-02-15 11:15:44,159 - core.session - INFO - __init__:54 - Session initialized: a8b01817-e666-4c66-b7a1-b8a90bb681fe
+2026-02-15 11:15:44,161 - core.session - INFO - __init__:54 - Session initialized: 65334228-0bf2-48c0-b005-21a3c97b5b20
+2026-02-15 11:15:44,162 - core.session - INFO - __init__:54 - Session initialized: 67fbbcc6-0e30-47d1-9098-711f929c4540
+2026-02-15 11:15:44,164 - core.session - INFO - __init__:54 - Session initialized: af04b0a9-bce3-4a1d-bcd0-403cfb476422
+2026-02-15 11:15:44,165 - core.session - INFO - __init__:54 - Session initialized: 8ea2f9f8-d716-435f-9f30-e24e65f345ab
+2026-02-15 11:16:14,827 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:16:15,538 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:16:15,540 - core.token_tracker - WARNING - count_tokens:84 - Tokenization error: Too long
+2026-02-15 11:16:15,543 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:16:15,547 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:16:15,551 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:16:15,553 - core.session - INFO - __init__:54 - Session initialized: 1975e4e8-d85c-4801-be96-6af2886ffd1b
+2026-02-15 11:16:15,553 - core.session - INFO - create_branch:329 - Created branch: 3766f270-a963-4c8f-9bc6-4a6c63d99b2c from message 4
+2026-02-15 11:16:15,555 - core.session - INFO - __init__:54 - Session initialized: a13afd2a-fd5e-43e9-9166-e538ddaf684e
+2026-02-15 11:16:15,556 - core.session - INFO - create_branch:329 - Created branch: 52c6de27-65fd-4b30-adc6-154d535ba9c2 from message 0
+2026-02-15 11:16:15,556 - core.session - INFO - create_branch:329 - Created branch: 8eae5725-3f2c-43a8-a885-57ad29d801f4 from message 0
+2026-02-15 11:16:15,556 - core.session - INFO - create_branch:329 - Created branch: aea4f4eb-b1da-4b60-8040-551c7ae30ed2 from message 0
+2026-02-15 11:16:15,557 - core.session - INFO - delete_branch:366 - Deleted branch: 52c6de27-65fd-4b30-adc6-154d535ba9c2
+2026-02-15 11:16:15,557 - core.session - INFO - delete_branch:366 - Deleted branch: 8eae5725-3f2c-43a8-a885-57ad29d801f4
+2026-02-15 11:16:15,557 - core.session - INFO - delete_branch:366 - Deleted branch: aea4f4eb-b1da-4b60-8040-551c7ae30ed2
+2026-02-15 11:16:15,560 - core.session - INFO - __init__:54 - Session initialized: de1c4c5c-2095-4634-930d-ca71796b7907
+2026-02-15 11:16:15,560 - core.session - INFO - create_branch:329 - Created branch: 8b8d2bd2-4a45-421d-b758-f7ce22be03dc from message 0
+2026-02-15 11:16:15,561 - core.session - INFO - delete_branch:366 - Deleted branch: 8b8d2bd2-4a45-421d-b758-f7ce22be03dc
+2026-02-15 11:16:15,561 - core.branch_manager - INFO - merge_branch:123 - Merged branch 8b8d2bd2-4a45-421d-b758-f7ce22be03dc into 8b8d2bd2-4a45-421d-b758-f7ce22be03dc
+2026-02-15 11:16:15,572 - core.session - INFO - __init__:54 - Session initialized: a7da9858-093e-4366-a0b0-c23073c6d0bc
+2026-02-15 11:16:15,573 - core.session - INFO - create_branch:329 - Created branch: 0499268a-2909-4c6e-b888-8a231e510b52 from message 0
+2026-02-15 11:16:15,573 - core.session - INFO - create_branch:329 - Created branch: b66a7d58-ed18-4210-bc12-c8e07651111a from message 0
+2026-02-15 11:16:15,573 - core.session - INFO - delete_branch:366 - Deleted branch: 0499268a-2909-4c6e-b888-8a231e510b52
+2026-02-15 11:16:15,573 - core.session - INFO - switch_branch:345 - Switched to branch: b66a7d58-ed18-4210-bc12-c8e07651111a
+2026-02-15 11:16:15,586 - core.session - INFO - __init__:54 - Session initialized: 08fcf469-01e6-4838-8c7b-ca74c0da048f
+2026-02-15 11:16:15,586 - core.session - INFO - pin_message:375 - Pinned message: 235f1184-10b5-4544-80b4-c9a05153b42e
+2026-02-15 11:16:15,586 - core.session - INFO - pin_message:375 - Pinned message: ebce8a3b-41f1-42f4-8ab2-3ae3282f760d
+2026-02-15 11:16:15,587 - core.session - INFO - pin_message:375 - Pinned message: 14846c25-6230-49c6-b36c-0c696573619a
+2026-02-15 11:16:15,587 - core.session - INFO - pin_message:375 - Pinned message: 0f339812-dcd0-4ff7-aca7-e03cd99993db
+2026-02-15 11:16:15,587 - core.session - INFO - pin_message:375 - Pinned message: db7af7aa-d8fa-48cf-be98-cc355fe3ca3f
+2026-02-15 11:16:15,588 - core.session - INFO - pin_message:375 - Pinned message: 4447dc17-9de8-4691-8034-25473b6a0509
+2026-02-15 11:16:15,588 - core.session - INFO - pin_message:375 - Pinned message: b56f5215-7b17-4383-8d02-f4ea53b6e906
+2026-02-15 11:16:15,588 - core.session - INFO - pin_message:375 - Pinned message: 4e652e1a-83cd-4c2f-8f59-bf81b2fc98b7
+2026-02-15 11:16:15,588 - core.session - INFO - pin_message:375 - Pinned message: 563f6a40-6f5d-4df2-93ec-2946ee7ae764
+2026-02-15 11:16:15,588 - core.session - INFO - pin_message:375 - Pinned message: 9b56a402-38f5-4e7b-adf4-2fd3068077e8
+2026-02-15 11:16:15,591 - core.session - INFO - __init__:54 - Session initialized: 6d8e0057-9ee6-4723-8118-208c2090bf91
+2026-02-15 11:16:15,591 - core.session - INFO - set_feedback:402 - Set feedback on message: e0a42c62-a6bb-48f7-925d-4c3f316e1673 = positive
+2026-02-15 11:16:15,591 - core.session - INFO - set_feedback:402 - Set feedback on message: 25764c02-6c5c-460a-9333-7764004a9b34 = negative
+2026-02-15 11:16:15,592 - core.session - INFO - set_feedback:402 - Set feedback on message: d502c3d0-a482-4be1-ba76-024f9121ea3f = positive
+2026-02-15 11:16:15,592 - core.session - INFO - set_feedback:402 - Set feedback on message: b74a4a22-f900-40dc-80be-9cf7cb6c137f = negative
+2026-02-15 11:16:15,592 - core.session - INFO - set_feedback:402 - Set feedback on message: 5a52e224-cc53-4451-a25a-1ced1365c5c1 = positive
+2026-02-15 11:16:15,594 - core.session - INFO - __init__:54 - Session initialized: 2f5d7ffa-e420-45dd-8740-cc6ff0b71e6b
+2026-02-15 11:16:15,597 - core.session - INFO - __init__:54 - Session initialized: eb517da1-d0bc-47e1-b4e6-f083ac00fe89
+2026-02-15 11:16:15,597 - core.session - INFO - delete_message:393 - Deleted message: 495f070f-f335-4b52-aa7e-2640a6071a39
+2026-02-15 11:16:15,597 - core.session - INFO - delete_message:393 - Deleted message: 3cce01bf-b4c9-4036-9682-6cfff5298629
+2026-02-15 11:16:15,597 - core.session - INFO - delete_message:393 - Deleted message: 06d33eed-408c-4f6e-b232-23466fcda391
+2026-02-15 11:16:15,597 - core.session - INFO - delete_message:393 - Deleted message: f8487ac1-d28a-475d-8bc2-a052f6176423
+2026-02-15 11:16:15,598 - core.session - INFO - delete_message:393 - Deleted message: 0b577050-6f29-4633-9815-62c1e5bb809d
+2026-02-15 11:16:15,598 - core.session - INFO - delete_message:393 - Deleted message: 4b1e3b27-dc03-4c92-a873-ce4c1a3f3fe3
+2026-02-15 11:16:15,598 - core.session - INFO - delete_message:393 - Deleted message: 9aa620a8-a673-4b26-a133-980304de4d6f
+2026-02-15 11:16:15,599 - core.session - INFO - delete_message:393 - Deleted message: 7e8d02f7-2005-4af6-bfc1-5d294c00e83c
+2026-02-15 11:16:15,599 - core.session - INFO - delete_message:393 - Deleted message: 69659cb9-eb7f-4266-9279-234061e0f447
+2026-02-15 11:16:15,599 - core.session - INFO - delete_message:393 - Deleted message: 68e6881d-877c-4058-a12c-adfd5387d610
+2026-02-15 11:16:15,601 - core.session - INFO - __init__:54 - Session initialized: ab905905-c062-4145-94e1-37d0fc9d8d8e
+2026-02-15 11:16:15,601 - core.session - WARNING - create_branch:306 - Invalid message index: 0
+2026-02-15 11:16:15,602 - core.session - INFO - __init__:54 - Session initialized: aea8ce5f-997b-473e-8926-47cdf5070e38
+2026-02-15 11:16:15,605 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:16:15,605 - core.token_tracker - WARNING - count_tokens:84 - Tokenization error: Tokenizer failed
+2026-02-15 11:16:15,609 - core.token_tracker - WARNING - _load_tokenizer:64 - Failed to load tokenizer: Load failed. Using fallback.
+2026-02-15 11:16:15,610 - core.session - INFO - __init__:54 - Session initialized: c3af1b18-b875-49bc-8c68-87b0ea0378e1
+2026-02-15 11:16:15,840 - core.session - INFO - __init__:54 - Session initialized: 5e633e99-d377-4bed-ba5a-a2668e61a353
+2026-02-15 11:39:02,166 - core.session - INFO - __init__:54 - Session initialized: cc002795-7328-4875-9de7-f8263cd12d7c
+2026-02-15 11:39:02,171 - core.session - INFO - __init__:54 - Session initialized: 68e47f4f-04fc-44fa-91a5-eaa25ef00662
+2026-02-15 11:39:02,171 - core.session - INFO - create_branch:333 - Created branch: 73cd3497-5b9a-4562-99c7-615c39f56389 from message 0
+2026-02-15 11:39:02,172 - core.session - INFO - __init__:54 - Session initialized: 689bffc3-64de-48e8-b8ca-b7b85d79c46e
+2026-02-15 11:39:02,172 - core.session - INFO - create_branch:333 - Created branch: bcfc4d70-81eb-48b6-9cf7-0564df218623 from message 0
+2026-02-15 11:39:02,174 - core.session - INFO - __init__:54 - Session initialized: 583aa62b-12db-4307-95f7-be2a19a07b32
+2026-02-15 11:39:02,175 - core.session - INFO - create_branch:333 - Created branch: 63c8e8ab-427c-4048-b47b-5e08f942fcd4 from message 0
+2026-02-15 11:39:02,175 - core.session - INFO - create_branch:333 - Created branch: aa3e88c4-02a4-4bfd-bb0d-a5ed9ef3e0c9 from message 0
+2026-02-15 11:39:02,175 - core.session - INFO - create_branch:333 - Created branch: caf96a2d-c580-4e9f-8e37-03b67c87c7d1 from message 0
+2026-02-15 11:39:02,176 - core.session - INFO - create_branch:333 - Created branch: 966647f2-9853-4ef7-9277-9c6520eaef0c from message 0
+2026-02-15 11:39:02,176 - core.session - INFO - create_branch:333 - Created branch: 05567c31-e919-4a53-bc17-f1f2fee758de from message 0
+2026-02-15 11:39:02,176 - core.session - INFO - create_branch:333 - Created branch: 34d4dc21-a2a6-4229-8e2f-9e391ba18633 from message 0
+2026-02-15 11:39:02,176 - core.session - INFO - create_branch:333 - Created branch: 07df062a-4492-4cd6-a2c4-c9d91fa04600 from message 0
+2026-02-15 11:39:02,177 - core.session - INFO - create_branch:333 - Created branch: 0989d9b1-0def-4c5c-8109-f56bdf11820b from message 0
+2026-02-15 11:39:02,177 - core.session - INFO - create_branch:333 - Created branch: 1b238310-e161-4c03-895f-f3cbf53fa360 from message 0
+2026-02-15 11:39:02,177 - core.session - INFO - create_branch:333 - Created branch: a6cd2b54-297c-4995-805a-2b031c42cc9d from message 0
+2026-02-15 11:39:02,177 - core.branch_manager - WARNING - create_branch:44 - Maximum branches (10) reached
+2026-02-15 11:39:02,178 - core.session - INFO - __init__:54 - Session initialized: ce391581-db9e-478a-b9c9-b6e89ba2568f
+2026-02-15 11:39:02,178 - core.branch_manager - ERROR - create_branch:52 - Message not found: 9b5f6024-b41b-4d58-99ad-51acdb1f5cf2
+2026-02-15 11:39:02,181 - core.session - INFO - __init__:54 - Session initialized: 6d6b25c6-53c3-4489-a476-86cb70f34694
+2026-02-15 11:39:02,185 - core.session - INFO - __init__:54 - Session initialized: f1579281-d04b-43a7-bfc3-047a5aa83f2b
+2026-02-15 11:39:02,186 - core.session - INFO - create_branch:333 - Created branch: df792ed6-f89a-4466-a56e-c4d43d93731d from message 0
+2026-02-15 11:39:02,186 - core.session - INFO - create_branch:333 - Created branch: 541e8f68-2c7c-4360-8a41-3ee9e5b9d2ec from message 0
+2026-02-15 11:39:02,186 - core.session - INFO - create_branch:333 - Created branch: cf48204e-f395-4112-9a33-97e0a2d0288e from message 0
+2026-02-15 11:39:02,188 - core.session - INFO - __init__:54 - Session initialized: bf010db4-12e5-4ebe-9536-2a146cd026d6
+2026-02-15 11:39:02,189 - core.session - INFO - create_branch:333 - Created branch: f7e603a3-bb33-4218-bc79-291263b1abba from message 0
+2026-02-15 11:39:02,190 - core.session - INFO - __init__:54 - Session initialized: 4df356b4-6693-46b5-9ab5-845e50ab6b19
+2026-02-15 11:39:02,192 - core.session - INFO - __init__:54 - Session initialized: 475fa44a-3f97-466f-b5b3-bc1a535383fd
+2026-02-15 11:39:02,192 - core.session - INFO - create_branch:333 - Created branch: 24a47b87-17cb-4ed8-a620-59d736fc8ce1 from message 0
+2026-02-15 11:39:02,192 - core.session - INFO - delete_branch:370 - Deleted branch: 24a47b87-17cb-4ed8-a620-59d736fc8ce1
+2026-02-15 11:39:02,193 - core.session - INFO - __init__:54 - Session initialized: 15729602-f712-4e50-be01-824746f846cd
+2026-02-15 11:39:02,195 - core.session - INFO - __init__:54 - Session initialized: 29c52e83-34e2-41c4-abe2-1460afda0d9f
+2026-02-15 11:39:02,195 - core.session - INFO - create_branch:333 - Created branch: dd15a2be-6d71-4b65-8bdf-c324bbfa5c88 from message 0
+2026-02-15 11:39:02,195 - core.session - INFO - create_branch:333 - Created branch: 39da68a2-453f-4ad6-a3c8-731295f61138 from message 0
+2026-02-15 11:39:02,196 - core.session - INFO - delete_branch:370 - Deleted branch: dd15a2be-6d71-4b65-8bdf-c324bbfa5c88
+2026-02-15 11:39:02,196 - core.branch_manager - INFO - merge_branch:131 - Merged branch dd15a2be-6d71-4b65-8bdf-c324bbfa5c88 into 39da68a2-453f-4ad6-a3c8-731295f61138
+2026-02-15 11:39:02,197 - core.session - INFO - __init__:54 - Session initialized: b155afea-3af4-4372-9a0d-bac653fd527a
+2026-02-15 11:39:02,198 - core.session - INFO - create_branch:333 - Created branch: 23f2f17d-fb66-4782-b174-c67751815c6e from message 0
+2026-02-15 11:39:02,198 - core.branch_manager - WARNING - merge_branch:116 - Source or target branch not found
+2026-02-15 11:39:02,201 - core.session - INFO - __init__:54 - Session initialized: 82337cd4-7fa8-4ce4-aef6-b2aab21175be
+2026-02-15 11:39:02,201 - core.session - INFO - create_branch:333 - Created branch: 5cdbc91a-7c6f-4869-814d-b25dd6d6f897 from message 0
+2026-02-15 11:39:02,201 - core.branch_manager - WARNING - merge_branch:116 - Source or target branch not found
+2026-02-15 11:39:02,202 - core.session - INFO - __init__:54 - Session initialized: bf91a079-5e28-424e-be9d-8b42c78170b1
+2026-02-15 11:39:02,202 - core.session - INFO - create_branch:333 - Created branch: ba85e2fb-3432-4047-8b57-4fa42131bd4b from message 0
+2026-02-15 11:39:02,204 - core.session - INFO - __init__:54 - Session initialized: 2987d442-8be6-42f7-be0f-54d6276b3e01
+2026-02-15 11:39:02,206 - core.session - INFO - __init__:54 - Session initialized: 586db6ba-b330-4abf-85c0-da97667f6eea
+2026-02-15 11:39:02,208 - core.session - INFO - __init__:54 - Session initialized: 9cdb36d9-7456-4ae0-8ea3-d4ccc9526b4d
+2026-02-15 11:39:02,208 - core.session - INFO - create_branch:333 - Created branch: eaf17bf4-b7a9-4c9e-a76f-5b735a023b6b from message 0
+2026-02-15 11:39:02,208 - core.session - INFO - create_branch:333 - Created branch: 372f232c-c27a-4e7b-914e-4a5d7b47e610 from message 0
+2026-02-15 11:39:02,210 - core.session - INFO - __init__:54 - Session initialized: 1b17f17d-56ba-4b18-a6a6-8edd35fe1f17
+2026-02-15 11:39:02,633 - rag.document_processor - INFO - process:94 - Processed document: test.txt (21 bytes)
+2026-02-15 11:39:02,638 - rag.document_processor - INFO - process:94 - Processed document: bytes_test.txt (17 bytes)
+2026-02-15 11:39:02,695 - rag.document_processor - INFO - process:94 - Processed document: convenience.txt (16 bytes)
+2026-02-15 11:39:02,714 - rag.document_processor - INFO - process:94 - Processed document: integration.txt (191 bytes)
+2026-02-15 11:39:02,744 - rag.document_processor - INFO - process:94 - Processed document: large.txt (560000 bytes)
+2026-02-15 11:39:02,779 - rag.document_processor - INFO - process:94 - Processed document: test.txt (0 bytes)
+2026-02-15 11:39:02,783 - core.session - INFO - __init__:54 - Session initialized: 1bb277ab-3929-4674-a22d-4235382cabb0
+2026-02-15 11:39:02,829 - rag.document_processor - INFO - process:94 - Processed document: large.txt (4500000 bytes)
+2026-02-15 11:39:03,195 - core.session - INFO - __init__:54 - Session initialized: 7d9248d7-993a-4650-b0f1-54d1c6b8f2b3
+2026-02-15 11:39:03,923 - core.session - INFO - __init__:54 - Session initialized: c04849c4-af07-4065-870f-b828cc872cd1
+2026-02-15 11:39:03,926 - core.session - INFO - __init__:54 - Session initialized: ae189e41-16a1-4aad-a9a3-d64f5ff9ab2b
+2026-02-15 11:39:03,927 - core.session - ERROR - import_conversation:296 - Failed to import conversation: 'role'
+2026-02-15 11:39:03,930 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 11:39:03,931 - core.workflow - INFO - process_query:60 - Processing query: query without context...
+2026-02-15 11:39:03,935 - model.handler - INFO - __init__:45 - ModelHandler initialized: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:03,935 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 11:39:05,298 - utils.file_utils - INFO - save_uploaded_file:41 - Saved uploaded file: C:\Users\andre\AppData\Local\Temp\tmplqwg3wvx\test.txt
+2026-02-15 11:39:05,323 - utils.file_utils - INFO - save_uploaded_file:41 - Saved uploaded file: C:\Users\andre\AppData\Local\Temp\tmppmdykqy2\test.txt
+2026-02-15 11:39:05,325 - utils.file_utils - INFO - save_uploaded_file:41 - Saved uploaded file: C:\Users\andre\AppData\Local\Temp\tmppmdykqy2\test_8bfa8e06.txt
+2026-02-15 11:39:05,332 - utils.file_utils - INFO - save_uploaded_file:41 - Saved uploaded file: C:\Users\andre\AppData\Local\Temp\tmpl8kjqf5u\document.pdf
+2026-02-15 11:39:05,338 - utils.file_utils - ERROR - save_uploaded_file:45 - Failed to save uploaded file: Write error
+2026-02-15 11:39:05,344 - utils.file_utils - INFO - delete_file:62 - Deleted file: C:\Users\andre\AppData\Local\Temp\tmpu5hrhg2f\to_delete.txt
+2026-02-15 11:39:05,354 - utils.file_utils - ERROR - delete_file:66 - Failed to delete file C:\Users\andre\AppData\Local\Temp\tmpm1bji5nt\protected.txt: [WinError 5] Accesso negato: 'C:\\Users\\andre\\AppData\\Local\\Temp\\tmpm1bji5nt\\protected.txt'
+2026-02-15 11:39:05,377 - utils.file_utils - INFO - clear_directory:121 - Cleared directory: C:\Users\andre\AppData\Local\Temp\tmp4bm3y_5f
+2026-02-15 11:39:05,384 - utils.file_utils - INFO - clear_directory:121 - Cleared directory: C:\Users\andre\AppData\Local\Temp\tmp50q8baaf
+2026-02-15 11:39:05,392 - utils.file_utils - ERROR - clear_directory:125 - Failed to clear directory C:\Users\andre\AppData\Local\Temp\tmpgguyah_0: [WinError 5] Accesso negato: 'C:\\Users\\andre\\AppData\\Local\\Temp\\tmpgguyah_0\\protected.txt'
+2026-02-15 11:39:05,659 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 11:39:05,659 - core.workflow - INFO - process_query:60 - Processing query: What is the answer?...
+2026-02-15 11:39:05,663 - core.session - INFO - __init__:54 - Session initialized: afa17d25-c9bc-42dd-bdd4-3b4f56f0de17
+2026-02-15 11:39:05,665 - core.session - INFO - __init__:54 - Session initialized: b2e757b2-de84-4d6d-bbc9-09f2352553d0
+2026-02-15 11:39:05,816 - utils.file_utils - INFO - save_uploaded_file:41 - Saved uploaded file: C:\Users\andre\AppData\Local\Temp\tmpqfapfuj4\test.txt
+2026-02-15 11:39:05,821 - core.session - INFO - __init__:54 - Session initialized: b2e90287-0f5e-4309-8fc0-dc344d6651ed
+2026-02-15 11:39:05,824 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 11:39:05,824 - core.workflow - INFO - process_query:60 - Processing query: test query...
+2026-02-15 11:39:05,824 - core.workflow - ERROR - process_query:85 - Retrieval error: Vector store error
+2026-02-15 11:39:05,829 - rag.document_processor - INFO - process:94 - Processed document: tmpbd7inxq5.txt (16 bytes)
+2026-02-15 11:39:05,872 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:05,875 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:05,875 - core.token_tracker - WARNING - count_tokens:84 - Tokenization error: Too long
+2026-02-15 11:39:05,877 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:05,881 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:05,885 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:05,887 - core.session - INFO - __init__:54 - Session initialized: 37e2cff9-a2a3-46a4-b023-4596db3ed2c0
+2026-02-15 11:39:05,888 - core.session - INFO - create_branch:333 - Created branch: 9bc45627-f6a7-4424-9616-a1f58bd40918 from message 4
+2026-02-15 11:39:05,890 - core.session - INFO - __init__:54 - Session initialized: 32673316-ba3a-470f-9160-3ca899e01e16
+2026-02-15 11:39:05,891 - core.session - INFO - create_branch:333 - Created branch: 2b109ddc-b478-4253-bce5-665f1bad86e2 from message 0
+2026-02-15 11:39:05,891 - core.session - INFO - create_branch:333 - Created branch: 2e62f8b1-844e-402b-9328-7c3fa70c0e0d from message 0
+2026-02-15 11:39:05,891 - core.session - INFO - create_branch:333 - Created branch: 546af9d5-eb54-4210-b221-1d81f672c733 from message 0
+2026-02-15 11:39:05,891 - core.session - INFO - delete_branch:370 - Deleted branch: 2b109ddc-b478-4253-bce5-665f1bad86e2
+2026-02-15 11:39:05,891 - core.session - INFO - delete_branch:370 - Deleted branch: 2e62f8b1-844e-402b-9328-7c3fa70c0e0d
+2026-02-15 11:39:05,891 - core.session - INFO - delete_branch:370 - Deleted branch: 546af9d5-eb54-4210-b221-1d81f672c733
+2026-02-15 11:39:05,893 - core.session - INFO - __init__:54 - Session initialized: aaacf037-a501-4fdd-92a2-b34358e2e88c
+2026-02-15 11:39:05,893 - core.session - INFO - create_branch:333 - Created branch: 4ccee1b1-f551-4ff7-b7b0-dfb8817d1ca9 from message 0
+2026-02-15 11:39:05,893 - core.branch_manager - WARNING - merge_branch:109 - Cannot merge branch with itself
+2026-02-15 11:39:05,895 - core.session - INFO - __init__:54 - Session initialized: 53a00305-3c41-4ea3-bb79-4be042d6de39
+2026-02-15 11:39:05,895 - core.session - INFO - create_branch:333 - Created branch: bb6503f5-e4f5-4c0c-ad80-3c696e777528 from message 0
+2026-02-15 11:39:05,895 - core.session - INFO - create_branch:333 - Created branch: 7cecd1d1-a412-4531-9479-d57b83202fc3 from message 0
+2026-02-15 11:39:05,895 - core.session - INFO - delete_branch:370 - Deleted branch: bb6503f5-e4f5-4c0c-ad80-3c696e777528
+2026-02-15 11:39:05,903 - core.session - INFO - switch_branch:349 - Switched to branch: 7cecd1d1-a412-4531-9479-d57b83202fc3
+2026-02-15 11:39:05,916 - core.session - INFO - __init__:54 - Session initialized: 56e410f4-43a2-47b9-862b-d859dde06f76
+2026-02-15 11:39:05,916 - core.session - INFO - pin_message:379 - Pinned message: 7a4136c1-694d-45f1-99bd-b295ef4d1ac3
+2026-02-15 11:39:05,918 - core.session - INFO - pin_message:379 - Pinned message: 36236e6d-e851-4ead-95c7-71a4d78dc1fe
+2026-02-15 11:39:05,918 - core.session - INFO - pin_message:379 - Pinned message: c70f132c-c151-4861-98e5-88b9680c173d
+2026-02-15 11:39:05,918 - core.session - INFO - pin_message:379 - Pinned message: a4edc8ce-a444-4380-9f13-3d6b63e83338
+2026-02-15 11:39:05,918 - core.session - INFO - pin_message:379 - Pinned message: 2864aeb4-40f9-4826-9a35-e32ac22b3798
+2026-02-15 11:39:05,919 - core.session - INFO - pin_message:379 - Pinned message: ca2247f9-60f7-4031-b1f6-5c7602786a2c
+2026-02-15 11:39:05,919 - core.session - INFO - pin_message:379 - Pinned message: edfeee0c-f2fe-41ca-a7d0-194cee8fcd3d
+2026-02-15 11:39:05,919 - core.session - INFO - pin_message:379 - Pinned message: aef5645e-02b0-4e78-a197-1e295e4323f9
+2026-02-15 11:39:05,919 - core.session - INFO - pin_message:379 - Pinned message: 20dc226b-f093-4d2e-beab-62db854d79e9
+2026-02-15 11:39:05,919 - core.session - INFO - pin_message:379 - Pinned message: 5aee6fc0-4e76-40fa-9fe9-5c763ca2f118
+2026-02-15 11:39:05,921 - core.session - INFO - __init__:54 - Session initialized: 698bee1d-85ee-4e12-8ddc-9f887e594171
+2026-02-15 11:39:05,922 - core.session - INFO - set_feedback:406 - Set feedback on message: 3d4a0b5d-c173-4534-81f2-3a43c222c8fe = positive
+2026-02-15 11:39:05,922 - core.session - INFO - set_feedback:406 - Set feedback on message: 47dc685d-2c3f-4ac6-acfa-b662f5a35001 = negative
+2026-02-15 11:39:05,923 - core.session - INFO - set_feedback:406 - Set feedback on message: 431d78f4-f4fe-4054-b4b7-93681fdd4739 = positive
+2026-02-15 11:39:05,923 - core.session - INFO - set_feedback:406 - Set feedback on message: 6448cf38-aac5-44d5-8717-493c6509c332 = negative
+2026-02-15 11:39:05,923 - core.session - INFO - set_feedback:406 - Set feedback on message: d7e9d7a2-0a9c-4361-be1f-7ef4fba4fbed = positive
+2026-02-15 11:39:05,925 - core.session - INFO - __init__:54 - Session initialized: 192a618c-6884-4c2d-8e5f-e33183649c8c
+2026-02-15 11:39:05,928 - core.session - INFO - __init__:54 - Session initialized: 062ed200-3ee3-4c5d-9ac0-9f84acea7610
+2026-02-15 11:39:05,929 - core.session - INFO - delete_message:397 - Deleted message: c1938aa5-2ed5-4e45-9952-c557f1faff16
+2026-02-15 11:39:05,929 - core.session - INFO - delete_message:397 - Deleted message: 301fe782-b6c9-450a-b159-29324b702cec
+2026-02-15 11:39:05,929 - core.session - INFO - delete_message:397 - Deleted message: a5b8706d-3188-4976-92fd-563fddde04f7
+2026-02-15 11:39:05,929 - core.session - INFO - delete_message:397 - Deleted message: 996e94f9-49a5-4edb-96df-740f49e441f7
+2026-02-15 11:39:05,929 - core.session - INFO - delete_message:397 - Deleted message: 6152b40f-6fc3-4fb7-9c3e-355ae2a1f193
+2026-02-15 11:39:05,929 - core.session - INFO - delete_message:397 - Deleted message: 69710359-e2f8-4785-8f02-d24bde50723c
+2026-02-15 11:39:05,929 - core.session - INFO - delete_message:397 - Deleted message: 426dfc31-2ccb-435a-b176-16fc8603086f
+2026-02-15 11:39:05,930 - core.session - INFO - delete_message:397 - Deleted message: d9b314c9-498f-43a3-a890-3554621cae58
+2026-02-15 11:39:05,930 - core.session - INFO - delete_message:397 - Deleted message: fda21859-8282-45ff-bb95-8d24243b3c27
+2026-02-15 11:39:05,930 - core.session - INFO - delete_message:397 - Deleted message: b6fbf771-9c7a-4471-a9a5-7dca7ae55009
+2026-02-15 11:39:05,932 - core.session - INFO - __init__:54 - Session initialized: 474cc35b-f713-4568-8691-deb093708c89
+2026-02-15 11:39:05,932 - core.session - WARNING - create_branch:310 - Invalid message index: 0
+2026-02-15 11:39:05,934 - core.session - INFO - __init__:54 - Session initialized: 7c498931-e367-43f7-a324-c580a65f11c4
+2026-02-15 11:39:05,936 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:05,936 - core.token_tracker - WARNING - count_tokens:84 - Tokenization error: Tokenizer failed
+2026-02-15 11:39:05,940 - core.token_tracker - WARNING - _load_tokenizer:64 - Failed to load tokenizer: Load failed. Using fallback.
+2026-02-15 11:39:05,942 - core.session - INFO - __init__:54 - Session initialized: c78859d8-26a9-496c-862b-fc70d767e38f
+2026-02-15 11:39:05,943 - core.branch_manager - ERROR - create_branch:38 - Cannot create branch from None message
+2026-02-15 11:39:05,945 - core.session - INFO - __init__:54 - Session initialized: ad4bfc83-2743-47b9-b00c-68de7cb8e279
+2026-02-15 11:39:05,971 - rag.engine - ERROR - add_document:110 - Error adding document: [WinError 2] Impossibile trovare il file specificato: 'test.txt'
+2026-02-15 11:39:06,033 - rag.engine - ERROR - add_document:110 - Error adding document: [WinError 2] Impossibile trovare il file specificato: 'large.txt'
+2026-02-15 11:39:06,054 - rag.engine - INFO - clear_all:247 - Cleared all documents
+2026-02-15 11:39:06,111 - core.session - INFO - __init__:54 - Session initialized: 5fe23f06-3da1-497c-aaf1-eb61a0a238e5
+2026-02-15 11:39:06,113 - core.session - INFO - __init__:54 - Session initialized: dac679be-e8df-4c8a-9a47-7141d9421f34
+2026-02-15 11:39:06,115 - core.session - INFO - __init__:54 - Session initialized: 5cc4969e-db2c-4743-8ff9-0dbddd3cead0
+2026-02-15 11:39:06,116 - core.session - INFO - __init__:54 - Session initialized: 380772c0-72d3-470a-a178-9dec174f89f1
+2026-02-15 11:39:06,118 - core.session - INFO - __init__:54 - Session initialized: 6107a548-4492-467a-ba19-ac94335f7505
+2026-02-15 11:39:06,119 - core.session - INFO - __init__:54 - Session initialized: b20aa4e6-aa7b-4a8d-9b3e-557480543174
+2026-02-15 11:39:06,121 - core.session - INFO - __init__:54 - Session initialized: 168255fd-ccdb-455c-a7a2-180290749167
+2026-02-15 11:39:06,123 - core.session - INFO - __init__:54 - Session initialized: b3070583-433a-4466-acbe-04ab17a28793
+2026-02-15 11:39:06,126 - core.session - INFO - __init__:54 - Session initialized: 37530d36-2f00-4c74-8f9c-cef088538ae2
+2026-02-15 11:39:06,155 - core.session - INFO - __init__:54 - Session initialized: 7292a091-132b-43c5-8752-42e93c51f4d0
+2026-02-15 11:39:06,158 - core.session - INFO - __init__:54 - Session initialized: f934f43f-4b51-4997-9fd6-0c091a688797
+2026-02-15 11:39:06,160 - core.session - INFO - __init__:54 - Session initialized: 72b76001-1e87-4c20-9f36-72feedd92711
+2026-02-15 11:39:06,161 - core.session - INFO - __init__:54 - Session initialized: 3a8cae19-a99e-403f-bf68-1a13edc91ec3
+2026-02-15 11:39:06,163 - core.session - INFO - clear_conversation:188 - Conversation cleared
+2026-02-15 11:39:06,165 - core.session - INFO - __init__:54 - Session initialized: 14fb325b-5b33-453b-8094-4274ef03139c
+2026-02-15 11:39:06,167 - core.session - INFO - __init__:54 - Session initialized: 6126b9c6-af80-4172-bd22-aa7a66deaee9
+2026-02-15 11:39:06,169 - core.session - INFO - __init__:54 - Session initialized: 19291169-140e-4748-990e-904b51a2d447
+2026-02-15 11:39:06,171 - core.session - INFO - __init__:54 - Session initialized: cb01e2ac-8040-42cd-b888-c12a03d3f3b1
+2026-02-15 11:39:06,174 - core.session - INFO - __init__:54 - Session initialized: 5779847d-546a-4bf3-83ce-e732e2c59b5a
+2026-02-15 11:39:06,175 - core.session - INFO - __init__:54 - Session initialized: f4c2eba0-7170-42c7-ba5b-c41ad0d6a3a8
+2026-02-15 11:39:06,177 - core.session - INFO - __init__:54 - Session initialized: e56166f9-0f1e-4ca8-8509-a2beff7bd63a
+2026-02-15 11:39:06,180 - core.session - INFO - __init__:54 - Session initialized: ec4cf934-a85b-49f3-aa37-5b8deaa6ef1d
+2026-02-15 11:39:06,181 - core.session - INFO - import_conversation:292 - Imported 2 messages
+2026-02-15 11:39:06,182 - core.session - INFO - __init__:54 - Session initialized: 5f493a39-f6c9-4278-85dc-c4af61b92269
+2026-02-15 11:39:06,182 - core.session - INFO - import_conversation:292 - Imported 0 messages
+2026-02-15 11:39:06,184 - core.session - INFO - __init__:54 - Session initialized: 79c44f05-4bb6-46e9-87a2-c1dee46c9b0a
+2026-02-15 11:39:06,187 - core.session - INFO - __init__:54 - Session initialized: 6500700e-5a3d-45aa-9a70-4cffaaf2c1c5
+2026-02-15 11:39:06,187 - core.session - INFO - create_branch:333 - Created branch: 7af39a54-553b-4768-8837-dddea6d678de from message 0
+2026-02-15 11:39:06,188 - core.session - INFO - __init__:54 - Session initialized: cb0ed445-da0b-4ed3-8ea6-d1b4a43696ae
+2026-02-15 11:39:06,188 - core.session - WARNING - create_branch:310 - Invalid message index: 10
+2026-02-15 11:39:06,192 - core.session - INFO - __init__:54 - Session initialized: ae90830e-8373-47e2-a914-03e5e2f3138e
+2026-02-15 11:39:06,192 - core.session - WARNING - create_branch:310 - Invalid message index: -1
+2026-02-15 11:39:06,193 - core.session - INFO - __init__:54 - Session initialized: 89970db8-3678-4ef4-8fe5-9d713529abee
+2026-02-15 11:39:06,193 - core.session - INFO - create_branch:333 - Created branch: 6e47172a-4da9-42d9-8eb9-36bbf2be0f77 from message 0
+2026-02-15 11:39:06,193 - core.session - INFO - create_branch:333 - Created branch: d75c087e-78cc-4181-8fc1-93b1fa1bc5ae from message 0
+2026-02-15 11:39:06,193 - core.session - INFO - switch_branch:349 - Switched to branch: 6e47172a-4da9-42d9-8eb9-36bbf2be0f77
+2026-02-15 11:39:06,196 - core.session - INFO - __init__:54 - Session initialized: 514554b1-726b-49e5-a308-225d6ed9cf1c
+2026-02-15 11:39:06,197 - core.session - WARNING - switch_branch:352 - Branch not found: non-existent-id
+2026-02-15 11:39:06,199 - core.session - INFO - __init__:54 - Session initialized: e3f14303-89c7-4aca-8013-4794b1007b53
+2026-02-15 11:39:06,199 - core.session - INFO - create_branch:333 - Created branch: bbc8af78-3eee-488a-99f3-98b19a2755ec from message 0
+2026-02-15 11:39:06,202 - core.session - INFO - __init__:54 - Session initialized: 5d9b86b6-a547-4106-a741-bcbe457f3ec8
+2026-02-15 11:39:06,202 - core.session - INFO - create_branch:333 - Created branch: 389966f8-1c8c-4d7b-a159-6a5c5456522f from message 0
+2026-02-15 11:39:06,202 - core.session - INFO - create_branch:333 - Created branch: 51a83a1e-a024-4214-96b0-d553e2665f57 from message 0
+2026-02-15 11:39:06,205 - core.session - INFO - __init__:54 - Session initialized: a0d8c3e6-2a5e-41a6-aac1-c3a83c022db2
+2026-02-15 11:39:06,205 - core.session - INFO - create_branch:333 - Created branch: d9c20b7a-9871-4bd4-8be0-287d0c1f1b0d from message 0
+2026-02-15 11:39:06,205 - core.session - INFO - delete_branch:370 - Deleted branch: d9c20b7a-9871-4bd4-8be0-287d0c1f1b0d
+2026-02-15 11:39:06,207 - core.session - INFO - __init__:54 - Session initialized: 38b03b0c-980a-4770-a4da-ce94f40f3d30
+2026-02-15 11:39:06,209 - core.session - INFO - __init__:54 - Session initialized: fbc3c52a-f887-4d6a-b418-22e745ed4c2b
+2026-02-15 11:39:06,209 - core.session - INFO - create_branch:333 - Created branch: d1cd6ccc-487d-468c-9fe4-bd37262c6b27 from message 0
+2026-02-15 11:39:06,209 - core.session - INFO - delete_branch:370 - Deleted branch: d1cd6ccc-487d-468c-9fe4-bd37262c6b27
+2026-02-15 11:39:06,211 - core.session - INFO - __init__:54 - Session initialized: 63922eed-bf17-4848-8583-20d6a2a21e43
+2026-02-15 11:39:06,211 - core.session - INFO - pin_message:379 - Pinned message: e357892e-b1cd-4b96-b82d-8a1fdcf23af0
+2026-02-15 11:39:06,213 - core.session - INFO - __init__:54 - Session initialized: 3caa151c-9108-4564-995f-a5865990f48e
+2026-02-15 11:39:06,216 - core.session - INFO - __init__:54 - Session initialized: a852a320-14b8-4f80-b389-e83201f2b546
+2026-02-15 11:39:06,216 - core.session - INFO - pin_message:379 - Pinned message: 06e291bc-a24b-4958-b9a4-56ea622f83ba
+2026-02-15 11:39:06,216 - core.session - INFO - unpin_message:388 - Unpinned message: 06e291bc-a24b-4958-b9a4-56ea622f83ba
+2026-02-15 11:39:06,218 - core.session - INFO - __init__:54 - Session initialized: 560e0baf-6175-476f-a0c6-8320b20f671c
+2026-02-15 11:39:06,221 - core.session - INFO - __init__:54 - Session initialized: 105571b7-e132-4068-be27-6a24fdd9343c
+2026-02-15 11:39:06,221 - core.session - INFO - set_feedback:406 - Set feedback on message: d30f24b8-9e09-4b68-8246-01b4905a5b3d = positive
+2026-02-15 11:39:06,223 - core.session - INFO - __init__:54 - Session initialized: c82b8756-2c4b-4a2e-9291-3df8a7c77c11
+2026-02-15 11:39:06,223 - core.session - INFO - set_feedback:406 - Set feedback on message: f53c6457-ae06-460c-a857-cdead7b88a8a = negative
+2026-02-15 11:39:06,225 - core.session - INFO - __init__:54 - Session initialized: be3f8ece-d15a-48ea-a9ec-c336d587c140
+2026-02-15 11:39:06,227 - core.session - INFO - __init__:54 - Session initialized: 8fd667b0-5706-4a6c-a635-337defc268c5
+2026-02-15 11:39:06,227 - core.session - INFO - delete_message:397 - Deleted message: 73da53d6-da44-405d-9a86-947d9ab3d30e
+2026-02-15 11:39:06,229 - core.session - INFO - __init__:54 - Session initialized: cf6efb4a-3f39-4e68-9801-1473bda71a45
+2026-02-15 11:39:06,231 - core.session - INFO - __init__:54 - Session initialized: c6d412ae-c7f5-4967-b0a8-e680ede0ff6b
+2026-02-15 11:39:06,231 - core.session - INFO - pin_message:379 - Pinned message: 6644da99-ac04-4234-8b3c-53b94a3de057
+2026-02-15 11:39:06,231 - core.session - INFO - set_feedback:406 - Set feedback on message: 6644da99-ac04-4234-8b3c-53b94a3de057 = positive
+2026-02-15 11:39:06,232 - core.session - INFO - __init__:54 - Session initialized: 9c8526ab-ee32-49d8-87b8-0caca892f568
+2026-02-15 11:39:06,236 - core.session - INFO - __init__:54 - Session initialized: 8bda2c84-aa98-4489-86d1-81fd20d76796
+2026-02-15 11:39:06,238 - core.session - INFO - __init__:54 - Session initialized: a2a9b3c9-10a0-4081-8d4c-be922207403e
+2026-02-15 11:39:06,240 - core.session - INFO - __init__:54 - Session initialized: 88e068ac-097d-46ba-b6a7-48b5330147f1
+2026-02-15 11:39:06,242 - core.session - INFO - __init__:54 - Session initialized: 665b26b9-1f25-4a68-949f-a9a5da87b7e7
+2026-02-15 11:39:06,244 - core.session - INFO - __init__:54 - Session initialized: 40f12b54-5634-4c46-9ba9-5fda55459c4c
+2026-02-15 11:39:06,247 - core.session - INFO - __init__:54 - Session initialized: f330018c-b897-498c-a504-9967784d0f81
+2026-02-15 11:39:06,249 - core.session - INFO - __init__:54 - Session initialized: bac6f72d-2f2f-49b1-ab32-ac9951e9aa76
+2026-02-15 11:39:06,250 - core.session - INFO - __init__:54 - Session initialized: 25a0174e-9a96-4aef-bc2f-cc06808f2327
+2026-02-15 11:39:06,402 - model.streaming - ERROR - create_streaming_generator:182 - Error in streaming: Test error
+2026-02-15 11:39:06,407 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:06,411 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: test-model
+2026-02-15 11:39:06,414 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:06,416 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:06,421 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:06,421 - core.token_tracker - WARNING - count_tokens:84 - Tokenization error: Tokenizer error
+2026-02-15 11:39:06,425 - core.token_tracker - WARNING - _load_tokenizer:64 - Failed to load tokenizer: Load error. Using fallback.
+2026-02-15 11:39:06,428 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:06,430 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:06,434 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:06,438 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:06,442 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:06,446 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:06,448 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:06,450 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:06,455 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:06,458 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:06,461 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:06,465 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:06,468 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:06,471 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:06,474 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:09,043 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:10,127 - rag.vector_store - INFO - clear:186 - Vector store cleared
+2026-02-15 11:39:10,397 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 11:39:10,400 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 11:39:10,406 - rag.embeddings - ERROR - _load_model:35 - Failed to load embedding model: No module named 'sentence_transformers'
+2026-02-15 11:39:10,469 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 11:39:10,470 - core.workflow - INFO - process_query:60 - Processing query: test query...
+2026-02-15 11:39:10,475 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 11:39:10,475 - core.workflow - INFO - process_query:60 - Processing query: test...
+2026-02-15 11:39:10,476 - core.workflow - ERROR - process_query:142 - Generation error: Generation failed
+2026-02-15 11:39:10,480 - model.handler - INFO - __init__:45 - ModelHandler initialized: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:10,480 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 11:39:10,480 - core.workflow - INFO - upload_document:168 - Document uploaded: Document added successfully
+2026-02-15 11:39:10,484 - model.handler - INFO - __init__:45 - ModelHandler initialized: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:10,485 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 11:39:10,485 - core.workflow - ERROR - upload_document:170 - Document upload failed: Invalid file type
+2026-02-15 11:39:10,487 - model.handler - INFO - __init__:45 - ModelHandler initialized: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:10,487 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 11:39:10,491 - model.handler - INFO - __init__:45 - ModelHandler initialized: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:10,491 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 11:39:10,493 - model.handler - INFO - __init__:45 - ModelHandler initialized: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:10,493 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 11:39:10,496 - model.handler - INFO - __init__:45 - ModelHandler initialized: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 11:39:10,496 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 11:39:10,499 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 11:39:10,501 - core.session - INFO - __init__:54 - Session initialized: 29a8dfc4-ac3a-42a3-a366-8c867a7fb433
+2026-02-15 11:39:10,502 - rag.embeddings - ERROR - _load_model:35 - Failed to load embedding model: No module named 'sentence_transformers'
+2026-02-15 11:41:07,052 - core.summarization - INFO - summarize_messages:49 - Not enough messages to summarize
+2026-02-15 11:41:07,057 - core.summarization - INFO - summarize_messages:49 - Not enough messages to summarize
+2026-02-15 11:41:07,059 - core.summarization - INFO - summarize_messages:83 - Summarized 6 messages, saved ~26 tokens
+2026-02-15 11:41:07,062 - core.summarization - INFO - summarize_messages:83 - Summarized 4 messages, saved ~20 tokens
+2026-02-15 11:41:07,065 - core.summarization - ERROR - summarize_messages:93 - Summarization failed: Generation failed
+2026-02-15 11:41:07,066 - core.summarization - INFO - summarize_messages:83 - Summarized 6 messages, saved ~16 tokens
+2026-02-15 11:41:07,085 - core.summarization - INFO - summarize_messages:83 - Summarized 1 messages, saved ~1247 tokens
+2026-02-15 11:41:07,088 - core.summarization - INFO - summarize_messages:49 - Not enough messages to summarize
+2026-02-15 11:41:07,104 - core.summarization - INFO - summarize_messages:83 - Summarized 6 messages, saved ~10 tokens
+2026-02-15 11:41:07,107 - core.summarization - INFO - summarize_messages:83 - Summarized 0 messages, saved ~0 tokens
+2026-02-15 11:41:07,122 - core.summarization - INFO - summarize_messages:49 - Not enough messages to summarize
+2026-02-15 11:41:07,138 - core.summarization - INFO - summarize_messages:49 - Not enough messages to summarize
+2026-02-15 14:11:39,839 - core.session - INFO - __init__:54 - Session initialized: 1a80bee5-72b2-46be-8d18-1df27a5ba437
+2026-02-15 14:11:39,874 - core.session - INFO - __init__:54 - Session initialized: 718b1d86-00ab-4a2f-a9b0-8bb2f4dc0fab
+2026-02-15 14:11:39,874 - core.session - INFO - create_branch:333 - Created branch: bd69616e-982d-43a5-a92d-c5192565c4ba from message 0
+2026-02-15 14:11:39,876 - core.session - INFO - __init__:54 - Session initialized: a15a6d91-5488-4dc7-8d9b-07cd4959e13a
+2026-02-15 14:11:39,876 - core.session - INFO - create_branch:333 - Created branch: 09ccb6f0-5eb2-4f0d-9ca6-33006f89c249 from message 0
+2026-02-15 14:11:39,878 - core.session - INFO - __init__:54 - Session initialized: d3defb2d-05bb-459d-8ac8-59a243a033be
+2026-02-15 14:11:39,878 - core.session - INFO - create_branch:333 - Created branch: f7254c99-8511-41f2-8b6d-7af143a782b7 from message 0
+2026-02-15 14:11:39,878 - core.session - INFO - create_branch:333 - Created branch: 535073b4-9dfe-41d8-8ffa-e99a779d2816 from message 0
+2026-02-15 14:11:39,878 - core.session - INFO - create_branch:333 - Created branch: e6b665e8-8be5-4ee5-84f7-e58069c90911 from message 0
+2026-02-15 14:11:39,878 - core.session - INFO - create_branch:333 - Created branch: 533aaeba-eb07-4c67-b875-af3ac58df7c0 from message 0
+2026-02-15 14:11:39,878 - core.session - INFO - create_branch:333 - Created branch: 585e8bb9-64d7-4958-b697-5efa4e573778 from message 0
+2026-02-15 14:11:39,879 - core.session - INFO - create_branch:333 - Created branch: 076c6c21-063c-4f02-a79a-7910b3c942d4 from message 0
+2026-02-15 14:11:39,879 - core.session - INFO - create_branch:333 - Created branch: 339727ef-fc4a-4ec2-88ff-65cd133dc48f from message 0
+2026-02-15 14:11:39,879 - core.session - INFO - create_branch:333 - Created branch: c8869b54-ba41-4b69-a040-0854722fdf93 from message 0
+2026-02-15 14:11:39,879 - core.session - INFO - create_branch:333 - Created branch: 97802d0e-8f17-4186-a2a7-917bbcc0a31c from message 0
+2026-02-15 14:11:39,879 - core.session - INFO - create_branch:333 - Created branch: e736ebf6-acd8-4fe9-bea6-19e178f836f8 from message 0
+2026-02-15 14:11:39,879 - core.branch_manager - WARNING - create_branch:44 - Maximum branches (10) reached
+2026-02-15 14:11:39,881 - core.session - INFO - __init__:54 - Session initialized: bb8a54b5-c89d-4a9c-be15-03759e400dae
+2026-02-15 14:11:39,881 - core.branch_manager - ERROR - create_branch:52 - Message not found: c1420f76-aae7-434a-bf74-a8fbb53c5153
+2026-02-15 14:11:39,882 - core.session - INFO - __init__:54 - Session initialized: 076e671d-ab09-4cce-a013-e672c6513447
+2026-02-15 14:11:39,884 - core.session - INFO - __init__:54 - Session initialized: 764eb941-3e36-4332-a5ab-1b3de16ac0f8
+2026-02-15 14:11:39,884 - core.session - INFO - create_branch:333 - Created branch: 8a9bf0c7-41ba-4684-9c30-65459eded36f from message 0
+2026-02-15 14:11:39,885 - core.session - INFO - create_branch:333 - Created branch: bf40b851-d64d-4851-af84-04e07ec026b1 from message 0
+2026-02-15 14:11:39,885 - core.session - INFO - create_branch:333 - Created branch: 7678da04-aa77-47a9-a22a-2e51f5876788 from message 0
+2026-02-15 14:11:39,887 - core.session - INFO - __init__:54 - Session initialized: 50f2c160-40ae-4647-b873-2a0d0aab9fd6
+2026-02-15 14:11:39,887 - core.session - INFO - create_branch:333 - Created branch: 072ecdf5-e50a-41c9-b44f-e62685b108cf from message 0
+2026-02-15 14:11:39,889 - core.session - INFO - __init__:54 - Session initialized: 06860eb2-b48d-43d1-a0a3-e055e9052afe
+2026-02-15 14:11:39,890 - core.session - INFO - __init__:54 - Session initialized: f84b73d6-d702-4224-b8fd-d23ee19dcb5d
+2026-02-15 14:11:39,890 - core.session - INFO - create_branch:333 - Created branch: 9ef06ee1-4e6a-4d3a-96fb-494411972073 from message 0
+2026-02-15 14:11:39,890 - core.session - INFO - delete_branch:370 - Deleted branch: 9ef06ee1-4e6a-4d3a-96fb-494411972073
+2026-02-15 14:11:39,891 - core.session - INFO - __init__:54 - Session initialized: f0cdc0a6-bc66-4f0f-9645-dc5566422599
+2026-02-15 14:11:39,893 - core.session - INFO - __init__:54 - Session initialized: 2aaeffbf-4e1c-4b38-9985-3fb41a1cd87c
+2026-02-15 14:11:39,893 - core.session - INFO - create_branch:333 - Created branch: 4e68d295-18ff-44b9-b83c-2c550e6c7c4d from message 0
+2026-02-15 14:11:39,893 - core.session - INFO - create_branch:333 - Created branch: fa6757af-986c-418e-8b3a-485f9350dd80 from message 0
+2026-02-15 14:11:39,893 - core.session - INFO - delete_branch:370 - Deleted branch: 4e68d295-18ff-44b9-b83c-2c550e6c7c4d
+2026-02-15 14:11:39,893 - core.branch_manager - INFO - merge_branch:131 - Merged branch 4e68d295-18ff-44b9-b83c-2c550e6c7c4d into fa6757af-986c-418e-8b3a-485f9350dd80
+2026-02-15 14:11:39,894 - core.session - INFO - __init__:54 - Session initialized: ff3528b1-7763-4603-839c-c01087f73b7b
+2026-02-15 14:11:39,895 - core.session - INFO - create_branch:333 - Created branch: 23be299b-b97f-4117-bd38-88f821129775 from message 0
+2026-02-15 14:11:39,895 - core.branch_manager - WARNING - merge_branch:116 - Source or target branch not found
+2026-02-15 14:11:39,896 - core.session - INFO - __init__:54 - Session initialized: e7b114ef-662b-40ad-b3f5-f399ceeffda2
+2026-02-15 14:11:39,896 - core.session - INFO - create_branch:333 - Created branch: d28a8c4e-76da-49d6-ad90-4c9033d61626 from message 0
+2026-02-15 14:11:39,896 - core.branch_manager - WARNING - merge_branch:116 - Source or target branch not found
+2026-02-15 14:11:39,899 - core.session - INFO - __init__:54 - Session initialized: 976c3064-8f75-4da7-aea2-fcaaf473edd6
+2026-02-15 14:11:39,899 - core.session - INFO - create_branch:333 - Created branch: decdec1d-1fb1-4ed2-84d3-32c4b21526bd from message 0
+2026-02-15 14:11:39,900 - core.session - INFO - __init__:54 - Session initialized: a176ea18-e884-47c5-98ce-3125e2a4fe2d
+2026-02-15 14:11:39,902 - core.session - INFO - __init__:54 - Session initialized: 3b86d590-b78b-4f08-b851-94457b1e7c5f
+2026-02-15 14:11:39,905 - core.session - INFO - __init__:54 - Session initialized: 393c810f-928a-4ab9-9e40-cc531a96a2b1
+2026-02-15 14:11:39,905 - core.session - INFO - create_branch:333 - Created branch: 76273785-9518-4a0f-868a-cfbb74e86136 from message 0
+2026-02-15 14:11:39,905 - core.session - INFO - create_branch:333 - Created branch: 59fd9ab0-c4bd-45a3-b53f-a7fda0f85027 from message 0
+2026-02-15 14:11:39,907 - core.session - INFO - __init__:54 - Session initialized: e75185f4-e7a0-42ff-99a0-abfe2828fc25
+2026-02-15 14:11:40,221 - rag.document_processor - INFO - process:94 - Processed document: test.txt (21 bytes)
+2026-02-15 14:11:40,225 - rag.document_processor - INFO - process:94 - Processed document: bytes_test.txt (17 bytes)
+2026-02-15 14:11:40,266 - rag.document_processor - INFO - process:94 - Processed document: convenience.txt (16 bytes)
+2026-02-15 14:11:40,281 - rag.document_processor - INFO - process:94 - Processed document: integration.txt (191 bytes)
+2026-02-15 14:11:40,304 - rag.document_processor - INFO - process:94 - Processed document: large.txt (560000 bytes)
+2026-02-15 14:11:40,315 - rag.document_processor - INFO - process:94 - Processed document: test.txt (0 bytes)
+2026-02-15 14:11:40,318 - core.session - INFO - __init__:54 - Session initialized: a1cd08bd-7bc3-4b2b-93d9-286347303fec
+2026-02-15 14:11:40,371 - rag.document_processor - INFO - process:94 - Processed document: large.txt (4500000 bytes)
+2026-02-15 14:11:40,637 - core.session - INFO - __init__:54 - Session initialized: 03e2c7d1-3403-4ee7-9f39-56e51dd70bad
+2026-02-15 14:11:40,640 - core.session - INFO - __init__:54 - Session initialized: ab65e3d4-29bc-4313-8cbc-cecde643100c
+2026-02-15 14:12:19,118 - core.session - INFO - __init__:54 - Session initialized: f4305818-5b0e-400c-87ae-ae052b3dcf77
+2026-02-15 14:12:19,151 - core.session - INFO - __init__:54 - Session initialized: 38643652-e347-438b-8684-6ec9d195466b
+2026-02-15 14:12:19,151 - core.session - INFO - create_branch:333 - Created branch: a32bad43-2ad1-4ba4-8971-6feb1ae27ff7 from message 0
+2026-02-15 14:12:19,152 - core.session - INFO - __init__:54 - Session initialized: ab70f6a7-4121-4847-9b92-f94e40a7641f
+2026-02-15 14:12:19,152 - core.session - INFO - create_branch:333 - Created branch: 189d0a3b-68c2-4351-a020-a7aebad17e3a from message 0
+2026-02-15 14:12:19,154 - core.session - INFO - __init__:54 - Session initialized: 60244a28-676f-4d1a-89bd-281b57457fc5
+2026-02-15 14:12:19,154 - core.session - INFO - create_branch:333 - Created branch: d8eedc29-48ed-4f71-a8f0-ccca41a28b00 from message 0
+2026-02-15 14:12:19,154 - core.session - INFO - create_branch:333 - Created branch: 69d21080-15d2-4438-9027-8a8e294e0a32 from message 0
+2026-02-15 14:12:19,154 - core.session - INFO - create_branch:333 - Created branch: 8c6cc7b5-d0c8-4d37-a83a-6e74aae6c6d3 from message 0
+2026-02-15 14:12:19,155 - core.session - INFO - create_branch:333 - Created branch: 43a60b89-eba2-41ff-ad31-c7aac243049a from message 0
+2026-02-15 14:12:19,155 - core.session - INFO - create_branch:333 - Created branch: b186bc4f-fbea-4302-88d9-74482a190980 from message 0
+2026-02-15 14:12:19,155 - core.session - INFO - create_branch:333 - Created branch: 91f6e200-6064-473b-9325-685d5c84b410 from message 0
+2026-02-15 14:12:19,155 - core.session - INFO - create_branch:333 - Created branch: cb34943a-41bf-4df4-b47f-4c2501994f69 from message 0
+2026-02-15 14:12:19,155 - core.session - INFO - create_branch:333 - Created branch: 27a864c7-1f03-4d6d-9e6d-a21f20415594 from message 0
+2026-02-15 14:12:19,155 - core.session - INFO - create_branch:333 - Created branch: daed6e2f-2f02-4538-a8de-d9f03b34e29c from message 0
+2026-02-15 14:12:19,155 - core.session - INFO - create_branch:333 - Created branch: 1fdcc4a8-1a34-4234-9685-d2ac0888af73 from message 0
+2026-02-15 14:12:19,155 - core.branch_manager - WARNING - create_branch:44 - Maximum branches (10) reached
+2026-02-15 14:12:19,157 - core.session - INFO - __init__:54 - Session initialized: 17e42c0b-d82a-4878-8710-94ba28d23a4f
+2026-02-15 14:12:19,157 - core.branch_manager - ERROR - create_branch:52 - Message not found: 6e4c9c5c-ecd1-428d-a8c3-4fa50e569f29
+2026-02-15 14:12:19,158 - core.session - INFO - __init__:54 - Session initialized: 2ec77880-6899-4493-99f2-1356d725f2d4
+2026-02-15 14:12:19,160 - core.session - INFO - __init__:54 - Session initialized: 07321561-4e1b-456c-8ac5-8e60bddb9d8f
+2026-02-15 14:12:19,160 - core.session - INFO - create_branch:333 - Created branch: a718cb67-c0e3-45b7-85de-08e3abd0fe4d from message 0
+2026-02-15 14:12:19,160 - core.session - INFO - create_branch:333 - Created branch: 4f724928-4934-4ff9-8cd0-79e71c4d4ce7 from message 0
+2026-02-15 14:12:19,160 - core.session - INFO - create_branch:333 - Created branch: 65f74f0c-0d46-4778-a810-bde653e29f10 from message 0
+2026-02-15 14:12:19,162 - core.session - INFO - __init__:54 - Session initialized: 517444c3-21cf-48ff-90b0-127d92bd2b92
+2026-02-15 14:12:19,162 - core.session - INFO - create_branch:333 - Created branch: 614d7781-0409-4fcc-88e6-6c87afe19645 from message 0
+2026-02-15 14:12:19,164 - core.session - INFO - __init__:54 - Session initialized: 26108ead-5456-4c0d-8df3-48792b455404
+2026-02-15 14:12:19,172 - core.session - INFO - __init__:54 - Session initialized: 27df1814-bcf2-4629-ba8c-5358353c4b6c
+2026-02-15 14:12:19,172 - core.session - INFO - create_branch:333 - Created branch: 3925711a-8f7c-436d-bee2-b37f26690433 from message 0
+2026-02-15 14:12:19,172 - core.session - INFO - delete_branch:370 - Deleted branch: 3925711a-8f7c-436d-bee2-b37f26690433
+2026-02-15 14:12:19,174 - core.session - INFO - __init__:54 - Session initialized: da84cc59-e7a0-4e5c-8ea0-8c58f75b07a1
+2026-02-15 14:12:19,175 - core.session - INFO - __init__:54 - Session initialized: 80f42130-7501-43f3-89e8-f745aac507d4
+2026-02-15 14:12:19,176 - core.session - INFO - create_branch:333 - Created branch: 344f8453-3007-49cf-a5dc-b135d90bc329 from message 0
+2026-02-15 14:12:19,176 - core.session - INFO - create_branch:333 - Created branch: b17e77c8-c188-4ec8-b529-59aa8f3b877f from message 0
+2026-02-15 14:12:19,176 - core.session - INFO - delete_branch:370 - Deleted branch: 344f8453-3007-49cf-a5dc-b135d90bc329
+2026-02-15 14:12:19,176 - core.branch_manager - INFO - merge_branch:131 - Merged branch 344f8453-3007-49cf-a5dc-b135d90bc329 into b17e77c8-c188-4ec8-b529-59aa8f3b877f
+2026-02-15 14:12:19,177 - core.session - INFO - __init__:54 - Session initialized: 281aaebb-4ee8-4bb9-9bbd-19efc5e9199d
+2026-02-15 14:12:19,177 - core.session - INFO - create_branch:333 - Created branch: aac954e8-5772-4b34-b669-f790fcb44ec8 from message 0
+2026-02-15 14:12:19,178 - core.branch_manager - WARNING - merge_branch:116 - Source or target branch not found
+2026-02-15 14:12:19,180 - core.session - INFO - __init__:54 - Session initialized: a98c88f5-0df4-49a0-894c-5da2fc798c84
+2026-02-15 14:12:19,180 - core.session - INFO - create_branch:333 - Created branch: 2252b5eb-052c-40c9-a618-2e993037783b from message 0
+2026-02-15 14:12:19,180 - core.branch_manager - WARNING - merge_branch:116 - Source or target branch not found
+2026-02-15 14:12:19,181 - core.session - INFO - __init__:54 - Session initialized: fe073e9a-c367-4193-aee7-59cd58e1dc0b
+2026-02-15 14:12:19,181 - core.session - INFO - create_branch:333 - Created branch: edb6ec01-969f-4c3e-89b4-6aaa9e9bd0d4 from message 0
+2026-02-15 14:12:19,184 - core.session - INFO - __init__:54 - Session initialized: 9ff4815a-3ed5-43d0-a9ca-25e486f53302
+2026-02-15 14:12:19,185 - core.session - INFO - __init__:54 - Session initialized: c0aba319-9059-4e49-9fc0-d7acb005c5ee
+2026-02-15 14:12:19,186 - core.session - INFO - __init__:54 - Session initialized: f9ab0c1e-2387-4e09-ae6b-292cbe4f970c
+2026-02-15 14:12:19,186 - core.session - INFO - create_branch:333 - Created branch: 57eabc79-127e-48fb-bd5e-fce2c0885884 from message 0
+2026-02-15 14:12:19,186 - core.session - INFO - create_branch:333 - Created branch: 6d1a1684-5ecc-4a61-b998-e38b746cddcf from message 0
+2026-02-15 14:12:19,189 - core.session - INFO - __init__:54 - Session initialized: 7a49fbbf-9db9-4daa-bad3-60568e7cab23
+2026-02-15 14:12:19,469 - rag.document_processor - INFO - process:94 - Processed document: test.txt (21 bytes)
+2026-02-15 14:12:19,473 - rag.document_processor - INFO - process:94 - Processed document: bytes_test.txt (17 bytes)
+2026-02-15 14:12:19,498 - rag.document_processor - INFO - process:94 - Processed document: convenience.txt (16 bytes)
+2026-02-15 14:12:19,504 - rag.document_processor - INFO - process:94 - Processed document: integration.txt (191 bytes)
+2026-02-15 14:12:19,554 - rag.document_processor - INFO - process:94 - Processed document: large.txt (560000 bytes)
+2026-02-15 14:12:19,571 - rag.document_processor - INFO - process:94 - Processed document: test.txt (0 bytes)
+2026-02-15 14:12:19,575 - core.session - INFO - __init__:54 - Session initialized: 347b90a3-ae61-4536-9685-6f258978c1a3
+2026-02-15 14:12:19,614 - rag.document_processor - INFO - process:94 - Processed document: large.txt (4500000 bytes)
+2026-02-15 14:12:19,900 - core.session - INFO - __init__:54 - Session initialized: 16136de9-7fd8-45cf-8b5a-53bf2816561d
+2026-02-15 14:12:19,900 - core.session - INFO - __init__:54 - Session initialized: 5f5a0164-baf4-4f78-9396-7426e6b45616
+2026-02-15 14:12:19,903 - core.session - INFO - __init__:54 - Session initialized: 315dc4ec-d7dd-4c5e-96af-5aee8aa3a958
+2026-02-15 14:12:19,904 - core.session - ERROR - import_conversation:296 - Failed to import conversation: 'role'
+2026-02-15 14:12:19,907 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 14:12:19,907 - core.workflow - INFO - process_query:60 - Processing query: query without context...
+2026-02-15 14:12:19,910 - model.handler - INFO - __init__:45 - ModelHandler initialized: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:19,910 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 14:12:20,842 - utils.file_utils - INFO - save_uploaded_file:41 - Saved uploaded file: C:\Users\andre\AppData\Local\Temp\tmp19ck4r4i\test.txt
+2026-02-15 14:12:20,861 - utils.file_utils - INFO - save_uploaded_file:41 - Saved uploaded file: C:\Users\andre\AppData\Local\Temp\tmpa1q6yd7m\test.txt
+2026-02-15 14:12:20,863 - utils.file_utils - INFO - save_uploaded_file:41 - Saved uploaded file: C:\Users\andre\AppData\Local\Temp\tmpa1q6yd7m\test_8bfa8e06.txt
+2026-02-15 14:12:20,867 - utils.file_utils - INFO - save_uploaded_file:41 - Saved uploaded file: C:\Users\andre\AppData\Local\Temp\tmpqfia3v65\document.pdf
+2026-02-15 14:12:20,871 - utils.file_utils - ERROR - save_uploaded_file:45 - Failed to save uploaded file: Write error
+2026-02-15 14:12:20,874 - utils.file_utils - INFO - delete_file:62 - Deleted file: C:\Users\andre\AppData\Local\Temp\tmppbdcsm4_\to_delete.txt
+2026-02-15 14:12:20,881 - utils.file_utils - ERROR - delete_file:66 - Failed to delete file C:\Users\andre\AppData\Local\Temp\tmpznylynsb\protected.txt: [WinError 5] Accesso negato: 'C:\\Users\\andre\\AppData\\Local\\Temp\\tmpznylynsb\\protected.txt'
+2026-02-15 14:12:20,895 - utils.file_utils - INFO - clear_directory:121 - Cleared directory: C:\Users\andre\AppData\Local\Temp\tmp46w4y0cc
+2026-02-15 14:12:20,899 - utils.file_utils - INFO - clear_directory:121 - Cleared directory: C:\Users\andre\AppData\Local\Temp\tmp5gf4_py3
+2026-02-15 14:12:20,904 - utils.file_utils - ERROR - clear_directory:125 - Failed to clear directory C:\Users\andre\AppData\Local\Temp\tmp0z4ppzn_: [WinError 5] Accesso negato: 'C:\\Users\\andre\\AppData\\Local\\Temp\\tmp0z4ppzn_\\protected.txt'
+2026-02-15 14:12:21,101 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 14:12:21,101 - core.workflow - INFO - process_query:60 - Processing query: What is the answer?...
+2026-02-15 14:12:21,103 - core.session - INFO - __init__:54 - Session initialized: ed4c4d94-deb8-4bd3-bc52-010d557098e9
+2026-02-15 14:12:21,104 - core.session - INFO - __init__:54 - Session initialized: 61846b41-41b8-4e19-85af-144a2f49b550
+2026-02-15 14:12:21,457 - utils.file_utils - INFO - save_uploaded_file:41 - Saved uploaded file: C:\Users\andre\AppData\Local\Temp\tmpe9l23t9z\test.txt
+2026-02-15 14:12:21,459 - core.session - INFO - __init__:54 - Session initialized: 3e1c1b5a-ecff-4fe8-bef0-f56e0a1d71e7
+2026-02-15 14:12:21,462 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 14:12:21,462 - core.workflow - INFO - process_query:60 - Processing query: test query...
+2026-02-15 14:12:21,463 - core.workflow - ERROR - process_query:85 - Retrieval error: Vector store error
+2026-02-15 14:12:21,474 - rag.document_processor - INFO - process:94 - Processed document: tmpvi631wc7.txt (16 bytes)
+2026-02-15 14:12:21,506 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:21,508 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:21,509 - core.token_tracker - WARNING - count_tokens:84 - Tokenization error: Too long
+2026-02-15 14:12:21,510 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:21,512 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:21,515 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:21,516 - core.session - INFO - __init__:54 - Session initialized: b0f1bc22-2950-40e0-b995-8a0f2c85564a
+2026-02-15 14:12:21,518 - core.session - INFO - create_branch:333 - Created branch: 79f229aa-dac1-4332-968c-cd0340e14919 from message 4
+2026-02-15 14:12:21,519 - core.session - INFO - __init__:54 - Session initialized: 1598d478-75de-4afe-9cd4-5872e1f1f9a4
+2026-02-15 14:12:21,519 - core.session - INFO - create_branch:333 - Created branch: e8affa6f-e96f-4fb8-9231-54673472d62a from message 0
+2026-02-15 14:12:21,519 - core.session - INFO - create_branch:333 - Created branch: d0587b8d-5f79-4e98-8354-2ee9000cf677 from message 0
+2026-02-15 14:12:21,519 - core.session - INFO - create_branch:333 - Created branch: 99ed7755-a59c-4c48-b6a3-4b8e74fb0ee4 from message 0
+2026-02-15 14:12:21,519 - core.session - INFO - delete_branch:370 - Deleted branch: e8affa6f-e96f-4fb8-9231-54673472d62a
+2026-02-15 14:12:21,519 - core.session - INFO - delete_branch:370 - Deleted branch: d0587b8d-5f79-4e98-8354-2ee9000cf677
+2026-02-15 14:12:21,519 - core.session - INFO - delete_branch:370 - Deleted branch: 99ed7755-a59c-4c48-b6a3-4b8e74fb0ee4
+2026-02-15 14:12:21,521 - core.session - INFO - __init__:54 - Session initialized: 935bfc6a-cb82-4afb-9df3-680afb94f935
+2026-02-15 14:12:21,521 - core.session - INFO - create_branch:333 - Created branch: b5f86435-a821-4087-8bc9-0f7752317890 from message 0
+2026-02-15 14:12:21,521 - core.branch_manager - WARNING - merge_branch:109 - Cannot merge branch with itself
+2026-02-15 14:12:21,522 - core.session - INFO - __init__:54 - Session initialized: 25d3c9ed-a9fa-4229-9b67-f5492eb004ca
+2026-02-15 14:12:21,522 - core.session - INFO - create_branch:333 - Created branch: 182bfc1b-e6d2-461a-8ec5-9b033fec78a5 from message 0
+2026-02-15 14:12:21,522 - core.session - INFO - create_branch:333 - Created branch: eb9331cb-32ab-4c04-aa5e-46ba1e7e6e76 from message 0
+2026-02-15 14:12:21,522 - core.session - INFO - delete_branch:370 - Deleted branch: 182bfc1b-e6d2-461a-8ec5-9b033fec78a5
+2026-02-15 14:12:21,522 - core.session - INFO - switch_branch:349 - Switched to branch: eb9331cb-32ab-4c04-aa5e-46ba1e7e6e76
+2026-02-15 14:12:21,530 - core.session - INFO - __init__:54 - Session initialized: 01c3913f-b100-4536-8f49-9d7d26305c9f
+2026-02-15 14:12:21,531 - core.session - INFO - pin_message:379 - Pinned message: 54644133-1bf7-403e-991f-04528a10cc0e
+2026-02-15 14:12:21,531 - core.session - INFO - pin_message:379 - Pinned message: d4447862-ae6d-4432-9559-46833155e31a
+2026-02-15 14:12:21,531 - core.session - INFO - pin_message:379 - Pinned message: 8bb8469f-08e4-4c1a-a529-624ed9332eea
+2026-02-15 14:12:21,531 - core.session - INFO - pin_message:379 - Pinned message: 39c7e68d-1753-4418-8db3-62bd0939e79b
+2026-02-15 14:12:21,531 - core.session - INFO - pin_message:379 - Pinned message: 8af3684f-b3c4-43cf-aafb-1290c3724b04
+2026-02-15 14:12:21,531 - core.session - INFO - pin_message:379 - Pinned message: 5145aecc-d035-4027-b315-3af8d17ac2a5
+2026-02-15 14:12:21,531 - core.session - INFO - pin_message:379 - Pinned message: c6c57bd2-9ec4-452b-b9e9-19cf5a9dc058
+2026-02-15 14:12:21,531 - core.session - INFO - pin_message:379 - Pinned message: 8a738792-2670-4e4f-8f6d-bf968971b88a
+2026-02-15 14:12:21,532 - core.session - INFO - pin_message:379 - Pinned message: 9945c62a-b9f5-43d2-9e18-5b332bd4e843
+2026-02-15 14:12:21,532 - core.session - INFO - pin_message:379 - Pinned message: b2961738-721c-4780-a84f-b3a8f0a59031
+2026-02-15 14:12:21,532 - core.session - INFO - __init__:54 - Session initialized: ea93d3ec-e5a1-47d7-9420-34120d896210
+2026-02-15 14:12:21,533 - core.session - INFO - set_feedback:406 - Set feedback on message: acf4773c-0506-43dc-b303-d902fe58bafc = positive
+2026-02-15 14:12:21,533 - core.session - INFO - set_feedback:406 - Set feedback on message: 8698f07a-fdb6-4e53-8e51-3df50485ef34 = negative
+2026-02-15 14:12:21,533 - core.session - INFO - set_feedback:406 - Set feedback on message: 801d602f-85de-4805-a808-85b48e301ba4 = positive
+2026-02-15 14:12:21,534 - core.session - INFO - set_feedback:406 - Set feedback on message: 7ecdb996-5389-4634-883b-6b3ef12be1a4 = negative
+2026-02-15 14:12:21,534 - core.session - INFO - set_feedback:406 - Set feedback on message: cadb186a-b67d-4d90-9d87-1b126c516454 = positive
+2026-02-15 14:12:21,535 - core.session - INFO - __init__:54 - Session initialized: 92bd7ddf-db94-4ab0-aee5-80230d70bc13
+2026-02-15 14:12:21,538 - core.session - INFO - __init__:54 - Session initialized: d7a83076-3ae4-4808-87bb-d331f1c382c4
+2026-02-15 14:12:21,538 - core.session - INFO - delete_message:397 - Deleted message: c81d17d3-5d27-4c02-96c1-8a7ecae691b0
+2026-02-15 14:12:21,538 - core.session - INFO - delete_message:397 - Deleted message: ad33c573-e585-4f60-916c-34e8e8cf6b17
+2026-02-15 14:12:21,538 - core.session - INFO - delete_message:397 - Deleted message: 9f8a62df-a4a0-40d3-979f-3a4d22c1b533
+2026-02-15 14:12:21,538 - core.session - INFO - delete_message:397 - Deleted message: a9dfab6e-ba87-47c4-8c59-0e939371e745
+2026-02-15 14:12:21,538 - core.session - INFO - delete_message:397 - Deleted message: cff4a323-adf5-4499-96c8-451cd99166e2
+2026-02-15 14:12:21,539 - core.session - INFO - delete_message:397 - Deleted message: c45bcede-ef8c-4c87-94a1-dfee375b2e6f
+2026-02-15 14:12:21,539 - core.session - INFO - delete_message:397 - Deleted message: 3d1e2001-d341-4514-bcfa-bfa9ae8b3722
+2026-02-15 14:12:21,539 - core.session - INFO - delete_message:397 - Deleted message: 84a9c0b8-58eb-4c19-ae66-99d498aa12e3
+2026-02-15 14:12:21,539 - core.session - INFO - delete_message:397 - Deleted message: c6a0f85f-9ada-4d7e-981a-b3b9f3d2f1e8
+2026-02-15 14:12:21,539 - core.session - INFO - delete_message:397 - Deleted message: 6f34a97e-240a-4854-8846-ce45af6a38a8
+2026-02-15 14:12:21,541 - core.session - INFO - __init__:54 - Session initialized: 47e43049-feb8-4ecf-875b-07c5f6333f44
+2026-02-15 14:12:21,541 - core.session - WARNING - create_branch:310 - Invalid message index: 0
+2026-02-15 14:12:21,543 - core.session - INFO - __init__:54 - Session initialized: 115cfeae-82b0-4aae-af95-2ecb9bf71d24
+2026-02-15 14:12:21,545 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:21,545 - core.token_tracker - WARNING - count_tokens:84 - Tokenization error: Tokenizer failed
+2026-02-15 14:12:21,547 - core.token_tracker - WARNING - _load_tokenizer:64 - Failed to load tokenizer: Load failed. Using fallback.
+2026-02-15 14:12:21,548 - core.session - INFO - __init__:54 - Session initialized: f3558b85-1a6b-452f-9929-1e7e0e2fa184
+2026-02-15 14:12:21,548 - core.branch_manager - ERROR - create_branch:38 - Cannot create branch from None message
+2026-02-15 14:12:21,549 - core.session - INFO - __init__:54 - Session initialized: 4d6cc397-ba03-4247-9030-e7f30fc47129
+2026-02-15 14:12:21,571 - rag.engine - ERROR - add_document:110 - Error adding document: [WinError 2] Impossibile trovare il file specificato: 'test.txt'
+2026-02-15 14:12:21,611 - rag.engine - ERROR - add_document:110 - Error adding document: [WinError 2] Impossibile trovare il file specificato: 'large.txt'
+2026-02-15 14:12:21,631 - rag.engine - INFO - clear_all:247 - Cleared all documents
+2026-02-15 14:12:21,663 - core.session - INFO - __init__:54 - Session initialized: 363e72c9-e944-4d4c-84e2-4dc06b00d870
+2026-02-15 14:12:21,665 - core.session - INFO - __init__:54 - Session initialized: 792743d0-0ef1-46b6-9a9a-0d1d661ed292
+2026-02-15 14:12:21,666 - core.session - INFO - __init__:54 - Session initialized: 40f10f33-3cdf-4bbd-aa33-2b79230b9e84
+2026-02-15 14:12:21,669 - core.session - INFO - __init__:54 - Session initialized: 9b033e1b-a2ec-4590-b940-fe3fc6f785ef
+2026-02-15 14:12:21,670 - core.session - INFO - __init__:54 - Session initialized: fd18963a-cfe3-4b86-9970-fb78aa65e3d3
+2026-02-15 14:12:21,671 - core.session - INFO - __init__:54 - Session initialized: a49f2f14-3edd-4229-91d2-ccba397b7e28
+2026-02-15 14:12:21,673 - core.session - INFO - __init__:54 - Session initialized: 6b5faffc-ec1f-4c78-87de-6168bda54f63
+2026-02-15 14:12:21,674 - core.session - INFO - __init__:54 - Session initialized: 621ef236-a07b-44aa-a3ca-8d632a4bf8d1
+2026-02-15 14:12:21,676 - core.session - INFO - __init__:54 - Session initialized: f2a715f5-e9c3-4e5e-8643-a6d4850ffe83
+2026-02-15 14:12:21,705 - core.session - INFO - __init__:54 - Session initialized: 5d07a36e-8e84-422d-9a96-9a99f329319b
+2026-02-15 14:12:21,707 - core.session - INFO - __init__:54 - Session initialized: 4821f745-341f-4071-9769-c6ecbb24eb38
+2026-02-15 14:12:21,708 - core.session - INFO - __init__:54 - Session initialized: f472e9ab-b7a8-4b7b-965a-77ddd0a50bee
+2026-02-15 14:12:21,710 - core.session - INFO - __init__:54 - Session initialized: 45614002-fe7d-4974-b0f7-8217cf20a8bf
+2026-02-15 14:12:21,710 - core.session - INFO - clear_conversation:188 - Conversation cleared
+2026-02-15 14:12:21,712 - core.session - INFO - __init__:54 - Session initialized: 65038003-2dbf-4cd4-9edf-9358e170b938
+2026-02-15 14:12:21,713 - core.session - INFO - __init__:54 - Session initialized: fa08e900-cb5b-4e94-a715-db08d819ee27
+2026-02-15 14:12:21,715 - core.session - INFO - __init__:54 - Session initialized: 5c701c20-82e6-449c-ad8e-43a15466b9f4
+2026-02-15 14:12:21,716 - core.session - INFO - __init__:54 - Session initialized: 706b2091-f441-4886-9936-a4030b818679
+2026-02-15 14:12:21,718 - core.session - INFO - __init__:54 - Session initialized: e9d9dedb-2038-40c6-82e9-7fc268b9c524
+2026-02-15 14:12:21,720 - core.session - INFO - __init__:54 - Session initialized: d70a425e-f6d8-4dae-9da0-96b3e8f4cad6
+2026-02-15 14:12:21,721 - core.session - INFO - __init__:54 - Session initialized: dbd61814-09f6-48fe-9393-88e395e413c1
+2026-02-15 14:12:21,722 - core.session - INFO - __init__:54 - Session initialized: cbd3ec69-6c31-461f-9c2d-eb5f1673ed5b
+2026-02-15 14:12:21,722 - core.session - INFO - import_conversation:292 - Imported 2 messages
+2026-02-15 14:12:21,724 - core.session - INFO - __init__:54 - Session initialized: b5f78e4a-9c39-4bf1-8b16-7706a9bb9402
+2026-02-15 14:12:21,724 - core.session - INFO - import_conversation:292 - Imported 0 messages
+2026-02-15 14:12:21,726 - core.session - INFO - __init__:54 - Session initialized: 9a3280a5-0aed-4116-9faf-ee1c5ef047df
+2026-02-15 14:12:21,727 - core.session - INFO - __init__:54 - Session initialized: c9290ee6-14fe-41ac-a7fb-c308e99a47fc
+2026-02-15 14:12:21,727 - core.session - INFO - create_branch:333 - Created branch: 5c7d2932-20af-459c-9e7b-6b0f5fd39d29 from message 0
+2026-02-15 14:12:21,728 - core.session - INFO - __init__:54 - Session initialized: 433b9653-bcff-481a-9382-24703455f43b
+2026-02-15 14:12:21,728 - core.session - WARNING - create_branch:310 - Invalid message index: 10
+2026-02-15 14:12:21,730 - core.session - INFO - __init__:54 - Session initialized: 31545d1f-753c-4fd9-b88c-fde62a310a6d
+2026-02-15 14:12:21,730 - core.session - WARNING - create_branch:310 - Invalid message index: -1
+2026-02-15 14:12:21,732 - core.session - INFO - __init__:54 - Session initialized: 2df041ca-5877-446a-a85a-387f2a68019e
+2026-02-15 14:12:21,732 - core.session - INFO - create_branch:333 - Created branch: 185b9db3-262d-4b8e-a469-78661f49d502 from message 0
+2026-02-15 14:12:21,732 - core.session - INFO - create_branch:333 - Created branch: e292b70b-4186-41b7-9688-2711afa0c313 from message 0
+2026-02-15 14:12:21,732 - core.session - INFO - switch_branch:349 - Switched to branch: 185b9db3-262d-4b8e-a469-78661f49d502
+2026-02-15 14:12:21,733 - core.session - INFO - __init__:54 - Session initialized: db793b96-ff7b-4daf-9590-8e7c63e42248
+2026-02-15 14:12:21,734 - core.session - WARNING - switch_branch:352 - Branch not found: non-existent-id
+2026-02-15 14:12:21,735 - core.session - INFO - __init__:54 - Session initialized: 037db34c-6775-4150-82ab-8219ebbbe5dd
+2026-02-15 14:12:21,736 - core.session - INFO - create_branch:333 - Created branch: 65479612-0232-4c4b-a9d5-c4bdde7ce8b3 from message 0
+2026-02-15 14:12:21,736 - core.session - INFO - __init__:54 - Session initialized: cb4c856e-7a6a-4a8b-942d-1ce6957c6409
+2026-02-15 14:12:21,737 - core.session - INFO - create_branch:333 - Created branch: 5e639fc7-30c4-4f4b-ad0c-1a3f03949d4d from message 0
+2026-02-15 14:12:21,737 - core.session - INFO - create_branch:333 - Created branch: 1b03b765-eb65-498a-a672-9f1f9f581437 from message 0
+2026-02-15 14:12:21,739 - core.session - INFO - __init__:54 - Session initialized: 9167421b-4da1-43ab-abfb-f942b5a00fc6
+2026-02-15 14:12:21,739 - core.session - INFO - create_branch:333 - Created branch: e7933a01-b8f7-413d-bec9-23842318a00d from message 0
+2026-02-15 14:12:21,739 - core.session - INFO - delete_branch:370 - Deleted branch: e7933a01-b8f7-413d-bec9-23842318a00d
+2026-02-15 14:12:21,740 - core.session - INFO - __init__:54 - Session initialized: 9f84c9ab-b63e-42ba-b0f4-e8f659614de2
+2026-02-15 14:12:21,742 - core.session - INFO - __init__:54 - Session initialized: 77c3a799-f9dc-4336-a21c-4b2ead146dd6
+2026-02-15 14:12:21,742 - core.session - INFO - create_branch:333 - Created branch: 1f04b4d6-521d-4975-a291-1691cd025f09 from message 0
+2026-02-15 14:12:21,743 - core.session - INFO - delete_branch:370 - Deleted branch: 1f04b4d6-521d-4975-a291-1691cd025f09
+2026-02-15 14:12:21,743 - core.session - INFO - __init__:54 - Session initialized: 87e9b47f-623f-4fa3-ba42-bd238e133c9e
+2026-02-15 14:12:21,743 - core.session - INFO - pin_message:379 - Pinned message: 824ea129-8a17-4719-87c9-802d575ef782
+2026-02-15 14:12:21,745 - core.session - INFO - __init__:54 - Session initialized: e70f6813-1cb0-48a9-9473-9ce6b768184a
+2026-02-15 14:12:21,747 - core.session - INFO - __init__:54 - Session initialized: 6adc64ba-7169-4dbe-9c51-f258a857c15b
+2026-02-15 14:12:21,747 - core.session - INFO - pin_message:379 - Pinned message: 5c127945-4dee-4155-9ba4-5d8be2ed0b6e
+2026-02-15 14:12:21,747 - core.session - INFO - unpin_message:388 - Unpinned message: 5c127945-4dee-4155-9ba4-5d8be2ed0b6e
+2026-02-15 14:12:21,748 - core.session - INFO - __init__:54 - Session initialized: 5f613663-ba0a-47df-8b30-df817a3c6905
+2026-02-15 14:12:21,750 - core.session - INFO - __init__:54 - Session initialized: 66726a6a-e7fe-4213-8063-63ea9d3e4674
+2026-02-15 14:12:21,750 - core.session - INFO - set_feedback:406 - Set feedback on message: 3cd8f83a-e708-4aae-8011-f3a9c61f3386 = positive
+2026-02-15 14:12:21,751 - core.session - INFO - __init__:54 - Session initialized: 1f9fd214-1cf4-464a-b0d3-cacbd2b82678
+2026-02-15 14:12:21,752 - core.session - INFO - set_feedback:406 - Set feedback on message: dcf6b749-07dc-422e-ac02-692a25bb4caf = negative
+2026-02-15 14:12:21,754 - core.session - INFO - __init__:54 - Session initialized: aebab27b-e0f8-4758-96b1-cb40344f8fd7
+2026-02-15 14:12:21,755 - core.session - INFO - __init__:54 - Session initialized: 740aaf3a-7da2-4e79-80e5-78d0e531ff4a
+2026-02-15 14:12:21,755 - core.session - INFO - delete_message:397 - Deleted message: a9cdd49c-e0a3-4ed6-9754-330b58cdaf38
+2026-02-15 14:12:21,757 - core.session - INFO - __init__:54 - Session initialized: 407e04bc-4e50-42d6-b8b0-1d71a95245a4
+2026-02-15 14:12:21,758 - core.session - INFO - __init__:54 - Session initialized: 7c948b7f-2e4d-4f56-bb27-bcfd67789034
+2026-02-15 14:12:21,759 - core.session - INFO - pin_message:379 - Pinned message: a76228a2-ebdb-43f9-8a94-169c0cf9b421
+2026-02-15 14:12:21,759 - core.session - INFO - set_feedback:406 - Set feedback on message: a76228a2-ebdb-43f9-8a94-169c0cf9b421 = positive
+2026-02-15 14:12:21,760 - core.session - INFO - __init__:54 - Session initialized: 1341dcfc-3a73-4b2b-8922-3d9be2632903
+2026-02-15 14:12:21,762 - core.session - INFO - __init__:54 - Session initialized: bc9569d6-9231-42ec-9197-3548f85ea238
+2026-02-15 14:12:21,763 - core.session - INFO - __init__:54 - Session initialized: 5a390d21-4ae0-4a8c-a866-6d124a0988d4
+2026-02-15 14:12:21,764 - core.session - INFO - __init__:54 - Session initialized: 496571d9-6c86-4bf7-be28-9bb0d1900321
+2026-02-15 14:12:21,766 - core.session - INFO - __init__:54 - Session initialized: 159bf08a-29c3-4092-ae39-8e98476fc085
+2026-02-15 14:12:21,768 - core.session - INFO - __init__:54 - Session initialized: 19cea73f-6671-4859-9e73-9eb26fdb53c4
+2026-02-15 14:12:21,769 - core.session - INFO - __init__:54 - Session initialized: fe7712a7-2661-482c-8934-1c5fdf07029d
+2026-02-15 14:12:21,771 - core.session - INFO - __init__:54 - Session initialized: fb7f35cc-671b-439a-95cb-245b2a7e152c
+2026-02-15 14:12:21,772 - core.session - INFO - __init__:54 - Session initialized: 35614425-b62f-4cc4-b2d2-0703a6925b56
+2026-02-15 14:12:21,908 - model.streaming - ERROR - create_streaming_generator:182 - Error in streaming: Test error
+2026-02-15 14:12:21,914 - core.summarization - INFO - summarize_messages:49 - Not enough messages to summarize
+2026-02-15 14:12:21,916 - core.summarization - INFO - summarize_messages:49 - Not enough messages to summarize
+2026-02-15 14:12:21,918 - core.summarization - INFO - summarize_messages:87 - Summarized 6 messages, saved ~26 tokens
+2026-02-15 14:12:21,919 - core.summarization - INFO - summarize_messages:87 - Summarized 4 messages, saved ~20 tokens
+2026-02-15 14:12:21,921 - core.summarization - ERROR - summarize_messages:97 - Summarization failed: Generation failed
+2026-02-15 14:12:21,922 - core.summarization - INFO - summarize_messages:87 - Summarized 6 messages, saved ~16 tokens
+2026-02-15 14:12:21,939 - core.summarization - INFO - summarize_messages:87 - Summarized 1 messages, saved ~1247 tokens
+2026-02-15 14:12:21,942 - core.summarization - INFO - summarize_messages:87 - Summarized 6 messages, saved ~13 tokens
+2026-02-15 14:12:21,950 - core.summarization - INFO - summarize_messages:87 - Summarized 6 messages, saved ~10 tokens
+2026-02-15 14:12:21,952 - core.summarization - INFO - summarize_messages:87 - Summarized 3 messages, saved ~4 tokens
+2026-02-15 14:12:21,954 - core.summarization - INFO - summarize_messages:87 - Summarized 0 messages, saved ~0 tokens
+2026-02-15 14:12:21,955 - core.summarization - INFO - summarize_messages:87 - Summarized 0 messages, saved ~0 tokens
+2026-02-15 14:12:21,966 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:21,969 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: test-model
+2026-02-15 14:12:21,972 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:21,975 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:21,979 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:21,979 - core.token_tracker - WARNING - count_tokens:84 - Tokenization error: Tokenizer error
+2026-02-15 14:12:21,981 - core.token_tracker - WARNING - _load_tokenizer:64 - Failed to load tokenizer: Load error. Using fallback.
+2026-02-15 14:12:21,984 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:21,986 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:21,989 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:21,990 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:21,994 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:21,997 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:21,998 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:22,002 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:22,004 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:22,005 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:22,009 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:22,012 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:22,014 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:22,016 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:22,019 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:24,077 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:25,070 - rag.vector_store - INFO - clear:186 - Vector store cleared
+2026-02-15 14:12:25,369 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 14:12:25,371 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 14:12:25,375 - rag.embeddings - ERROR - _load_model:35 - Failed to load embedding model: No module named 'sentence_transformers'
+2026-02-15 14:12:25,430 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 14:12:25,431 - core.workflow - INFO - process_query:60 - Processing query: test query...
+2026-02-15 14:12:25,435 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 14:12:25,435 - core.workflow - INFO - process_query:60 - Processing query: test...
+2026-02-15 14:12:25,436 - core.workflow - ERROR - process_query:142 - Generation error: Generation failed
+2026-02-15 14:12:25,439 - model.handler - INFO - __init__:45 - ModelHandler initialized: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:25,440 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 14:12:25,440 - core.workflow - INFO - upload_document:168 - Document uploaded: Document added successfully
+2026-02-15 14:12:25,443 - model.handler - INFO - __init__:45 - ModelHandler initialized: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:25,443 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 14:12:25,444 - core.workflow - ERROR - upload_document:170 - Document upload failed: Invalid file type
+2026-02-15 14:12:25,447 - model.handler - INFO - __init__:45 - ModelHandler initialized: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:25,448 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 14:12:25,450 - model.handler - INFO - __init__:45 - ModelHandler initialized: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:25,450 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 14:12:25,453 - model.handler - INFO - __init__:45 - ModelHandler initialized: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:25,454 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 14:12:25,456 - model.handler - INFO - __init__:45 - ModelHandler initialized: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:12:25,456 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 14:12:25,459 - core.workflow - INFO - __init__:35 - WorkflowEngine initialized
+2026-02-15 14:12:25,461 - core.session - INFO - __init__:54 - Session initialized: a8089382-2c52-4fe0-9b7b-43236a9f7d0f
+2026-02-15 14:12:25,462 - rag.embeddings - ERROR - _load_model:35 - Failed to load embedding model: No module named 'sentence_transformers'
+2026-02-15 14:14:04,902 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:14:04,936 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: test-model
+2026-02-15 14:14:04,940 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:14:04,943 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:14:04,946 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:14:04,958 - core.token_tracker - WARNING - count_tokens:84 - Tokenization error: Tokenizer error
+2026-02-15 14:14:04,960 - core.token_tracker - WARNING - _load_tokenizer:64 - Failed to load tokenizer: Load error. Using fallback.
+2026-02-15 14:14:04,963 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:14:04,965 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:14:04,969 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:14:04,971 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:14:04,973 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:14:04,976 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:14:04,978 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:14:04,980 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:14:04,982 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:14:04,986 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:14:04,989 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:14:04,992 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:14:04,994 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:14:04,998 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:14:05,002 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:14:07,264 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:14:07,266 - core.session - INFO - __init__:54 - Session initialized: 8867b6e6-b778-4434-bf24-55b5a6c709ca
+2026-02-15 14:14:07,269 - core.session - INFO - __init__:54 - Session initialized: c4e26f9c-370b-432f-a5be-15c5720f1c2b
+2026-02-15 14:14:07,269 - core.session - INFO - create_branch:333 - Created branch: 83eb6100-faa8-4558-9915-5d45d08d8ce9 from message 0
+2026-02-15 14:14:07,271 - core.session - INFO - __init__:54 - Session initialized: 23f88a5a-72ec-42d1-9589-fdff27d6488e
+2026-02-15 14:14:07,271 - core.session - INFO - create_branch:333 - Created branch: a6f66147-6aa9-4dc0-96a3-83a7d97bb50f from message 0
+2026-02-15 14:14:07,273 - core.session - INFO - __init__:54 - Session initialized: 0699d649-4c17-47b8-afc0-cf1193c35297
+2026-02-15 14:14:07,274 - core.session - INFO - create_branch:333 - Created branch: 7e972ba8-a40b-47b0-8f3c-9045d8af82d5 from message 0
+2026-02-15 14:14:07,274 - core.session - INFO - create_branch:333 - Created branch: d4a22c71-b09f-4b94-8da1-c622a0f455a6 from message 0
+2026-02-15 14:14:07,275 - core.session - INFO - create_branch:333 - Created branch: a9f9579f-5e8b-477e-9cce-76b8157bf612 from message 0
+2026-02-15 14:14:07,275 - core.session - INFO - create_branch:333 - Created branch: 6a40924c-773d-4f1f-b9ca-ef7d489f93f3 from message 0
+2026-02-15 14:14:07,275 - core.session - INFO - create_branch:333 - Created branch: ab122c43-8e46-4b00-85ee-939833a522e6 from message 0
+2026-02-15 14:14:07,275 - core.session - INFO - create_branch:333 - Created branch: 42082dd5-6514-4f05-a61c-9a43929df01a from message 0
+2026-02-15 14:14:07,275 - core.session - INFO - create_branch:333 - Created branch: 5573dd61-5361-4a78-9b2c-ac692bfc7a2c from message 0
+2026-02-15 14:14:07,275 - core.session - INFO - create_branch:333 - Created branch: c89dcf6e-12e9-45fb-9c63-cee89484afaa from message 0
+2026-02-15 14:14:07,276 - core.session - INFO - create_branch:333 - Created branch: b4075159-47c7-4083-9540-d38a940071dd from message 0
+2026-02-15 14:14:07,276 - core.session - INFO - create_branch:333 - Created branch: 3e34bd68-bc1a-4927-85d6-2fec5d313069 from message 0
+2026-02-15 14:14:07,276 - core.branch_manager - WARNING - create_branch:44 - Maximum branches (10) reached
+2026-02-15 14:14:07,277 - core.session - INFO - __init__:54 - Session initialized: a2ad0773-f50e-4056-9939-e770581782c0
+2026-02-15 14:14:07,278 - core.branch_manager - ERROR - create_branch:52 - Message not found: a831f48e-47fe-438f-b76a-b8e3d685b313
+2026-02-15 14:14:07,280 - core.session - INFO - __init__:54 - Session initialized: 6730d64e-2647-4f9e-9e2f-919f102bdf79
+2026-02-15 14:14:07,282 - core.session - INFO - __init__:54 - Session initialized: b4ab1c14-2c55-4ba3-8f88-d6bb7dceae68
+2026-02-15 14:14:07,282 - core.session - INFO - create_branch:333 - Created branch: 2808c920-3493-4dca-a423-c474a6093b3a from message 0
+2026-02-15 14:14:07,282 - core.session - INFO - create_branch:333 - Created branch: 9ca511af-2596-421d-a139-6618f106610d from message 0
+2026-02-15 14:14:07,282 - core.session - INFO - create_branch:333 - Created branch: e5e5c2e8-c3d0-4915-bfd0-c1f65da0418c from message 0
+2026-02-15 14:14:07,284 - core.session - INFO - __init__:54 - Session initialized: a4fd6c4a-a653-465c-904a-5a449766a513
+2026-02-15 14:14:07,284 - core.session - INFO - create_branch:333 - Created branch: 1f864cf1-2f40-44ff-9743-00ca0f90d09d from message 0
+2026-02-15 14:14:07,285 - core.session - INFO - __init__:54 - Session initialized: c295e5e4-4745-40a1-a758-0f545585bfd1
+2026-02-15 14:14:07,286 - core.session - INFO - __init__:54 - Session initialized: 021615a2-7971-4e94-bd0a-3515781233a7
+2026-02-15 14:14:07,287 - core.session - INFO - create_branch:333 - Created branch: 61d99bff-c7cc-4ebd-a832-75ec8b43d32d from message 0
+2026-02-15 14:14:07,287 - core.session - INFO - delete_branch:370 - Deleted branch: 61d99bff-c7cc-4ebd-a832-75ec8b43d32d
+2026-02-15 14:14:07,289 - core.session - INFO - __init__:54 - Session initialized: bf83f987-b5c4-41e3-93dc-09479f82494c
+2026-02-15 14:14:07,292 - core.session - INFO - __init__:54 - Session initialized: 7eb1abe9-782b-4cb4-9bc4-16669325786c
+2026-02-15 14:14:07,292 - core.session - INFO - create_branch:333 - Created branch: 9beb9801-0df2-46f7-a7dd-d42b310f52b0 from message 0
+2026-02-15 14:14:07,292 - core.session - INFO - create_branch:333 - Created branch: 9914f74b-53bd-43d2-a099-09a719600597 from message 0
+2026-02-15 14:14:07,292 - core.session - INFO - delete_branch:370 - Deleted branch: 9beb9801-0df2-46f7-a7dd-d42b310f52b0
+2026-02-15 14:14:07,293 - core.branch_manager - INFO - merge_branch:131 - Merged branch 9beb9801-0df2-46f7-a7dd-d42b310f52b0 into 9914f74b-53bd-43d2-a099-09a719600597
+2026-02-15 14:14:07,294 - core.session - INFO - __init__:54 - Session initialized: 48645a9a-3922-45bd-bcb6-4df69adcb92b
+2026-02-15 14:14:07,295 - core.session - INFO - create_branch:333 - Created branch: 63639f30-a875-4196-b1d8-d55bc5f9e49c from message 0
+2026-02-15 14:14:07,295 - core.branch_manager - WARNING - merge_branch:116 - Source or target branch not found
+2026-02-15 14:14:07,296 - core.session - INFO - __init__:54 - Session initialized: 8803fdaa-6ae2-49de-879d-75adb52aa4ad
+2026-02-15 14:14:07,297 - core.session - INFO - create_branch:333 - Created branch: 972d39a0-53e9-4a47-ae72-ee548d3c176c from message 0
+2026-02-15 14:14:07,297 - core.branch_manager - WARNING - merge_branch:116 - Source or target branch not found
+2026-02-15 14:14:07,298 - core.session - INFO - __init__:54 - Session initialized: 1db5ba6e-9005-4166-a9e7-8940c1b88897
+2026-02-15 14:14:07,299 - core.session - INFO - create_branch:333 - Created branch: 89872bc7-8209-4bc9-9000-6b2a15decf94 from message 0
+2026-02-15 14:14:07,300 - core.session - INFO - __init__:54 - Session initialized: 0d6f99fd-227e-4231-93ef-57ea8f66a8a0
+2026-02-15 14:14:07,302 - core.session - INFO - __init__:54 - Session initialized: 411dec1d-8950-43fc-94bb-d9c59283738d
+2026-02-15 14:14:07,304 - core.session - INFO - __init__:54 - Session initialized: f4af164e-e506-452d-8e27-b8ee671b66d4
+2026-02-15 14:14:07,304 - core.session - INFO - create_branch:333 - Created branch: 2bad11e9-f16f-49f8-b8e2-a4be21c08e32 from message 0
+2026-02-15 14:14:07,305 - core.session - INFO - create_branch:333 - Created branch: a9a2de99-0010-451c-901a-c01f38e3e3b9 from message 0
+2026-02-15 14:14:07,307 - core.session - INFO - __init__:54 - Session initialized: c14896f7-c0cd-4805-8f51-e3311b87397c
+2026-02-15 14:14:07,345 - core.summarization - INFO - summarize_messages:49 - Not enough messages to summarize
+2026-02-15 14:14:07,348 - core.summarization - INFO - summarize_messages:49 - Not enough messages to summarize
+2026-02-15 14:14:07,350 - core.summarization - INFO - summarize_messages:87 - Summarized 6 messages, saved ~26 tokens
+2026-02-15 14:14:07,352 - core.summarization - INFO - summarize_messages:87 - Summarized 4 messages, saved ~20 tokens
+2026-02-15 14:14:07,353 - core.summarization - ERROR - summarize_messages:97 - Summarization failed: Generation failed
+2026-02-15 14:14:07,356 - core.summarization - INFO - summarize_messages:87 - Summarized 6 messages, saved ~16 tokens
+2026-02-15 14:14:07,369 - core.summarization - INFO - summarize_messages:87 - Summarized 1 messages, saved ~1247 tokens
+2026-02-15 14:14:07,371 - core.summarization - INFO - summarize_messages:87 - Summarized 6 messages, saved ~13 tokens
+2026-02-15 14:14:07,374 - core.summarization - INFO - summarize_messages:87 - Summarized 6 messages, saved ~10 tokens
+2026-02-15 14:14:07,376 - core.summarization - INFO - summarize_messages:87 - Summarized 3 messages, saved ~4 tokens
+2026-02-15 14:14:07,380 - core.summarization - INFO - summarize_messages:87 - Summarized 0 messages, saved ~0 tokens
+2026-02-15 14:14:07,383 - core.summarization - INFO - summarize_messages:87 - Summarized 0 messages, saved ~0 tokens
+2026-02-15 14:14:07,388 - core.session - INFO - __init__:54 - Session initialized: 57349dd3-63f1-4840-88d9-58a9ddce3b46
+2026-02-15 14:14:07,389 - core.session - INFO - create_branch:333 - Created branch: b6583d4c-3886-4393-b053-66653f2ea34e from message 0
+2026-02-15 14:14:07,391 - core.session - INFO - __init__:54 - Session initialized: fd5f79ee-825e-42a4-a397-6f7635f6f56b
+2026-02-15 14:14:07,391 - core.session - WARNING - create_branch:310 - Invalid message index: 10
+2026-02-15 14:14:07,393 - core.session - INFO - __init__:54 - Session initialized: 2983f741-5549-4dd2-91f1-72c6d0086118
+2026-02-15 14:14:07,393 - core.session - WARNING - create_branch:310 - Invalid message index: -1
+2026-02-15 14:14:07,394 - core.session - INFO - __init__:54 - Session initialized: 6a989e1f-665b-464d-9daa-5819f2784eba
+2026-02-15 14:14:07,395 - core.session - INFO - create_branch:333 - Created branch: c0dd11e7-4113-4814-aca0-903d8c2a06ab from message 0
+2026-02-15 14:14:07,395 - core.session - INFO - create_branch:333 - Created branch: 83ab0023-b311-4772-a0f9-b5413e84b365 from message 0
+2026-02-15 14:14:07,395 - core.session - INFO - switch_branch:349 - Switched to branch: c0dd11e7-4113-4814-aca0-903d8c2a06ab
+2026-02-15 14:14:07,397 - core.session - INFO - __init__:54 - Session initialized: c305b1b7-c71a-4bd1-b521-39d3d6bd109b
+2026-02-15 14:14:07,398 - core.session - WARNING - switch_branch:352 - Branch not found: non-existent-id
+2026-02-15 14:14:07,400 - core.session - INFO - __init__:54 - Session initialized: 5b846921-0bd5-44a6-9cab-908165ad5cd1
+2026-02-15 14:14:07,401 - core.session - INFO - create_branch:333 - Created branch: 55904d20-369b-4c8f-b4cc-df7f0cbbbd6c from message 0
+2026-02-15 14:14:07,403 - core.session - INFO - __init__:54 - Session initialized: 4eb95c1e-6875-45c8-934f-2b496ff4cdc5
+2026-02-15 14:14:07,404 - core.session - INFO - create_branch:333 - Created branch: 76e86fc2-4a9f-4655-87f2-32d2f8f1c4e2 from message 0
+2026-02-15 14:14:07,404 - core.session - INFO - create_branch:333 - Created branch: 0ebc513c-e463-4a80-9597-ae5b6a7e3167 from message 0
+2026-02-15 14:14:07,407 - core.session - INFO - __init__:54 - Session initialized: 1565fb2b-eb36-44c1-9c91-96254788a0c7
+2026-02-15 14:14:07,407 - core.session - INFO - create_branch:333 - Created branch: df3b1ea4-e18d-4765-92f6-0db429bad8bb from message 0
+2026-02-15 14:14:07,407 - core.session - INFO - delete_branch:370 - Deleted branch: df3b1ea4-e18d-4765-92f6-0db429bad8bb
+2026-02-15 14:14:07,409 - core.session - INFO - __init__:54 - Session initialized: 312826b1-1be4-49f4-bf76-3aef2d638419
+2026-02-15 14:14:07,410 - core.session - INFO - __init__:54 - Session initialized: 0efdccd7-8f38-4ef7-83bd-582a5d96b23c
+2026-02-15 14:14:07,411 - core.session - INFO - create_branch:333 - Created branch: 85363abc-b8a5-4f91-a396-d127222e6bba from message 0
+2026-02-15 14:14:07,411 - core.session - INFO - delete_branch:370 - Deleted branch: 85363abc-b8a5-4f91-a396-d127222e6bba
+2026-02-15 14:14:07,413 - core.session - INFO - __init__:54 - Session initialized: 05cc71a6-e530-4c64-8d8c-6647ec2ab02c
+2026-02-15 14:14:07,413 - core.session - INFO - pin_message:379 - Pinned message: cc5abe0f-7a0b-4a0f-a704-7d7f905cfcc1
+2026-02-15 14:14:07,415 - core.session - INFO - __init__:54 - Session initialized: b26633e5-4808-4364-988c-ebdf3b16097e
+2026-02-15 14:14:07,416 - core.session - INFO - __init__:54 - Session initialized: e96863df-301a-43fb-ad00-076458c302d4
+2026-02-15 14:14:07,417 - core.session - INFO - pin_message:379 - Pinned message: 30444d30-1a8f-413c-a659-1674914a2754
+2026-02-15 14:14:07,418 - core.session - INFO - unpin_message:388 - Unpinned message: 30444d30-1a8f-413c-a659-1674914a2754
+2026-02-15 14:14:07,420 - core.session - INFO - __init__:54 - Session initialized: c77b4d13-b423-43a0-acdf-32b3f5738865
+2026-02-15 14:14:07,422 - core.session - INFO - __init__:54 - Session initialized: 91bf7edb-8b45-46cd-a1ab-fb11cd144529
+2026-02-15 14:14:07,422 - core.session - INFO - set_feedback:406 - Set feedback on message: f06601c8-1841-4353-bc7e-1dfa872bdccd = positive
+2026-02-15 14:14:07,425 - core.session - INFO - __init__:54 - Session initialized: 6aaf0391-b42d-4d9f-b561-f9afc1dbf5a4
+2026-02-15 14:14:07,425 - core.session - INFO - set_feedback:406 - Set feedback on message: ba4a499e-9c02-4699-961a-8db824630ab5 = negative
+2026-02-15 14:14:07,428 - core.session - INFO - __init__:54 - Session initialized: 069e1cae-0db9-4e88-a242-dda91bc8e195
+2026-02-15 14:14:07,431 - core.session - INFO - __init__:54 - Session initialized: 9d7840b7-c841-4130-86a1-8e6c2729c55f
+2026-02-15 14:14:07,438 - core.session - INFO - delete_message:397 - Deleted message: 7888702c-8363-493b-b6cd-305aa9554767
+2026-02-15 14:14:07,440 - core.session - INFO - __init__:54 - Session initialized: 01b0939d-0a0b-44a0-9a1d-4a0739a3a8fd
+2026-02-15 14:14:07,442 - core.session - INFO - __init__:54 - Session initialized: e979bfcf-3706-471f-b168-a43b28ddfb4a
+2026-02-15 14:14:07,442 - core.session - INFO - pin_message:379 - Pinned message: 5261148e-6c33-4f92-aee3-ffa60ca93864
+2026-02-15 14:14:07,442 - core.session - INFO - set_feedback:406 - Set feedback on message: 5261148e-6c33-4f92-aee3-ffa60ca93864 = positive
+2026-02-15 14:14:07,444 - core.session - INFO - __init__:54 - Session initialized: aa4b4251-5643-4bab-88ee-0326eea40ba9
+2026-02-15 14:14:07,447 - core.session - INFO - __init__:54 - Session initialized: ae84b495-8ae0-4fa6-aad8-a8600ec431ce
+2026-02-15 14:14:07,451 - core.session - INFO - __init__:54 - Session initialized: 7b5da5f1-07ed-4b43-baa2-5c8473006036
+2026-02-15 14:14:07,452 - core.session - INFO - __init__:54 - Session initialized: fc08824b-8bed-497f-be50-e17bf077302c
+2026-02-15 14:14:07,455 - core.session - INFO - __init__:54 - Session initialized: 92e6042e-3816-4eff-ae3f-1a6594955e4d
+2026-02-15 14:14:07,457 - core.session - INFO - __init__:54 - Session initialized: 41b163b6-5305-4d63-8f17-e4790c0dd61d
+2026-02-15 14:14:07,458 - core.session - INFO - __init__:54 - Session initialized: 0d2e4925-5f62-4c64-8c33-723c6a05ed66
+2026-02-15 14:14:07,460 - core.session - INFO - __init__:54 - Session initialized: 94771981-77ea-4194-a83f-c1bbc9670a76
+2026-02-15 14:14:07,461 - core.session - INFO - __init__:54 - Session initialized: 251b7bfc-500b-49d4-a327-b91bb83208b0
+2026-02-15 14:14:07,473 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:14:07,476 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:14:07,477 - core.token_tracker - WARNING - count_tokens:84 - Tokenization error: Too long
+2026-02-15 14:14:07,479 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:14:07,482 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:14:07,486 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:14:07,488 - core.session - INFO - __init__:54 - Session initialized: 51551706-5d72-494f-aecc-6cf64eaf604d
+2026-02-15 14:14:07,488 - core.session - INFO - create_branch:333 - Created branch: 0ea5b87f-2823-4638-8cd8-84f1b7c6c227 from message 4
+2026-02-15 14:14:07,491 - core.session - INFO - __init__:54 - Session initialized: 1e25e59f-67f9-456f-9c60-49a9979b7088
+2026-02-15 14:14:07,491 - core.session - INFO - create_branch:333 - Created branch: 57a3a2e6-36e8-4822-9c70-a0bdf7099d55 from message 0
+2026-02-15 14:14:07,491 - core.session - INFO - create_branch:333 - Created branch: 86384d86-527f-47cb-ab35-24453ae0b358 from message 0
+2026-02-15 14:14:07,491 - core.session - INFO - create_branch:333 - Created branch: e641bb11-24cb-473d-aacc-1f2ec156fab1 from message 0
+2026-02-15 14:14:07,492 - core.session - INFO - delete_branch:370 - Deleted branch: 57a3a2e6-36e8-4822-9c70-a0bdf7099d55
+2026-02-15 14:14:07,492 - core.session - INFO - delete_branch:370 - Deleted branch: 86384d86-527f-47cb-ab35-24453ae0b358
+2026-02-15 14:14:07,492 - core.session - INFO - delete_branch:370 - Deleted branch: e641bb11-24cb-473d-aacc-1f2ec156fab1
+2026-02-15 14:14:07,493 - core.session - INFO - __init__:54 - Session initialized: ce1f0be3-fd5c-41b0-ba29-9ccc2b362d0f
+2026-02-15 14:14:07,493 - core.session - INFO - create_branch:333 - Created branch: a29f8fff-9e4b-4aa0-bcb4-eec6a0825f0f from message 0
+2026-02-15 14:14:07,493 - core.branch_manager - WARNING - merge_branch:109 - Cannot merge branch with itself
+2026-02-15 14:14:07,495 - core.session - INFO - __init__:54 - Session initialized: bdac05a3-a986-496f-aace-f069210ff260
+2026-02-15 14:14:07,496 - core.session - INFO - create_branch:333 - Created branch: d4d9cec2-4884-4d5a-99b3-50d07beba6ae from message 0
+2026-02-15 14:14:07,496 - core.session - INFO - create_branch:333 - Created branch: 5c2c2829-4368-49b5-afcc-1c26af75dc64 from message 0
+2026-02-15 14:14:07,496 - core.session - INFO - delete_branch:370 - Deleted branch: d4d9cec2-4884-4d5a-99b3-50d07beba6ae
+2026-02-15 14:14:07,496 - core.session - INFO - switch_branch:349 - Switched to branch: 5c2c2829-4368-49b5-afcc-1c26af75dc64
+2026-02-15 14:14:07,504 - core.session - INFO - __init__:54 - Session initialized: 499bcc2d-742c-42da-96e5-8b29152bc33c
+2026-02-15 14:14:07,505 - core.session - INFO - pin_message:379 - Pinned message: 3875833a-e6ff-4367-bab8-f24a771d493d
+2026-02-15 14:14:07,505 - core.session - INFO - pin_message:379 - Pinned message: 78c96b59-4ae4-4985-920b-45e31a3e5926
+2026-02-15 14:14:07,505 - core.session - INFO - pin_message:379 - Pinned message: e6e0564c-219c-4d90-af05-880f32c0d2d8
+2026-02-15 14:14:07,505 - core.session - INFO - pin_message:379 - Pinned message: 348efd42-fbe6-42ed-9ad2-5a9fb07127d5
+2026-02-15 14:14:07,505 - core.session - INFO - pin_message:379 - Pinned message: 00436473-2141-4ae2-a988-88d41c182be1
+2026-02-15 14:14:07,505 - core.session - INFO - pin_message:379 - Pinned message: 816ad147-6658-404f-beda-ab4d3dbfa0a8
+2026-02-15 14:14:07,505 - core.session - INFO - pin_message:379 - Pinned message: 0f8085b7-5d15-406d-bdbc-74937a3f0fd0
+2026-02-15 14:14:07,505 - core.session - INFO - pin_message:379 - Pinned message: 24e4aab2-0ac2-43b1-bb90-0a46425a2e70
+2026-02-15 14:14:07,505 - core.session - INFO - pin_message:379 - Pinned message: 193aaed3-0063-4e1f-a7af-bbc8f7ac2505
+2026-02-15 14:14:07,505 - core.session - INFO - pin_message:379 - Pinned message: 9bcf1d08-e262-4fd0-94a5-cb8c114f0f7b
+2026-02-15 14:14:07,507 - core.session - INFO - __init__:54 - Session initialized: 246e2ebc-7612-4ced-86bd-9dff11138f4c
+2026-02-15 14:14:07,508 - core.session - INFO - set_feedback:406 - Set feedback on message: 00654064-9759-47e5-8956-e4f42fcdd1f1 = positive
+2026-02-15 14:14:07,508 - core.session - INFO - set_feedback:406 - Set feedback on message: 988b4a6b-2acb-452c-84e9-96c67cca8751 = negative
+2026-02-15 14:14:07,508 - core.session - INFO - set_feedback:406 - Set feedback on message: fce5ef4c-b3ae-4fc9-9fb8-b3a8433c5c87 = positive
+2026-02-15 14:14:07,509 - core.session - INFO - set_feedback:406 - Set feedback on message: 66f010ee-34ba-4b99-8555-fda93ccfa300 = negative
+2026-02-15 14:14:07,509 - core.session - INFO - set_feedback:406 - Set feedback on message: a541e13b-d161-476e-844b-08806edd2f76 = positive
+2026-02-15 14:14:07,510 - core.session - INFO - __init__:54 - Session initialized: 9a61e220-32dd-423d-b213-6a63fcc4bd4d
+2026-02-15 14:14:07,512 - core.session - INFO - __init__:54 - Session initialized: f0570113-459c-4920-baad-940ca268283e
+2026-02-15 14:14:07,514 - core.session - INFO - delete_message:397 - Deleted message: c7c5063c-b203-4335-8e4e-8372b7e5b519
+2026-02-15 14:14:07,514 - core.session - INFO - delete_message:397 - Deleted message: 5f07cc44-6636-4e52-9794-541d9fb76146
+2026-02-15 14:14:07,515 - core.session - INFO - delete_message:397 - Deleted message: f3c17f8e-ec27-46e8-999f-99c0c388e696
+2026-02-15 14:14:07,515 - core.session - INFO - delete_message:397 - Deleted message: 6fbe501f-8455-45fd-89c8-a7ad1cc85fbd
+2026-02-15 14:14:07,515 - core.session - INFO - delete_message:397 - Deleted message: 144688e2-0706-40ec-99df-b4d1be6c02f4
+2026-02-15 14:14:07,515 - core.session - INFO - delete_message:397 - Deleted message: 828195a2-e8c2-4b1f-9e47-7710e5fa9154
+2026-02-15 14:14:07,515 - core.session - INFO - delete_message:397 - Deleted message: 6140beaf-dd76-475d-9e25-da984ba554f5
+2026-02-15 14:14:07,515 - core.session - INFO - delete_message:397 - Deleted message: 2a309c68-fe44-4148-8257-aaa8dce65792
+2026-02-15 14:14:07,515 - core.session - INFO - delete_message:397 - Deleted message: 74904d19-9dcf-484f-90a6-ad7906cb7d32
+2026-02-15 14:14:07,515 - core.session - INFO - delete_message:397 - Deleted message: a01c6292-8ec6-4aa6-99d7-9cd87c782e2e
+2026-02-15 14:14:07,518 - core.session - INFO - __init__:54 - Session initialized: 5f170c3e-1576-4da7-9e25-2a94bee55847
+2026-02-15 14:14:07,518 - core.session - WARNING - create_branch:310 - Invalid message index: 0
+2026-02-15 14:14:07,519 - core.session - INFO - __init__:54 - Session initialized: 44a4832e-252b-474a-83a7-9fb76dd6cb76
+2026-02-15 14:14:07,522 - core.token_tracker - INFO - _load_tokenizer:62 - Loaded tokenizer for: Qwen/Qwen2.5-1.5B-Instruct
+2026-02-15 14:14:07,522 - core.token_tracker - WARNING - count_tokens:84 - Tokenization error: Tokenizer failed
+2026-02-15 14:14:07,525 - core.token_tracker - WARNING - _load_tokenizer:64 - Failed to load tokenizer: Load failed. Using fallback.
+2026-02-15 14:14:07,526 - core.session - INFO - __init__:54 - Session initialized: 88e1b4f3-44d0-447f-a47d-f47a8f939778
+2026-02-15 14:14:07,526 - core.branch_manager - ERROR - create_branch:38 - Cannot create branch from None message
+2026-02-15 14:14:07,528 - core.session - INFO - __init__:54 - Session initialized: 08710f05-3783-41f5-a6d5-19060ebf90b7

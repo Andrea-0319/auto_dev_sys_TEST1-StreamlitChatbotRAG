@@ -1,6 +1,3 @@
-- **Original input** from user: "Voglio creare un piccolo chatbot con sistema rag e streamlit. Usa Hugginface per chiamare un modello che possa rispondere allo user, un modello anche piccolo. Fai in modo che funzioni correttamente e non ci siano bug. Usa un modello gratuito che abbia abilità di ragionamento e fai in modo tramite streamlit di far vedere  quando questo modello ragiona e come sta ragionando".
-- **Time spent to build this**: ~20 Minutes in only 1 cycle.
-- **Verification**: Need to verify and test if every component works properly and not only in the surface.
 # RAG-Enabled Chatbot
 
 A conversational AI chatbot application built with Streamlit that leverages Retrieval-Augmented Generation (RAG) to provide intelligent responses based on user-uploaded documents.

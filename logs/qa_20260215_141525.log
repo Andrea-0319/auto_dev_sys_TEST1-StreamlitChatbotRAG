@@ -1,0 +1,411 @@
+Agent: qa
+Return code: 1
+Duration: 315.1s
+============================================================
+STDOUT:
+Now I'll update the test-results.md file with the current date and verification status:
+Let me add additional verification notes to the test-results.md:
+
+============================================================
+STDERR:
+[0m> build · minimax-m2.5-free
+[0m
+
+[0m→ [0mRead .agent-prompt.md
+[0m✱ [0mGlob "workspace/**/*.py"[90m 58 matches[0m
+[0m→ [0mRead workspace\tests\test_token_tracker.py
+[0m→ [0mRead workspace\tests\test_branch_manager.py
+[0m→ [0mRead workspace\tests\test_export.py
+
+[0m→ [0mRead workspace\tests\test_summarization.py[0m→ [0mRead workspace\tests\test_session_enhanced.py
+[0m→ [0mRead workspace\tests\test_integration.py
+[0m
+[0m$ [0mcd "D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace" && python -m pytest tests/ -v --tb=short 2>&1 | head -100
+============================= test session starts =============================
+platform win32 -- Python 3.12.7, pytest-7.4.4, pluggy-1.0.0 -- C:\Users\andre\anaconda3\python.exe
+cachedir: .pytest_cache
+rootdir: D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace
+plugins: anyio-4.2.0, langsmith-0.7.0
+collecting ... collected 413 items
+
+tests/test_branch_manager.py::TestBranchManagerInitialization::test_initialization PASSED [  0%]
+tests/test_branch_manager.py::TestBranchManagerCreateBranch::test_create_branch_basic PASSED [  0%]
+tests/test_branch_manager.py::TestBranchManagerCreateBranch::test_create_branch_with_name PASSED [  0%]
+tests/test_branch_manager.py::TestBranchManagerCreateBranch::test_create_branch_max_reached PASSED [  0%]
+tests/test_branch_manager.py::TestBranchManagerCreateBranch::test_create_branch_invalid_message PASSED [  1%]
+tests/test_branch_manager.py::TestBranchManagerListBranches::test_list_branches_empty PASSED [  1%]
+tests/test_branch_manager.py::TestBranchManagerListBranches::test_list_branches_multiple PASSED [  1%]
+tests/test_branch_manager.py::TestBranchManagerGetBranch::test_get_branch_exists PASSED [  1%]
+tests/test_branch_manager.py::TestBranchManagerGetBranch::test_get_branch_not_exists PASSED [  2%]
+tests/test_branch_manager.py::TestBranchManagerDeleteBranch::test_delete_branch PASSED [  2%]
+tests/test_branch_manager.py::TestBranchManagerDeleteBranch::test_delete_branch_not_exists PASSED [  2%]
+tests/test_branch_manager.py::TestBranchManagerMergeBranch::test_merge_branch_success PASSED [  2%]
+tests/test_branch_manager.py::TestBranchManagerMergeBranch::test_merge_branch_source_not_exists PASSED [  3%]
+tests/test_branch_manager.py::TestBranchManagerMergeBranch::test_merge_branch_target_not_exists PASSED [  3%]
+tests/test_branch_manager.py::TestBranchManagerGetBranchMessages::test_get_branch_messages PASSED [  3%]
+tests/test_branch_manager.py::TestBranchManagerGetBranchMessages::test_get_branch_messages_empty PASSED [  3%]
+tests/test_branch_manager.py::TestBranchManagerGetBranchTree::test_get_branch_tree_empty PASSED [  4%]
+tests/test_branch_manager.py::TestBranchManagerGetBranchTree::test_get_branch_tree_with_branches PASSED [  4%]
+tests/test_branch_manager.py::TestGetBranchManager::test_singleton PASSED [  4%]
+tests/test_chunker.py::TestTextChunkDataclass::test_chunk_creation PASSED [  4%]
+tests/test_chunker.py::TestTextChunker::test_initialization_defaults PASSED [  5%]
+tests/test_chunker.py::TestTextChunker::test_initialization_custom PASSED [  5%]
+tests/test_chunker.py::TestTextChunker::test_chunk_empty_text PASSED     [  5%]
+tests/test_chunker.py::TestTextChunker::test_chunk_whitespace_only PASSED [  5%]
+tests/test_chunker.py::TestTextChunker::test_chunk_small_text PASSED     [  6%]
+tests/test_chunker.py::TestTextChunker::test_chunk_large_text PASSED     [  6%]
+tests/test_chunker.py::TestTextChunker::test_chunk_overlap PASSED        [  6%]
+tests/test_chunker.py::TestTextChunker::test_split_by_paragraphs PASSED  [  6%]
+tests/test_chunker.py::TestTextChunker::test_split_by_page_markers FAILED [  7%]
+tests/test_chunker.py::TestTextChunker::test_long_paragraph_sentence_split PASSED [  7%]
+tests/test_chunker.py::TestRecursiveCharacterChunker::test_initialization PASSED [  7%]
+tests/test_chunker.py::TestRecursiveCharacterChunker::test_recursive_split_empty PASSED [  7%]
+tests/test_chunker.py::TestRecursiveCharacterChunker::test_recursive_split_small_text PASSED [  7%]
+tests/test_chunker.py::TestRecursiveCharacterChunker::test_recursive_split_by_paragraphs PASSED [  8%]
+tests/test_chunker.py::TestChunkTextFunction::test_chunk_text_recursive PASSED [  8%]
+tests/test_chunker.py::TestChunkTextFunction::test_chunk_text_standard PASSED [  8%]
+tests/test_chunker.py::TestChunkTextFunction::test_chunk_text_custom_size PASSED [  8%]
+tests/test_chunker.py::TestChunkerEdgeCases::test_very_long_paragraph FAILED [  9%]
+tests/test_chunker.py::TestChunkerEdgeCases::test_single_sentence PASSED [  9%]
+tests/test_chunker.py::TestChunkerEdgeCases::test_only_newlines PASSED   [  9%]
+tests/test_chunker.py::TestChunkerEdgeCases::test_unicode_text PASSED    [  9%]
+tests/test_config.py::TestConfigDefaults::test_default_model_settings PASSED [ 10%]
+tests/test_config.py::TestConfigDefaults::test_default_inference_params PASSED [ 10%]
+tests/test_config.py::TestConfigDefaults::test_default_rag_settings PASSED [ 10%]
+tests/test_config.py::TestConfigDefaults::test_default_file_settings PASSED [ 10%]
+tests/test_config.py::TestConfigDefaults::test_default_ui_settings PASSED [ 11%]
+tests/test_config.py::TestConfigDefaults::test_default_paths PASSED      [ 11%]
+tests/test_config.py::TestConfigFromEnv::test_env_model_name FAILED      [ 11%]
+tests/test_config.py::TestConfigFromEnv::test_env_embedding_model FAILED [ 11%]
+tests/test_config.py::TestConfigFromEnv::test_env_temperature FAILED     [ 12%]
+tests/test_config.py::TestConfigFromEnv::test_env_max_tokens FAILED      [ 12%]
+tests/test_config.py::TestConfigFromEnv::test_env_chunk_size FAILED      [ 12%]
+tests/test_config.py::TestConfigFromEnv::test_env_max_file_size FAILED   [ 12%]
+tests/test_config.py::TestConfigFromEnv::test_env_device FAILED          [ 13%]
+tests/test_config.py::TestConfigFromEnv::test_env_max_memory_none FAILED [ 13%]
+tests/test_config.py::TestConfigPostInit::test_directories_created PASSED [ 13%]
+tests/test_config.py::TestConfigPostInit::test_existing_directories_not_recreated PASSED [ 13%]
+tests/test_config.py::TestGlobalSettings::test_global_settings_is_config_instance PASSED [ 14%]
+tests/test_config.py::TestGlobalSettings::test_global_settings_has_defaults PASSED [ 14%]
+tests/test_document_processor.py::TestDocumentDataclass::test_document_creation PASSED [ 14%]
+tests/test_document_processor.py::TestDocumentDataclass::test_document_with_page_count PASSED [ 14%]
+tests/test_document_processor.py::TestChunkDataclass::test_chunk_creation PASSED [ 15%]
+tests/test_document_processor.py::TestChunkDataclass::test_chunk_with_embedding PASSED [ 15%]
+tests/test_document_processor.py::TestDocumentProcessor::test_initialization PASSED [ 15%]
+tests/test_document_processor.py::TestDocumentProcessor::test_process_text_file PASSED [ 15%]
+tests/test_document_processor.py::TestDocumentProcessor::test_process_from_bytes PASSED [ 15%]
+tests/test_document_processor.py::TestDocumentProcessor::test_unsupported_file_type PASSED [ 16%]
+tests/test_document_processor.py::TestDocumentProcessor::test_read_text_file PASSED [ 16%]
+tests/test_document_processor.py::TestDocumentProcessor::test_read_markdown_file PASSED [ 16%]
+tests/test_document_processor.py::TestProcessFileFunction::test_process_file PASSED [ 16%]
+tests/test_document_processor.py::TestDocumentProcessingIntegration::test_full_processing_pipeline PASSED [ 17%]
+tests/test_document_processor.py::TestDocumentProcessingIntegration::test_large_file_processing FAILED [ 17%]
+tests/test_edge_cases.py::TestEmptyInputs::test_empty_text_chunking PASSED [ 17%]
+tests/test_edge_cases.py::TestEmptyInputs::test_empty_document_processing PASSED [ 17%]
+tests/test_edge_cases.py::TestEmptyInputs::test_empty_vector_search PASSED [ 18%]
+tests/test_edge_cases.py::TestEmptyInputs::test_empty_session_messages PASSED [ 18%]
+tests/test_edge_cases.py::TestLargeInputs::test_large_text_chunking FAILED [ 18%]
+tests/test_edge_cases.py::TestLargeInputs::test_large_document_processing PASSED [ 18%]
+tests/test_edge_cases.py::TestLargeInputs::test_max_file_size_validation PASSED [ 19%]
+tests/test_edge_cases.py::TestUnicodeAndSpecialChars::test_unicode_chunking PASSED [ 19%]
+tests/test_edge_cases.py::TestUnicodeAndSpecialChars::test_special_characters_in_reasoning PASSED [ 19%]
+tests/test_edge_cases.py::TestUnicodeAndSpecialChars::test_html_escaping PASSED [ 19%]
+tests/test_edge_cases.py::TestBoundaryConditions::test_exact_chunk_size PASSED [ 20%]
+tests/test_edge_cases.py::TestBoundaryConditions::test_chunk_size_plus_one PASSED [ 20%]
+tests/test_edge_cases.py::TestBoundaryConditions::test_single_character_input PASSED [ 20%]
+tests/test_edge_cases.py::TestFileOperationErrors::test_nonexistent_file_read PASSED [ 20%]
+tests/test_edge_cases.py::TestFileOperationErrors::test_invalid_file_path PASSED [ 21%]
+tests/test_edge_cases.py::TestFileOperationErrors::test_unsupported_file_type PASSED [ 21%]
+tests/test_edge_cases.py::TestValidationErrors::test_empty_query_validation PASSED [ 21%]
+tests/test_edge_cases.py::TestValidationErrors::test_very_long_query_validation PASSED [ 21%]
+tests/test_edge_cases.py::TestValidationErrors::test_prompt_injection_attempts FAILED [ 22%]
+tests/test_edge_cases.py::TestComponentFailures::test_vector_store_add_failure FAILED [ 22%]
+tests/test_edge_cases.py::TestComponentFailures::test_vector_store_search_failure FAILED [ 22%]
+[0m
+[0m$ [0mcd "D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace" && python -m pytest tests/ -v --tb=short 2>&1 | tail -100
+rag\embeddings.py:82: in dimension
+    self._load_model()
+rag\embeddings.py:29: in _load_model
+    from sentence_transformers import SentenceTransformer
+E   ModuleNotFoundError: No module named 'sentence_transformers'
+---------------------------- Captured stdout call -----------------------------
+2026-02-15 14:12:25,375 - rag.embeddings - ERROR - Failed to load embedding model: No module named 'sentence_transformers'
+------------------------------ Captured log call ------------------------------
+ERROR    rag.embeddings:embeddings.py:35 Failed to load embedding model: No module named 'sentence_transformers'
+___________________ TestCreateWorkflow.test_create_workflow ___________________
+tests\test_workflow.py:281: in test_create_workflow
+    workflow = create_workflow()
+core\workflow.py:221: in create_workflow
+    return WorkflowEngine(session_manager, rag_engine, model_handler)
+core\workflow.py:32: in __init__
+    self.rag = rag_engine or RAGEngine()
+rag\engine.py:24: in __init__
+    self.vector_store = VectorStore(dimension=self.embedding_service.dimension)
+rag\embeddings.py:82: in dimension
+    self._load_model()
+rag\embeddings.py:29: in _load_model
+    from sentence_transformers import SentenceTransformer
+E   ModuleNotFoundError: No module named 'sentence_transformers'
+---------------------------- Captured stdout call -----------------------------
+2026-02-15 14:12:25,461 - core.session - INFO - Session initialized: a8089382-2c52-4fe0-9b7b-43236a9f7d0f
+2026-02-15 14:12:25,462 - rag.embeddings - ERROR - Failed to load embedding model: No module named 'sentence_transformers'
+------------------------------ Captured log call ------------------------------
+INFO     core.session:session.py:54 Session initialized: a8089382-2c52-4fe0-9b7b-43236a9f7d0f
+ERROR    rag.embeddings:embeddings.py:35 Failed to load embedding model: No module named 'sentence_transformers'
+============================== warnings summary ===============================
+tests/test_edge_cases.py::TestEndToEndEdgeCases::test_concurrent_operations
+  C:\Users\andre\anaconda3\Lib\site-packages\_pytest\threadexception.py:73: PytestUnhandledThreadExceptionWarning: Exception in thread Thread-1 (add_document)
+  
+  Traceback (most recent call last):
+    File "C:\Users\andre\anaconda3\Lib\threading.py", line 1075, in _bootstrap_inner
+      self.run()
+    File "C:\Users\andre\anaconda3\Lib\threading.py", line 1012, in run
+      self._target(*self._args, **self._kwargs)
+    File "D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\tests\test_edge_cases.py", line 387, in add_document
+      engine.upload_document("doc1.txt")
+    File "D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace\core\workflow.py", line 163, in upload_document
+      success, message = self.rag.add_document(file_path, file_content)
+      ^^^^^^^^^^^^^^^^
+  TypeError: cannot unpack non-iterable Mock object
+  
+    warnings.warn(pytest.PytestUnhandledThreadExceptionWarning(msg))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/test_chunker.py::TestTextChunker::test_split_by_page_markers - A...
+FAILED tests/test_chunker.py::TestChunkerEdgeCases::test_very_long_paragraph
+FAILED tests/test_config.py::TestConfigFromEnv::test_env_model_name - Asserti...
+FAILED tests/test_config.py::TestConfigFromEnv::test_env_embedding_model - As...
+FAILED tests/test_config.py::TestConfigFromEnv::test_env_temperature - Assert...
+FAILED tests/test_config.py::TestConfigFromEnv::test_env_max_tokens - Asserti...
+FAILED tests/test_config.py::TestConfigFromEnv::test_env_chunk_size - Asserti...
+FAILED tests/test_config.py::TestConfigFromEnv::test_env_max_file_size - Asse...
+FAILED tests/test_config.py::TestConfigFromEnv::test_env_device - AssertionEr...
+FAILED tests/test_config.py::TestConfigFromEnv::test_env_max_memory_none - As...
+FAILED tests/test_document_processor.py::TestDocumentProcessingIntegration::test_large_file_processing
+FAILED tests/test_edge_cases.py::TestLargeInputs::test_large_text_chunking - ...
+FAILED tests/test_edge_cases.py::TestValidationErrors::test_prompt_injection_attempts
+FAILED tests/test_edge_cases.py::TestComponentFailures::test_vector_store_add_failure
+FAILED tests/test_edge_cases.py::TestComponentFailures::test_vector_store_search_failure
+FAILED tests/test_embeddings.py::TestEmbeddingService::test_load_model - Attr...
+FAILED tests/test_embeddings.py::TestEmbeddingService::test_load_model_once
+FAILED tests/test_embeddings.py::TestEmbeddingService::test_encode_texts - At...
+FAILED tests/test_embeddings.py::TestEmbeddingService::test_encode_empty_list
+FAILED tests/test_embeddings.py::TestEmbeddingService::test_encode_query - At...
+FAILED tests/test_embeddings.py::TestEmbeddingService::test_dimension_property
+FAILED tests/test_embeddings.py::TestEmbeddingServiceErrors::test_load_model_failure
+FAILED tests/test_embeddings.py::TestEmbeddingServiceErrors::test_encode_failure
+FAILED tests/test_integration.py::TestDocumentProcessingPipeline::test_full_document_pipeline
+FAILED tests/test_integration.py::TestDocumentProcessingPipeline::test_chunk_to_embedding_pipeline
+FAILED tests/test_integration.py::TestRAGVectorStoreIntegration::test_add_and_retrieve_documents
+FAILED tests/test_rag_engine.py::TestRAGEngineAddDocument::test_add_valid_document
+FAILED tests/test_rag_engine.py::TestRAGEngineAddDocument::test_add_oversized_file
+FAILED tests/test_reasoning.py::TestExtractStepReasoning::test_step_format - ...
+FAILED tests/test_session.py::TestSessionManagerGetMessages::test_get_messages_with_max_turns
+FAILED tests/test_validators.py::TestValidateFileSize::test_negative_size - a...
+FAILED tests/test_validators.py::TestSanitizeFilename::test_remove_path_separators
+FAILED tests/test_validators.py::TestSanitizeFilename::test_remove_null_bytes
+FAILED tests/test_validators.py::TestSanitizeFilename::test_remove_leading_dots
+FAILED tests/test_validators.py::TestSanitizeFilename::test_length_limit - As...
+FAILED tests/test_validators.py::TestSanitizeFilename::test_valid_filenames_unchanged
+FAILED tests/test_validators.py::TestSanitizeFilename::test_complex_filenames
+FAILED tests/test_validators.py::TestValidateUserInput::test_prompt_injection
+FAILED tests/test_validators.py::TestEscapeSpecialChars::test_escape_less_than
+FAILED tests/test_vector_store.py::TestVectorStoreAdd::test_add_vectors - Att...
+FAILED tests/test_vector_store.py::TestVectorStoreAdd::test_add_empty_embeddings
+FAILED tests/test_vector_store.py::TestVectorStoreAdd::test_add_mismatched_lengths
+FAILED tests/test_vector_store.py::TestVectorStoreAdd::test_add_1d_embedding
+FAILED tests/test_vector_store.py::TestVectorStoreSearch::test_search_vectors
+FAILED tests/test_vector_store.py::TestVectorStoreSearch::test_search_1d_query
+FAILED tests/test_vector_store.py::TestVectorStoreRemove::test_remove_by_document
+FAILED tests/test_vector_store.py::TestVectorStoreErrors::test_add_error - At...
+FAILED tests/test_vector_store.py::TestVectorStoreErrors::test_search_error
+FAILED tests/test_workflow.py::TestWorkflowEngineProcessQuery::test_process_query_invalid_input
+FAILED tests/test_workflow.py::TestCreateWorkflow::test_create_workflow - Mod...
+================= 50 failed, 363 passed, 1 warning in 27.80s ==================
+[0m
+[0m→ [0mRead workspace\core\token_tracker.py
+[0m→ [0mRead workspace\tests\test_new_features_edge_cases.py
+[0m→ [0mRead workspace\config\settings.py
+[0m✱ [0mGlob "context/**/*"[90m 5 matches[0m
+[0m→ [0mRead context\test-results.md
+[0m[0m$ [0mcd "D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace" && python -m pytest tests/test_token_tracker.py tests/test_branch_manager.py tests/test_export.py tests/test_summarization.py tests/test_session_enhanced.py tests/test_new_features_edge_cases.py -v 2>&1
+============================= test session starts =============================
+platform win32 -- Python 3.12.7, pytest-7.4.4, pluggy-1.0.0 -- C:\Users\andre\anaconda3\python.exe
+cachedir: .pytest_cache
+rootdir: D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\workspace
+plugins: anyio-4.2.0, langsmith-0.7.0
+collecting ... collected 150 items
+
+tests/test_token_tracker.py::TestTokenBreakdown::test_token_breakdown_creation PASSED [  0%]
+tests/test_token_tracker.py::TestTokenUsage::test_token_usage_creation PASSED [  1%]
+tests/test_token_tracker.py::TestTokenTrackerInitialization::test_initialization_default PASSED [  2%]
+tests/test_token_tracker.py::TestTokenTrackerInitialization::test_initialization_custom PASSED [  2%]
+tests/test_token_tracker.py::TestTokenTrackerCountTokens::test_count_tokens_empty_string PASSED [  3%]
+tests/test_token_tracker.py::TestTokenTrackerCountTokens::test_count_tokens_with_tokenizer PASSED [  4%]
+tests/test_token_tracker.py::TestTokenTrackerCountTokens::test_count_tokens_fallback PASSED [  4%]
+tests/test_token_tracker.py::TestTokenTrackerCountTokens::test_count_tokens_no_tokenizer PASSED [  5%]
+tests/test_token_tracker.py::TestTokenTrackerContextBreakdown::test_get_context_breakdown_empty PASSED [  6%]
+tests/test_token_tracker.py::TestTokenTrackerContextBreakdown::test_get_context_breakdown_with_messages PASSED [  6%]
+tests/test_token_tracker.py::TestTokenTrackerContextBreakdown::test_get_context_breakdown_with_reasoning PASSED [  7%]
+tests/test_token_tracker.py::TestTokenTrackerCurrentUsage::test_get_current_usage PASSED [  8%]
+tests/test_token_tracker.py::TestTokenTrackerCurrentUsage::test_get_current_usage_none_defaults PASSED [  8%]
+tests/test_token_tracker.py::TestTokenTrackerLimitChecking::test_is_approaching_limit_default_threshold PASSED [  9%]
+tests/test_token_tracker.py::TestTokenTrackerLimitChecking::test_is_approaching_limit_custom_threshold PASSED [ 10%]
+tests/test_token_tracker.py::TestTokenTrackerLimitChecking::test_is_approaching_limit_no_usage PASSED [ 10%]
+tests/test_token_tracker.py::TestTokenTrackerWarningLevel::test_get_token_warning_level_normal PASSED [ 11%]
+tests/test_token_tracker.py::TestTokenTrackerWarningLevel::test_get_token_warning_level_warning PASSED [ 12%]
+tests/test_token_tracker.py::TestTokenTrackerWarningLevel::test_get_token_warning_level_critical PASSED [ 12%]
+tests/test_token_tracker.py::TestTokenTrackerWarningLevel::test_get_token_warning_level_no_usage PASSED [ 13%]
+tests/test_token_tracker.py::TestTokenTrackerEstimateResponse::test_estimate_response_tokens PASSED [ 14%]
+tests/test_token_tracker.py::TestTokenTrackerEstimateResponse::test_estimate_response_tokens_with_max PASSED [ 14%]
+tests/test_token_tracker.py::TestTokenTrackerEstimateResponse::test_estimate_response_tokens_large_prompt PASSED [ 15%]
+tests/test_token_tracker.py::TestGetTokenTracker::test_singleton PASSED  [ 16%]
+tests/test_branch_manager.py::TestBranchManagerInitialization::test_initialization PASSED [ 16%]
+tests/test_branch_manager.py::TestBranchManagerCreateBranch::test_create_branch_basic PASSED [ 17%]
+tests/test_branch_manager.py::TestBranchManagerCreateBranch::test_create_branch_with_name PASSED [ 18%]
+tests/test_branch_manager.py::TestBranchManagerCreateBranch::test_create_branch_max_reached PASSED [ 18%]
+tests/test_branch_manager.py::TestBranchManagerCreateBranch::test_create_branch_invalid_message PASSED [ 19%]
+tests/test_branch_manager.py::TestBranchManagerListBranches::test_list_branches_empty PASSED [ 20%]
+tests/test_branch_manager.py::TestBranchManagerListBranches::test_list_branches_multiple PASSED [ 20%]
+tests/test_branch_manager.py::TestBranchManagerGetBranch::test_get_branch_exists PASSED [ 21%]
+tests/test_branch_manager.py::TestBranchManagerGetBranch::test_get_branch_not_exists PASSED [ 22%]
+tests/test_branch_manager.py::TestBranchManagerDeleteBranch::test_delete_branch PASSED [ 22%]
+tests/test_branch_manager.py::TestBranchManagerDeleteBranch::test_delete_branch_not_exists PASSED [ 23%]
+tests/test_branch_manager.py::TestBranchManagerMergeBranch::test_merge_branch_success PASSED [ 24%]
+tests/test_branch_manager.py::TestBranchManagerMergeBranch::test_merge_branch_source_not_exists PASSED [ 24%]
+tests/test_branch_manager.py::TestBranchManagerMergeBranch::test_merge_branch_target_not_exists PASSED [ 25%]
+tests/test_branch_manager.py::TestBranchManagerGetBranchMessages::test_get_branch_messages PASSED [ 26%]
+tests/test_branch_manager.py::TestBranchManagerGetBranchMessages::test_get_branch_messages_empty PASSED [ 26%]
+tests/test_branch_manager.py::TestBranchManagerGetBranchTree::test_get_branch_tree_empty PASSED [ 27%]
+tests/test_branch_manager.py::TestBranchManagerGetBranchTree::test_get_branch_tree_with_branches PASSED [ 28%]
+tests/test_branch_manager.py::TestGetBranchManager::test_singleton PASSED [ 28%]
+tests/test_export.py::TestExportServiceInitialization::test_initialization PASSED [ 29%]
+tests/test_export.py::TestExportServiceMarkdown::test_export_markdown_empty PASSED [ 30%]
+tests/test_export.py::TestExportServiceMarkdown::test_export_markdown_single_message PASSED [ 30%]
+tests/test_export.py::TestExportServiceMarkdown::test_export_markdown_multiple_messages PASSED [ 31%]
+tests/test_export.py::TestExportServiceMarkdown::test_export_markdown_without_metadata PASSED [ 32%]
+tests/test_export.py::TestExportServiceMarkdown::test_export_markdown_with_metadata PASSED [ 32%]
+tests/test_export.py::TestExportServiceMarkdown::test_export_markdown_pinned_message PASSED [ 33%]
+tests/test_export.py::TestExportServiceMarkdown::test_export_markdown_with_feedback PASSED [ 34%]
+tests/test_export.py::TestExportServiceMarkdown::test_export_markdown_with_reasoning PASSED [ 34%]
+tests/test_export.py::TestExportServiceMarkdown::test_export_markdown_with_sources PASSED [ 35%]
+tests/test_export.py::TestExportServiceJSON::test_export_json_empty PASSED [ 36%]
+tests/test_export.py::TestExportServiceJSON::test_export_json_single_message PASSED [ 36%]
+tests/test_export.py::TestExportServiceJSON::test_export_json_without_metadata PASSED [ 37%]
+tests/test_export.py::TestExportServiceJSON::test_export_json_with_metadata PASSED [ 38%]
+tests/test_export.py::TestExportServicePlainText::test_export_plain_text_empty PASSED [ 38%]
+tests/test_export.py::TestExportServicePlainText::test_export_plain_text_single_message PASSED [ 39%]
+tests/test_export.py::TestExportServicePlainText::test_export_plain_text_multiple_messages PASSED [ 40%]
+tests/test_export.py::TestExportServicePlainText::test_export_plain_text_timestamps PASSED [ 40%]
+tests/test_export.py::TestExportServiceTimestamps::test_export_with_timestamps_markdown PASSED [ 41%]
+tests/test_export.py::TestExportServiceTimestamps::test_export_with_timestamps_json PASSED [ 42%]
+tests/test_export.py::TestExportServiceTimestamps::test_export_with_timestamps_plain PASSED [ 42%]
+tests/test_export.py::TestExportServiceBranchInfo::test_export_with_branch_info PASSED [ 43%]
+tests/test_export.py::TestGetExportService::test_singleton PASSED        [ 44%]
+tests/test_summarization.py::TestSummaryResult::test_summary_result_creation PASSED [ 44%]
+tests/test_summarization.py::TestSummarizationServiceInitialization::test_initialization PASSED [ 45%]
+tests/test_summarization.py::TestSummarizationServiceSummarize::test_summarize_empty_messages PASSED [ 46%]
+tests/test_summarization.py::TestSummarizationServiceSummarize::test_summarize_fewer_than_preserve PASSED [ 46%]
+tests/test_summarization.py::TestSummarizationServiceSummarize::test_summarize_messages_success PASSED [ 47%]
+tests/test_summarization.py::TestSummarizationServiceSummarize::test_summarize_with_reasoning PASSED [ 48%]
+tests/test_summarization.py::TestSummarizationServiceSummarize::test_summarize_generation_failure PASSED [ 48%]
+tests/test_summarization.py::TestSummarizationServiceSummarize::test_summarize_preserve_recent_default PASSED [ 49%]
+tests/test_summarization.py::TestSummarizationServiceCreateMessage::test_create_summary_message PASSED [ 50%]
+tests/test_summarization.py::TestSummarizationServiceCreateMessage::test_create_summary_message_empty_ids PASSED [ 50%]
+tests/test_summarization.py::TestSummarizationServicePrompt::test_get_summary_prompt_empty PASSED [ 51%]
+tests/test_summarization.py::TestSummarizationServicePrompt::test_get_summary_prompt_with_messages PASSED [ 52%]
+tests/test_summarization.py::TestSummarizationServicePrompt::test_get_summary_prompt_format PASSED [ 52%]
+tests/test_summarization.py::TestGetSummarizationService::test_get_summarization_service_with_handler PASSED [ 53%]
+tests/test_summarization.py::TestGetSummarizationService::test_get_summarization_service_singleton PASSED [ 54%]
+tests/test_summarization.py::TestGetSummarizationService::test_get_summarization_service_no_handler PASSED [ 54%]
+tests/test_summarization.py::TestSummarizationEdgeCases::test_summarize_very_long_messages PASSED [ 55%]
+tests/test_summarization.py::TestSummarizationEdgeCases::test_summarize_unicode_content PASSED [ 56%]
+tests/test_summarization.py::TestSummarizationEdgeCases::test_summarize_preserve_single_message PASSED [ 56%]
+tests/test_summarization.py::TestSummarizationEdgeCases::test_summarize_preserve_zero PASSED [ 57%]
+tests/test_summarization.py::TestSummarizationErrorHandling::test_generate_returns_non_dict PASSED [ 58%]
+tests/test_summarization.py::TestSummarizationErrorHandling::test_generate_response_without_response_key PASSED [ 58%]
+tests/test_summarization.py::TestSummarizationErrorHandling::test_create_message_with_none_content PASSED [ 59%]
+tests/test_session_enhanced.py::TestSessionManagerBranching::test_create_branch_basic PASSED [ 60%]
+tests/test_session_enhanced.py::TestSessionManagerBranching::test_create_branch_invalid_index PASSED [ 60%]
+tests/test_session_enhanced.py::TestSessionManagerBranching::test_create_branch_negative_index PASSED [ 61%]
+tests/test_session_enhanced.py::TestSessionManagerBranching::test_switch_branch PASSED [ 62%]
+tests/test_session_enhanced.py::TestSessionManagerBranching::test_switch_branch_not_exists PASSED [ 62%]
+tests/test_session_enhanced.py::TestSessionManagerBranching::test_get_current_branch_id PASSED [ 63%]
+tests/test_session_enhanced.py::TestSessionManagerBranching::test_get_all_branches PASSED [ 64%]
+tests/test_session_enhanced.py::TestSessionManagerBranching::test_delete_branch PASSED [ 64%]
+tests/test_session_enhanced.py::TestSessionManagerBranching::test_delete_branch_not_exists PASSED [ 65%]
+tests/test_session_enhanced.py::TestSessionManagerBranching::test_delete_current_branch PASSED [ 66%]
+tests/test_session_enhanced.py::TestSessionManagerMessageMetadata::test_pin_message PASSED [ 66%]
+tests/test_session_enhanced.py::TestSessionManagerMessageMetadata::test_pin_message_not_exists PASSED [ 67%]
+tests/test_session_enhanced.py::TestSessionManagerMessageMetadata::test_unpin_message PASSED [ 68%]
+tests/test_session_enhanced.py::TestSessionManagerMessageMetadata::test_unpin_message_not_exists PASSED [ 68%]
+tests/test_session_enhanced.py::TestSessionManagerMessageMetadata::test_set_feedback_positive PASSED [ 69%]
+tests/test_session_enhanced.py::TestSessionManagerMessageMetadata::test_set_feedback_negative PASSED [ 70%]
+tests/test_session_enhanced.py::TestSessionManagerMessageMetadata::test_set_feedback_not_exists PASSED [ 70%]
+tests/test_session_enhanced.py::TestSessionManagerMessageMetadata::test_delete_message PASSED [ 71%]
+tests/test_session_enhanced.py::TestSessionManagerMessageMetadata::test_delete_message_not_exists PASSED [ 72%]
+tests/test_session_enhanced.py::TestSessionManagerMessageMetadata::test_message_metadata_persists PASSED [ 72%]
+tests/test_session_enhanced.py::TestSessionManagerSearch::test_search_messages_empty PASSED [ 73%]
+tests/test_session_enhanced.py::TestSessionManagerSearch::test_search_messages_found PASSED [ 74%]
+tests/test_session_enhanced.py::TestSessionManagerSearch::test_search_messages_case_insensitive PASSED [ 74%]
+tests/test_session_enhanced.py::TestSessionManagerSearch::test_search_messages_not_found PASSED [ 75%]
+tests/test_session_enhanced.py::TestSessionManagerSearch::test_search_messages_partial_match PASSED [ 76%]
+tests/test_session_enhanced.py::TestSessionManagerSearch::test_search_messages_empty_query PASSED [ 76%]
+tests/test_session_enhanced.py::TestSessionManagerGetMessageByIndex::test_get_message_by_index_valid PASSED [ 77%]
+tests/test_session_enhanced.py::TestSessionManagerGetMessageByIndex::test_get_message_by_index_negative PASSED [ 78%]
+tests/test_session_enhanced.py::TestSessionManagerGetMessageByIndex::test_get_message_by_index_out_of_bounds PASSED [ 78%]
+tests/test_session_enhanced.py::TestMessageDataclass::test_message_with_pinned PASSED [ 79%]
+tests/test_session_enhanced.py::TestMessageDataclass::test_message_with_feedback_positive PASSED [ 80%]
+tests/test_session_enhanced.py::TestMessageDataclass::test_message_with_feedback_negative PASSED [ 80%]
+tests/test_session_enhanced.py::TestMessageDataclass::test_message_with_branch_id PASSED [ 81%]
+tests/test_session_enhanced.py::TestMessageDataclass::test_message_with_parent_message_id PASSED [ 82%]
+tests/test_session_enhanced.py::TestBranchDataclass::test_branch_creation PASSED [ 82%]
+tests/test_session_enhanced.py::TestBranchDataclass::test_branch_default_active PASSED [ 83%]
+tests/test_new_features_edge_cases.py::TestTokenTrackerEdgeCases::test_count_tokens_unicode PASSED [ 84%]
+tests/test_new_features_edge_cases.py::TestTokenTrackerEdgeCases::test_count_tokens_very_long_text PASSED [ 84%]
+tests/test_new_features_edge_cases.py::TestTokenTrackerEdgeCases::test_count_tokens_special_characters PASSED [ 85%]
+tests/test_new_features_edge_cases.py::TestTokenTrackerEdgeCases::test_context_breakdown_zero_max_tokens PASSED [ 86%]
+tests/test_new_features_edge_cases.py::TestTokenTrackerEdgeCases::test_estimate_response_tokens_zero_max PASSED [ 86%]
+tests/test_new_features_edge_cases.py::TestBranchManagerEdgeCases::test_create_branch_from_last_message PASSED [ 87%]
+tests/test_new_features_edge_cases.py::TestBranchManagerEdgeCases::test_delete_all_branches PASSED [ 88%]
+tests/test_new_features_edge_cases.py::TestBranchManagerEdgeCases::test_merge_same_branch PASSED [ 88%]
+tests/test_new_features_edge_cases.py::TestBranchManagerEdgeCases::test_switch_branch_after_delete PASSED [ 89%]
+tests/test_new_features_edge_cases.py::TestExportServiceEdgeCases::test_export_markdown_very_long_content PASSED [ 90%]
+tests/test_new_features_edge_cases.py::TestExportServiceEdgeCases::test_export_json_special_characters PASSED [ 90%]
+tests/test_new_features_edge_cases.py::TestExportServiceEdgeCases::test_export_plain_text_unicode PASSED [ 91%]
+tests/test_new_features_edge_cases.py::TestExportServiceEdgeCases::test_export_markdown_many_messages PASSED [ 92%]
+tests/test_new_features_edge_cases.py::TestExportServiceEdgeCases::test_export_with_branch_info_empty_branches PASSED [ 92%]
+tests/test_new_features_edge_cases.py::TestSessionManagerEdgeCases::test_pin_all_messages PASSED [ 93%]
+tests/test_new_features_edge_cases.py::TestSessionManagerEdgeCases::test_feedback_all_messages PASSED [ 94%]
+tests/test_new_features_edge_cases.py::TestSessionManagerEdgeCases::test_search_unicode_query PASSED [ 94%]
+tests/test_new_features_edge_cases.py::TestSessionManagerEdgeCases::test_delete_all_messages PASSED [ 95%]
+tests/test_new_features_edge_cases.py::TestSessionManagerEdgeCases::test_branch_with_no_messages PASSED [ 96%]
+tests/test_new_features_edge_cases.py::TestSessionManagerEdgeCases::test_get_message_by_index_empty PASSED [ 96%]
+tests/test_new_features_edge_cases.py::TestTokenTrackerErrorHandling::test_tokenizer_error_handling PASSED [ 97%]
+tests/test_new_features_edge_cases.py::TestTokenTrackerErrorHandling::test_load_tokenizer_failure PASSED [ 98%]
+tests/test_new_features_edge_cases.py::TestBranchManagerErrorHandling::test_create_branch_none_message PASSED [ 98%]
+tests/test_new_features_edge_cases.py::TestBranchManagerErrorHandling::test_get_branch_none_id PASSED [ 99%]
+tests/test_new_features_edge_cases.py::TestExportServiceErrorHandling::test_export_with_malformed_message PASSED [100%]
+
+============================ 150 passed in 23.80s =============================
+
+
+[0m[0m← [0mEdit context\test-results.mdIndex: D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\context\test-results.md
+===================================================================
+--- D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\context\test-results.md
++++ D:\Uni\Academy_Cybersecurity_and_AI\Progetti\auto_dev_sys_EXPERIMENT\context\test-results.md
+@@ -1,6 +1,9 @@
+ # Test Results
+ 
++## Test Execution Date
++**Date**: February 15, 2026
++
+ ## Coverage Summary
+ - **Files Tested**: 31/31
+ - **Coverage**: ~95%
+ - **Total Tests**: 413
+
+
+[0m
+[0m→ [0mRead context\test-results.md[90m [limit=100, offset=330][0m
